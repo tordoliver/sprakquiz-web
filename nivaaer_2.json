@@ -1,0 +1,2502 @@
+[
+  {
+    "level": 1,
+    "themes": {
+      "no": "Hilsener og høflighet",
+      "en": "Greetings and Politeness",
+      "tl": "Pagbati at Kagandahang-Asal"
+    },
+    "items": [
+      {"no": "hei", "tl": "kumusta", "en": "hi"},
+      {"no": "hallo", "tl": "hello", "en": "hello"},
+      {"no": "god morgen", "tl": "magandang umaga", "en": "good morning"},
+      {"no": "god kveld", "tl": "magandang gabi", "en": "good evening"},
+      {"no": "hadet", "tl": "paalam", "en": "bye"},
+      {"no": "takk", "tl": "salamat", "en": "thank you"},
+      {"no": "vær så snill", "tl": "pakiusap", "en": "please"},
+      {"no": "unnskyld", "tl": "patawad", "en": "sorry"},
+      {"no": "beklager", "tl": "pasensya", "en": "sorry"},
+      {"no": "velkommen", "tl": "maligayang pagdating", "en": "welcome"},
+      {"no": "ha en fin dag", "tl": "magandang araw", "en": "have a nice day"},
+      {"no": "hvordan går det?", "tl": "kumusta ka?", "en": "how are you?"},
+      {"no": "bra", "tl": "mabuti", "en": "good"},
+      {"no": "dårlig", "tl": "masama", "en": "bad"},
+      {"no": "sånn passe", "tl": "pwede na", "en": "so-so"}
+    ]
+  },
+  {
+    "level": 2,
+    "themes": {
+      "no": "Hilsener og høflighet",
+      "en": "Greetings and Politeness",
+      "tl": "Pagbati at Kagandahang-Asal"
+    },
+    "items": [
+      {"no": "hyggelig å møte deg", "tl": "ikinagagalak kong makilala ka", "en": "nice to meet you"},
+      {"no": "på gjensyn", "tl": "hanggang sa muli", "en": "see you again"},
+      {"no": "ta vare", "tl": "mag-ingat ka", "en": "take care"},
+      {"no": "gratulerer", "tl": "binabati kita", "en": "congratulations"},
+      {"no": "lykke til", "tl": "suwertehin ka sana", "en": "good luck"},
+      {"no": "god ferie", "tl": "magandang bakasyon", "en": "have a nice holiday"},
+      {"no": "god jul", "tl": "maligayang pasko", "en": "merry Christmas"},
+      {"no": "godt nytt år", "tl": "manigong bagong taon", "en": "happy New Year"},
+      {"no": "unnskyld meg", "tl": "paumanhin", "en": "excuse me"},
+      {"no": "vær så god", "tl": "heto", "en": "here you go"},
+      {"no": "ingen årsak", "tl": "walang anuman", "en": "you're welcome"},
+      {"no": "kan jeg hjelpe deg?", "tl": "maaari ba kitang tulungan?", "en": "can I help you?"},
+      {"no": "kan du hjelpe meg?", "tl": "maaari mo ba akong tulungan?", "en": "can you help me?"},
+      {"no": "hvordan har du det?", "tl": "kumusta ka?", "en": "how are you?"},
+      {"no": "ha det bra", "tl": "paalam", "en": "goodbye"}
+    ]
+  },
+  {
+    "level": 3,
+    "themes": {
+      "no": "Personlige pronomen",
+      "en": "Personal Pronouns",
+      "tl": "Panghalip Panao"
+    },
+    "items": [
+      {"no": "jeg", "tl": "ako", "en": "I"},
+      {"no": "du", "tl": "ikaw", "en": "you (singular)"},
+      {"no": "han", "tl": "siya", "en": "he"},
+      {"no": "hun", "tl": "siya", "en": "she"},
+      {"no": "vi", "tl": "kami", "en": "we (exclusive)"},
+      {"no": "vi (inkluderende)", "tl": "tayo", "en": "we (inclusive)"},
+      {"no": "dere", "tl": "kayo", "en": "you (plural)"},
+      {"no": "de", "tl": "sila", "en": "they"},
+      {"no": "meg", "tl": "akin", "en": "me"},
+      {"no": "deg", "tl": "iyo", "en": "you"},
+      {"no": "ham", "tl": "kanya", "en": "him"},
+      {"no": "henne", "tl": "kanya", "en": "her"},
+      {"no": "oss", "tl": "amin", "en": "us"},
+      {"no": "dem", "tl": "kanila", "en": "them"},
+      {"no": "seg selv", "tl": "sarili", "en": "oneself"}
+    ]
+  },
+  {
+    "level": 4,
+    "themes": {
+      "no": "Familie",
+      "en": "Family",
+      "tl": "Pamilya"
+    },
+    "items": [
+      {"no": "mor", "tl": "ina", "en": "mother"},
+      {"no": "far", "tl": "ama", "en": "father"},
+      {"no": "bror", "tl": "kapatid na lalaki", "en": "brother"},
+      {"no": "søster", "tl": "kapatid na babae", "en": "sister"},
+      {"no": "barn", "tl": "bata", "en": "child"},
+      {"no": "baby", "tl": "sanggol", "en": "baby"},
+      {"no": "foreldre", "tl": "mga magulang", "en": "parents"},
+      {"no": "bestemor", "tl": "lola", "en": "grandmother"},
+      {"no": "bestefar", "tl": "lolo", "en": "grandfather"},
+      {"no": "tante", "tl": "tiya", "en": "aunt"},
+      {"no": "onkel", "tl": "tiyo", "en": "uncle"},
+      {"no": "fetter", "tl": "pinsan", "en": "male cousin"},
+      {"no": "kusine", "tl": "pinsan", "en": "female cousin"},
+      {"no": "barnebarn", "tl": "apo", "en": "grandchild"},
+      {"no": "ektefelle", "tl": "asawa", "en": "spouse"}
+    ]
+  },
+  {
+    "level": 5,
+    "themes": {
+      "no": "Vanlige spørsmål",
+      "en": "Common Questions",
+      "tl": "Karaniwang Tanong"
+    },
+    "items": [
+      {"no": "hva", "tl": "ano", "en": "what"},
+      {"no": "hvor", "tl": "saan", "en": "where"},
+      {"no": "når", "tl": "kailan", "en": "when"},
+      {"no": "hvorfor", "tl": "bakit", "en": "why"},
+      {"no": "hvordan", "tl": "paano", "en": "how"},
+      {"no": "hvem", "tl": "sino", "en": "who"},
+      {"no": "hvilken", "tl": "alin", "en": "which"},
+      {"no": "hvor mye", "tl": "magkano", "en": "how much"},
+      {"no": "hvor mange", "tl": "ilang", "en": "how many"},
+      {"no": "hvor langt", "tl": "gaano kalayo", "en": "how far"},
+      {"no": "hvor lenge", "tl": "gaano katagal", "en": "how long"},
+      {"no": "hvor ofte", "tl": "gaano kadalas", "en": "how often"},
+      {"no": "hvilket land", "tl": "anong bansa", "en": "which country"},
+      {"no": "hvilken by", "tl": "anong lungsod", "en": "which city"},
+      {"no": "hvilken tid", "tl": "anong oras", "en": "what time"}
+    ]
+  },
+  {
+    "level": 6,
+    "themes": {
+      "no": "Tall",
+      "en": "Numbers",
+      "tl": "Mga Bilang"
+    },
+    "items": [
+      {"no": "én", "tl": "isa", "en": "one"},
+      {"no": "to", "tl": "dalawa", "en": "two"},
+      {"no": "tre", "tl": "tatlo", "en": "three"},
+      {"no": "fire", "tl": "apat", "en": "four"},
+      {"no": "fem", "tl": "lima", "en": "five"},
+      {"no": "seks", "tl": "anim", "en": "six"},
+      {"no": "syv", "tl": "pito", "en": "seven"},
+      {"no": "åtte", "tl": "walo", "en": "eight"},
+      {"no": "ni", "tl": "siyam", "en": "nine"},
+      {"no": "ti", "tl": "sampu", "en": "ten"},
+      {"no": "elleve", "tl": "labing-isa", "en": "eleven"},
+      {"no": "tolv", "tl": "labindalawa", "en": "twelve"},
+      {"no": "tretten", "tl": "labintatlo", "en": "thirteen"},
+      {"no": "fjorten", "tl": "labing-apat", "en": "fourteen"},
+      {"no": "femten", "tl": "labinlima", "en": "fifteen"}
+    ]
+  },
+  {
+    "level": 7,
+    "themes": {
+      "no": "Dager og måneder",
+      "en": "Days and Months",
+      "tl": "Mga Araw at Buwan"
+    },
+    "items": [
+      {"no": "mandag", "tl": "lunes", "en": "Monday"},
+      {"no": "tirsdag", "tl": "martes", "en": "Tuesday"},
+      {"no": "onsdag", "tl": "miyerkules", "en": "Wednesday"},
+      {"no": "torsdag", "tl": "huwebes", "en": "Thursday"},
+      {"no": "fredag", "tl": "biyernes", "en": "Friday"},
+      {"no": "lørdag", "tl": "sabado", "en": "Saturday"},
+      {"no": "søndag", "tl": "linggo", "en": "Sunday"},
+      {"no": "januar", "tl": "enero", "en": "January"},
+      {"no": "februar", "tl": "pebrero", "en": "February"},
+      {"no": "mars", "tl": "marso", "en": "March"},
+      {"no": "april", "tl": "abril", "en": "April"},
+      {"no": "mai", "tl": "mayo", "en": "May"},
+      {"no": "juni", "tl": "hunyo", "en": "June"},
+      {"no": "juli", "tl": "hulyo", "en": "July"},
+      {"no": "august", "tl": "agosto", "en": "August"}
+    ]
+  },
+  {
+    "level": 8,
+    "themes": {
+      "no": "Mat og drikke",
+      "en": "Food and Drinks",
+      "tl": "Pagkain at Inumin"
+    },
+    "items": [
+      {"no": "mat", "tl": "pagkain", "en": "food"},
+      {"no": "drikke", "tl": "inumin", "en": "drink"},
+      {"no": "brød", "tl": "tinapay", "en": "bread"},
+      {"no": "ris", "tl": "kanin", "en": "rice"},
+      {"no": "kjøtt", "tl": "karne", "en": "meat"},
+      {"no": "fisk", "tl": "isda", "en": "fish"},
+      {"no": "kylling", "tl": "manok", "en": "chicken"},
+      {"no": "frukt", "tl": "prutas", "en": "fruit"},
+      {"no": "grønnsak", "tl": "gulay", "en": "vegetable"},
+      {"no": "salat", "tl": "ensalada", "en": "salad"},
+      {"no": "suppe", "tl": "sopas", "en": "soup"},
+      {"no": "egg", "tl": "itlog", "en": "egg"},
+      {"no": "melk", "tl": "gatas", "en": "milk"},
+      {"no": "kaffe", "tl": "kape", "en": "coffee"},
+      {"no": "te", "tl": "tsaa", "en": "tea"}
+    ]
+  },
+  {
+    "level": 9,
+    "themes": {
+      "no": "Kjøkkenutstyr",
+      "en": "Kitchenware",
+      "tl": "Kagamitan sa Kusina"
+    },
+    "items": [
+      {"no": "tallerken", "tl": "plato", "en": "plate"},
+      {"no": "glass", "tl": "baso", "en": "glass"},
+      {"no": "kopp", "tl": "tasa", "en": "cup"},
+      {"no": "kniv", "tl": "kutsilyo", "en": "knife"},
+      {"no": "gaffel", "tl": "tinidor", "en": "fork"},
+      {"no": "skje", "tl": "kutsara", "en": "spoon"},
+      {"no": "kjele", "tl": "kaserola", "en": "pot"},
+      {"no": "panne", "tl": "kawali", "en": "pan"},
+      {"no": "ovn", "tl": "hurno", "en": "oven"},
+      {"no": "mikrobølgeovn", "tl": "microwave", "en": "microwave"},
+      {"no": "kjøleskap", "tl": "pridyeder", "en": "refrigerator"},
+      {"no": "fryser", "tl": "freezer", "en": "freezer"},
+      {"no": "flaske", "tl": "bote", "en": "bottle"},
+      {"no": "kork", "tl": "takip", "en": "cap/cork"},
+      {"no": "boks", "tl": "kahon", "en": "box"}
+    ]
+  },
+  {
+    "level": 10,
+    "themes": {
+      "no": "Klær",
+      "en": "Clothes",
+      "tl": "Damit"
+    },
+    "items": [
+      {"no": "skjorte", "tl": "kamiseta", "en": "shirt"},
+      {"no": "bukse", "tl": "pantalon", "en": "trousers"},
+      {"no": "jakke", "tl": "dyaket", "en": "jacket"},
+      {"no": "sko", "tl": "sapatos", "en": "shoes"},
+      {"no": "hatt", "tl": "sumbrero", "en": "hat"},
+      {"no": "kjole", "tl": "bestida", "en": "dress"},
+      {"no": "klær", "tl": "damit", "en": "clothes"},
+      {"no": "støvler", "tl": "bota", "en": "boots"},
+      {"no": "sokker", "tl": "medyas", "en": "socks"},
+      {"no": "belte", "tl": "sinturon", "en": "belt"},
+      {"no": "skjerf", "tl": "scarf", "en": "scarf"},
+      {"no": "hansker", "tl": "guwantes", "en": "gloves"},
+      {"no": "slips", "tl": "kurbata", "en": "tie"},
+      {"no": "lue", "tl": "bonnet", "en": "beanie"},
+      {"no": "genser", "tl": "sweater", "en": "sweater"}
+    ]
+  },
+  {
+    "level": 11,
+    "themes": {
+      "no": "Farger",
+      "en": "Colors",
+      "tl": "Mga Kulay"
+    },
+    "items": [
+      {"no": "rød", "tl": "pula", "en": "red"},
+      {"no": "blå", "tl": "asul", "en": "blue"},
+      {"no": "grønn", "tl": "berde", "en": "green"},
+      {"no": "gul", "tl": "dilaw", "en": "yellow"},
+      {"no": "oransje", "tl": "kahel", "en": "orange"},
+      {"no": "lilla", "tl": "lila", "en": "purple"},
+      {"no": "rosa", "tl": "rosas", "en": "pink"},
+      {"no": "svart", "tl": "itim", "en": "black"},
+      {"no": "hvit", "tl": "puti", "en": "white"},
+      {"no": "grå", "tl": "abo", "en": "gray"},
+      {"no": "brun", "tl": "kayumanggi", "en": "brown"},
+      {"no": "lys", "tl": "maliwanag", "en": "light"},
+      {"no": "mørk", "tl": "madilim", "en": "dark"},
+      {"no": "gyllen", "tl": "ginto", "en": "golden"},
+      {"no": "sølv", "tl": "pilak", "en": "silver"}
+    ]
+  },
+  {
+    "level": 12,
+    "themes": {
+      "no": "Været",
+      "en": "Weather",
+      "tl": "Panahon"
+    },
+    "items": [
+      {"no": "sol", "tl": "araw", "en": "sun"},
+      {"no": "måne", "tl": "buwan", "en": "moon"},
+      {"no": "stjerne", "tl": "bituin", "en": "star"},
+      {"no": "skyer", "tl": "ulap", "en": "clouds"},
+      {"no": "regn", "tl": "ulan", "en": "rain"},
+      {"no": "vind", "tl": "hangin", "en": "wind"},
+      {"no": "snø", "tl": "niyebe", "en": "snow"},
+      {"no": "storm", "tl": "bagyo", "en": "storm"},
+      {"no": "torden", "tl": "kulog", "en": "thunder"},
+      {"no": "lyn", "tl": "kidlat", "en": "lightning"},
+      {"no": "varmt", "tl": "mainit", "en": "hot"},
+      {"no": "kaldt", "tl": "malamig", "en": "cold"},
+      {"no": "fuktig", "tl": "mahalumigmig", "en": "humid"},
+      {"no": "tørt", "tl": "tuyo", "en": "dry"},
+      {"no": "klima", "tl": "klima", "en": "climate"}
+    ]
+  },
+  {
+    "level": 13,
+    "themes": {
+      "no": "Tid",
+      "en": "Time",
+      "tl": "Oras"
+    },
+    "items": [
+      {"no": "time", "tl": "oras", "en": "hour"},
+      {"no": "minutt", "tl": "minuto", "en": "minute"},
+      {"no": "sekund", "tl": "segundo", "en": "second"},
+      {"no": "dag", "tl": "araw", "en": "day"},
+      {"no": "uke", "tl": "linggo", "en": "week"},
+      {"no": "måned", "tl": "buwan", "en": "month"},
+      {"no": "år", "tl": "taon", "en": "year"},
+      {"no": "i dag", "tl": "ngayon", "en": "today"},
+      {"no": "i morgen", "tl": "bukas", "en": "tomorrow"},
+      {"no": "i går", "tl": "kahapon", "en": "yesterday"},
+      {"no": "morgen", "tl": "umaga", "en": "morning"},
+      {"no": "ettermiddag", "tl": "hapon", "en": "afternoon"},
+      {"no": "kveld", "tl": "gabi", "en": "evening"},
+      {"no": "natt", "tl": "gabi", "en": "night"},
+      {"no": "midnatt", "tl": "hatinggabi", "en": "midnight"}
+    ]
+  },
+  {
+    "level": 14,
+    "themes": {
+      "no": "Transport",
+      "en": "Transport",
+      "tl": "Transportasyon"
+    },
+    "items": [
+      {"no": "bil", "tl": "kotse", "en": "car"},
+      {"no": "buss", "tl": "bus", "en": "bus"},
+      {"no": "tog", "tl": "tren", "en": "train"},
+      {"no": "sykkel", "tl": "bisikleta", "en": "bicycle"},
+      {"no": "motorsykkel", "tl": "motorsiklo", "en": "motorcycle"},
+      {"no": "båt", "tl": "barko", "en": "boat"},
+      {"no": "ferge", "tl": "ferry", "en": "ferry"},
+      {"no": "fly", "tl": "eroplano", "en": "airplane"},
+      {"no": "helikopter", "tl": "helikopter", "en": "helicopter"},
+      {"no": "trikk", "tl": "tram", "en": "tram"},
+      {"no": "tunnelbane", "tl": "subway", "en": "subway"},
+      {"no": "taxi", "tl": "taxi", "en": "taxi"},
+      {"no": "pickup", "tl": "pickup", "en": "pickup"},
+      {"no": "lastebil", "tl": "trak", "en": "truck"},
+      {"no": "traktor", "tl": "traktor", "en": "tractor"}
+    ]
+  },
+  {
+    "level": 15,
+    "themes": {
+      "no": "Hus og rom",
+      "en": "House and Rooms",
+      "tl": "Bahay at mga Silid"
+    },
+    "items": [
+      {"no": "hus", "tl": "bahay", "en": "house"},
+      {"no": "leilighet", "tl": "apartment", "en": "apartment"},
+      {"no": "rom", "tl": "silid", "en": "room"},
+      {"no": "stue", "tl": "sala", "en": "living room"},
+      {"no": "kjøkken", "tl": "kusina", "en": "kitchen"},
+      {"no": "soverom", "tl": "silid-tulugan", "en": "bedroom"},
+      {"no": "bad", "tl": "banyo", "en": "bathroom"},
+      {"no": "spisestue", "tl": "silid-kainan", "en": "dining room"},
+      {"no": "gang", "tl": "pasilyo", "en": "hallway"},
+      {"no": "kjeller", "tl": "silong", "en": "basement"},
+      {"no": "loft", "tl": "atik", "en": "attic"},
+      {"no": "hage", "tl": "hardin", "en": "garden"},
+      {"no": "balkong", "tl": "beranda", "en": "balcony"},
+      {"no": "terrasse", "tl": "teras", "en": "terrace"},
+      {"no": "garasje", "tl": "garahe", "en": "garage"}
+    ]
+  },
+  {
+    "level": 16,
+    "themes": {
+      "no": "Møbler",
+      "en": "Furniture",
+      "tl": "Kagamitan sa Bahay"
+    },
+    "items": [
+      {"no": "stol", "tl": "silya", "en": "chair"},
+      {"no": "bord", "tl": "mesa", "en": "table"},
+      {"no": "sofa", "tl": "sofa", "en": "sofa"},
+      {"no": "seng", "tl": "kama", "en": "bed"},
+      {"no": "skrivebord", "tl": "mesa de trabaho", "en": "desk"},
+      {"no": "skap", "tl": "aparador", "en": "wardrobe"},
+      {"no": "hylle", "tl": "estante", "en": "shelf"},
+      {"no": "skuff", "tl": "drawer", "en": "drawer"},
+      {"no": "speil", "tl": "salamin", "en": "mirror"},
+      {"no": "teppe", "tl": "karpet", "en": "carpet"},
+      {"no": "gardin", "tl": "kortina", "en": "curtain"},
+      {"no": "pute", "tl": "unan", "en": "pillow"},
+      {"no": "dyne", "tl": "kumot", "en": "duvet"},
+      {"no": "lampe", "tl": "lampara", "en": "lamp"},
+      {"no": "klokke", "tl": "orasan", "en": "clock"}
+    ]
+  },
+  {
+    "level": 17,
+    "themes": {
+      "no": "Elektronikk",
+      "en": "Electronics",
+      "tl": "Elektronika"
+    },
+    "items": [
+      {"no": "telefon", "tl": "telepono", "en": "phone"},
+      {"no": "mobiltelefon", "tl": "cellphone", "en": "mobile phone"},
+      {"no": "datamaskin", "tl": "kompyuter", "en": "computer"},
+      {"no": "bærbar PC", "tl": "laptop", "en": "laptop"},
+      {"no": "nettbrett", "tl": "tablet", "en": "tablet"},
+      {"no": "fjernsyn", "tl": "telebisyon", "en": "television"},
+      {"no": "kamera", "tl": "kamera", "en": "camera"},
+      {"no": "radio", "tl": "radyo", "en": "radio"},
+      {"no": "høyttaler", "tl": "speaker", "en": "speaker"},
+      {"no": "hodetelefoner", "tl": "headphone", "en": "headphones"},
+      {"no": "mus", "tl": "mouse", "en": "mouse"},
+      {"no": "tastatur", "tl": "keyboard", "en": "keyboard"},
+      {"no": "skjerm", "tl": "monitor", "en": "screen"},
+      {"no": "printer", "tl": "printer", "en": "printer"},
+      {"no": "lader", "tl": "charger", "en": "charger"}
+    ]
+  },
+  {
+    "level": 18,
+    "themes": {
+      "no": "Kroppen",
+      "en": "The Body",
+      "tl": "Katawan"
+    },
+    "items": [
+      {"no": "hode", "tl": "ulo", "en": "head"},
+      {"no": "hår", "tl": "buhok", "en": "hair"},
+      {"no": "øye", "tl": "mata", "en": "eye"},
+      {"no": "nese", "tl": "ilong", "en": "nose"},
+      {"no": "munn", "tl": "bibig", "en": "mouth"},
+      {"no": "øre", "tl": "tainga", "en": "ear"},
+      {"no": "tann", "tl": "ngipin", "en": "tooth"},
+      {"no": "hals", "tl": "leeg", "en": "neck"},
+      {"no": "skulder", "tl": "balikat", "en": "shoulder"},
+      {"no": "arm", "tl": "braso", "en": "arm"},
+      {"no": "hånd", "tl": "kamay", "en": "hand"},
+      {"no": "finger", "tl": "daliri", "en": "finger"},
+      {"no": "rygg", "tl": "likod", "en": "back"},
+      {"no": "bein", "tl": "binti", "en": "leg"},
+      {"no": "fot", "tl": "paa", "en": "foot"}
+    ]
+  },
+  {
+    "level": 19,
+    "themes": {
+      "no": "Følelser",
+      "en": "Emotions",
+      "tl": "Mga Damdamin"
+    },
+    "items": [
+      {"no": "glad", "tl": "masaya", "en": "happy"},
+      {"no": "trist", "tl": "malungkot", "en": "sad"},
+      {"no": "sint", "tl": "galit", "en": "angry"},
+      {"no": "redd", "tl": "takot", "en": "afraid"},
+      {"no": "overrasket", "tl": "nagulat", "en": "surprised"},
+      {"no": "lei seg", "tl": "nalulungkot", "en": "upset"},
+      {"no": "sliten", "tl": "pagod", "en": "tired"},
+      {"no": "nervøs", "tl": "kinakabahan", "en": "nervous"},
+      {"no": "stolt", "tl": "ipinagmamalaki", "en": "proud"},
+      {"no": "skuffet", "tl": "nadismaya", "en": "disappointed"},
+      {"no": "forelsket", "tl": "umiibig", "en": "in love"},
+      {"no": "ensom", "tl": "malungkot", "en": "lonely"},
+      {"no": "håpefull", "tl": "umaasa", "en": "hopeful"},
+      {"no": "rolig", "tl": "kalma", "en": "calm"},
+      {"no": "spent", "tl": "sabik", "en": "excited"}
+    ]
+  },
+  {
+    "level": 20,
+    "themes": {
+      "no": "Yrker",
+      "en": "Professions",
+      "tl": "Mga Propesyon"
+    },
+    "items": [
+      {"no": "lærer", "tl": "guro", "en": "teacher"},
+      {"no": "lege", "tl": "doktor", "en": "doctor"},
+      {"no": "sykepleier", "tl": "nars", "en": "nurse"},
+      {"no": "sjåfør", "tl": "drayber", "en": "driver"},
+      {"no": "politi", "tl": "pulis", "en": "police officer"},
+      {"no": "brannmann", "tl": "bumbero", "en": "firefighter"},
+      {"no": "kokk", "tl": "kusinero", "en": "chef"},
+      {"no": "servitør", "tl": "waiter", "en": "waiter"},
+      {"no": "bonde", "tl": "magsasaka", "en": "farmer"},
+      {"no": "ingeniør", "tl": "inhinyero", "en": "engineer"},
+      {"no": "mekaniker", "tl": "mekaniko", "en": "mechanic"},
+      {"no": "advokat", "tl": "abogado", "en": "lawyer"},
+      {"no": "arkitekt", "tl": "arkitekto", "en": "architect"},
+      {"no": "kunstner", "tl": "artista", "en": "artist"},
+      {"no": "skuespiller", "tl": "aktor", "en": "actor"}
+    ]
+  },
+  {
+    "level": 21,
+    "themes": {
+      "no": "Kjøkkenutstyr",
+      "en": "Kitchenware",
+      "tl": "Kagamitan sa Kusina"
+    },
+    "items": [
+      {"no": "kniv", "tl": "kutsilyo", "en": "knife"},
+      {"no": "gaffel", "tl": "tinidor", "en": "fork"},
+      {"no": "skje", "tl": "kutsara", "en": "spoon"},
+      {"no": "tallerken", "tl": "pinggan", "en": "plate"},
+      {"no": "glass", "tl": "baso", "en": "glass"},
+      {"no": "kopp", "tl": "tasâ", "en": "cup"},
+      {"no": "kjele", "tl": "kaldero", "en": "pot"},
+      {"no": "panne", "tl": "kawali", "en": "pan"},
+      {"no": "ovn", "tl": "hurno", "en": "oven"},
+      {"no": "mikrobølgeovn", "tl": "microwave", "en": "microwave"},
+      {"no": "kjøleskap", "tl": "refrigerador", "en": "refrigerator"},
+      {"no": "fryser", "tl": "pridyider", "en": "freezer"},
+      {"no": "rist", "tl": "grill", "en": "grill"},
+      {"no": "åpner", "tl": "pambukas", "en": "opener"},
+      {"no": "skjærefjøl", "tl": "cutting board", "en": "cutting board"}
+    ]
+  },
+  {
+    "level": 22,
+    "themes": {
+      "no": "Mat og drikke",
+      "en": "Food and Drinks",
+      "tl": "Pagkain at Inumin"
+    },
+    "items": [
+      {"no": "brød", "tl": "tinapay", "en": "bread"},
+      {"no": "ris", "tl": "kanin", "en": "rice"},
+      {"no": "kjøtt", "tl": "karne", "en": "meat"},
+      {"no": "kylling", "tl": "manok", "en": "chicken"},
+      {"no": "fisk", "tl": "isda", "en": "fish"},
+      {"no": "egg", "tl": "itlog", "en": "egg"},
+      {"no": "ost", "tl": "kesyo", "en": "cheese"},
+      {"no": "smør", "tl": "mantikilya", "en": "butter"},
+      {"no": "melk", "tl": "gatas", "en": "milk"},
+      {"no": "kaffe", "tl": "kape", "en": "coffee"},
+      {"no": "te", "tl": "tsaa", "en": "tea"},
+      {"no": "juice", "tl": "dyus", "en": "juice"},
+      {"no": "øl", "tl": "beer", "en": "beer"},
+      {"no": "vin", "tl": "alak", "en": "wine"},
+      {"no": "vann", "tl": "tubig", "en": "water"}
+    ]
+  },
+  {
+    "level": 23,
+    "themes": {
+      "no": "Frukt",
+      "en": "Fruits",
+      "tl": "Mga Prutas"
+    },
+    "items": [
+      {"no": "eple", "tl": "mansanas", "en": "apple"},
+      {"no": "banan", "tl": "saging", "en": "banana"},
+      {"no": "appelsin", "tl": "kahel", "en": "orange"},
+      {"no": "mango", "tl": "mangga", "en": "mango"},
+      {"no": "druer", "tl": "ubas", "en": "grapes"},
+      {"no": "jordbær", "tl": "presa", "en": "strawberry"},
+      {"no": "ananas", "tl": "pinya", "en": "pineapple"},
+      {"no": "melon", "tl": "melon", "en": "melon"},
+      {"no": "vannmelon", "tl": "pakwan", "en": "watermelon"},
+      {"no": "pære", "tl": "peras", "en": "pear"},
+      {"no": "fersken", "tl": "milokoton", "en": "peach"},
+      {"no": "plomme", "tl": "kaimito", "en": "plum"},
+      {"no": "kiwi", "tl": "kiwi", "en": "kiwi"},
+      {"no": "kokosnøtt", "tl": "niyog", "en": "coconut"},
+      {"no": "papaya", "tl": "papaya", "en": "papaya"}
+    ]
+  },
+  {
+    "level": 24,
+    "themes": {
+      "no": "Grønnsaker",
+      "en": "Vegetables",
+      "tl": "Mga Gulay"
+    },
+    "items": [
+      {"no": "potet", "tl": "patatas", "en": "potato"},
+      {"no": "gulrot", "tl": "karot", "en": "carrot"},
+      {"no": "tomat", "tl": "kamatis", "en": "tomato"},
+      {"no": "løk", "tl": "sibuyas", "en": "onion"},
+      {"no": "hvitløk", "tl": "bawang", "en": "garlic"},
+      {"no": "salat", "tl": "letsugas", "en": "lettuce"},
+      {"no": "agurk", "tl": "pipino", "en": "cucumber"},
+      {"no": "brokkoli", "tl": "brokoli", "en": "broccoli"},
+      {"no": "blomkål", "tl": "koliplor", "en": "cauliflower"},
+      {"no": "spinat", "tl": "espinaka", "en": "spinach"},
+      {"no": "erter", "tl": "gisantes", "en": "peas"},
+      {"no": "bønner", "tl": "sitaw", "en": "beans"},
+      {"no": "paprika", "tl": "sili", "en": "bell pepper"},
+      {"no": "mais", "tl": "mais", "en": "corn"},
+      {"no": "sopp", "tl": "kabute", "en": "mushroom"}
+    ]
+  },
+  {
+    "level": 25,
+    "themes": {
+      "no": "Klesplagg",
+      "en": "Clothing",
+      "tl": "Damit"
+    },
+    "items": [
+      {"no": "skjorte", "tl": "kamisa", "en": "shirt"},
+      {"no": "bukse", "tl": "pantalon", "en": "pants"},
+      {"no": "shorts", "tl": "shorts", "en": "shorts"},
+      {"no": "kjole", "tl": "bestida", "en": "dress"},
+      {"no": "skjørt", "tl": "palda", "en": "skirt"},
+      {"no": "jakke", "tl": "dyaket", "en": "jacket"},
+      {"no": "frakk", "tl": "kapote", "en": "coat"},
+      {"no": "genser", "tl": "sweater", "en": "sweater"},
+      {"no": "t-skjorte", "tl": "t-shirt", "en": "t-shirt"},
+      {"no": "sko", "tl": "sapatos", "en": "shoes"},
+      {"no": "sandaler", "tl": "sandalyas", "en": "sandals"},
+      {"no": "støvler", "tl": "bota", "en": "boots"},
+      {"no": "hatt", "tl": "sumbrero", "en": "hat"},
+      {"no": "caps", "tl": "kap", "en": "cap"},
+      {"no": "belte", "tl": "sinturon", "en": "belt"}
+    ]
+  },
+  {
+    "level": 26,
+    "themes": {
+      "no": "Smykker og tilbehør",
+      "en": "Jewelry and Accessories",
+      "tl": "Alahas at Aksesorya"
+    },
+    "items": [
+      {"no": "ring", "tl": "singsing", "en": "ring"},
+      {"no": "halskjede", "tl": "kwintas", "en": "necklace"},
+      {"no": "armbånd", "tl": "pulseras", "en": "bracelet"},
+      {"no": "ørering", "tl": "hikaw", "en": "earring"},
+      {"no": "klokke", "tl": "relo", "en": "watch"},
+      {"no": "solbriller", "tl": "salamin sa araw", "en": "sunglasses"},
+      {"no": "veske", "tl": "bag", "en": "bag"},
+      {"no": "ryggsekk", "tl": "backpack", "en": "backpack"},
+      {"no": "paraply", "tl": "payong", "en": "umbrella"},
+      {"no": "lommebok", "tl": "pitaka", "en": "wallet"},
+      {"no": "skjerf", "tl": "iskarf", "en": "scarf"},
+      {"no": "hansker", "tl": "glab", "en": "gloves"},
+      {"no": "belte", "tl": "sinturon", "en": "belt"},
+      {"no": "hårbånd", "tl": "headband", "en": "headband"},
+      {"no": "slips", "tl": "kurbata", "en": "tie"}
+    ]
+  },
+  {
+    "level": 27,
+    "themes": {
+      "no": "Sport",
+      "en": "Sports",
+      "tl": "Isports"
+    },
+    "items": [
+      {"no": "fotball", "tl": "soccer", "en": "football"},
+      {"no": "basketball", "tl": "basketbol", "en": "basketball"},
+      {"no": "tennis", "tl": "tenis", "en": "tennis"},
+      {"no": "volleyball", "tl": "bolibol", "en": "volleyball"},
+      {"no": "svømming", "tl": "paglangoy", "en": "swimming"},
+      {"no": "løping", "tl": "pagpapatakbo", "en": "running"},
+      {"no": "sykling", "tl": "pagbibisikleta", "en": "cycling"},
+      {"no": "ski", "tl": "ski", "en": "skiing"},
+      {"no": "snowboard", "tl": "snowboard", "en": "snowboarding"},
+      {"no": "golf", "tl": "golf", "en": "golf"},
+      {"no": "håndball", "tl": "handbol", "en": "handball"},
+      {"no": "rugby", "tl": "ragbi", "en": "rugby"},
+      {"no": "boksing", "tl": "boksing", "en": "boxing"},
+      {"no": "bryting", "tl": "wrestling", "en": "wrestling"},
+      {"no": "turn", "tl": "gimnastika", "en": "gymnastics"}
+    ]
+  },
+  {
+    "level": 28,
+    "themes": {
+      "no": "Reise",
+      "en": "Travel",
+      "tl": "Paglalakbay"
+    },
+    "items": [
+      {"no": "flyplass", "tl": "paliparan", "en": "airport"},
+      {"no": "hotell", "tl": "hotel", "en": "hotel"},
+      {"no": "bagasje", "tl": "bagahe", "en": "luggage"},
+      {"no": "pass", "tl": "pasaporte", "en": "passport"},
+      {"no": "billett", "tl": "ticket", "en": "ticket"},
+      {"no": "kart", "tl": "mapa", "en": "map"},
+      {"no": "reise", "tl": "biyahe", "en": "trip"},
+      {"no": "ferie", "tl": "bakasyon", "en": "vacation"},
+      {"no": "guide", "tl": "gabay", "en": "guide"},
+      {"no": "telt", "tl": "tent", "en": "tent"},
+      {"no": "tur", "tl": "lakbay", "en": "tour"},
+      {"no": "strøm", "tl": "kuryente", "en": "electricity"},
+      {"no": "penger", "tl": "pera", "en": "money"},
+      {"no": "valuta", "tl": "salapi", "en": "currency"},
+      {"no": "grense", "tl": "hangganan", "en": "border"}
+    ]
+  },
+  {
+    "level": 29,
+    "themes": {
+      "no": "Butikk og handel",
+      "en": "Shopping",
+      "tl": "Pamimili"
+    },
+    "items": [
+      {"no": "butikk", "tl": "tindahan", "en": "store"},
+      {"no": "marked", "tl": "pamilihan", "en": "market"},
+      {"no": "kasse", "tl": "cashier", "en": "cash register"},
+      {"no": "kunde", "tl": "customer", "en": "customer"},
+      {"no": "pris", "tl": "presyo", "en": "price"},
+      {"no": "rabatt", "tl": "diskwento", "en": "discount"},
+      {"no": "tilbud", "tl": "alok", "en": "offer"},
+      {"no": "betaling", "tl": "bayad", "en": "payment"},
+      {"no": "kvittering", "tl": "resibo", "en": "receipt"},
+      {"no": "handlekurv", "tl": "basket", "en": "basket"},
+      {"no": "handlepose", "tl": "bag", "en": "shopping bag"},
+      {"no": "matbutikk", "tl": "grocery", "en": "grocery store"},
+      {"no": "klesbutikk", "tl": "boutique", "en": "clothing store"},
+      {"no": "elektronikkbutikk", "tl": "electronics store", "en": "electronics store"},
+      {"no": "smykkebutikk", "tl": "jewelry store", "en": "jewelry store"}
+    ]
+  },
+  {
+    "level": 30,
+    "themes": {
+      "no": "Skole",
+      "en": "School",
+      "tl": "Paaralan"
+    },
+    "items": [
+      {"no": "skole", "tl": "paaralan", "en": "school"},
+      {"no": "elev", "tl": "mag-aaral", "en": "student"},
+      {"no": "lærer", "tl": "guro", "en": "teacher"},
+      {"no": "klasse", "tl": "klase", "en": "class"},
+      {"no": "bok", "tl": "aklat", "en": "book"},
+      {"no": "blyant", "tl": "lapis", "en": "pencil"},
+      {"no": "penn", "tl": "panulat", "en": "pen"},
+      {"no": "viskelær", "tl": "pambura", "en": "eraser"},
+      {"no": "papir", "tl": "papel", "en": "paper"},
+      {"no": "tavle", "tl": "pisara", "en": "blackboard"},
+      {"no": "linjal", "tl": "pinuno", "en": "ruler"},
+      {"no": "sekk", "tl": "bag", "en": "backpack"},
+      {"no": "prøve", "tl": "eksamen", "en": "test"},
+      {"no": "lekser", "tl": "takdang aralin", "en": "homework"},
+      {"no": "friminutt", "tl": "recess", "en": "break"}
+    ]
+  },  
+  {
+  "level": 31,
+  "themes": {
+    "no": "Ville dyr",
+    "en": "Wild Animals",
+    "tl": "Mga Ligaw na Hayop"
+  },
+  "items": [
+    {"no": "løve", "tl": "leon", "en": "lion"},
+    {"no": "tiger", "tl": "tigre", "en": "tiger"},
+    {"no": "bjørn", "tl": "oso", "en": "bear"},
+    {"no": "ulv", "tl": "lobo", "en": "wolf"},
+    {"no": "rev", "tl": "aso-gubat", "en": "fox"},
+    {"no": "hjort", "tl": "usa", "en": "deer"},
+    {"no": "ape", "tl": "unggoy", "en": "monkey"},
+    {"no": "elefant", "tl": "elepante", "en": "elephant"},
+    {"no": "giraff", "tl": "dyirap", "en": "giraffe"},
+    {"no": "sebra", "tl": "sebra", "en": "zebra"},
+    {"no": "kenguru", "tl": "kanggaro", "en": "kangaroo"},
+    {"no": "panda", "tl": "panda", "en": "panda"},
+    {"no": "flodhest", "tl": "hipopotamo", "en": "hippopotamus"},
+    {"no": "krokodille", "tl": "buwaya", "en": "crocodile"},
+    {"no": "slange", "tl": "ahas", "en": "snake"}
+  ]
+},
+{
+  "level": 32,
+  "themes": {
+    "no": "Husdyr",
+    "en": "Domestic Animals",
+    "tl": "Mga Alagang Hayop"
+  },
+  "items": [
+    {"no": "hund", "tl": "aso", "en": "dog"},
+    {"no": "katt", "tl": "pusa", "en": "cat"},
+    {"no": "ku", "tl": "baka", "en": "cow"},
+    {"no": "gris", "tl": "baboy", "en": "pig"},
+    {"no": "sau", "tl": "tupa", "en": "sheep"},
+    {"no": "geit", "tl": "kambing", "en": "goat"},
+    {"no": "hest", "tl": "kabayo", "en": "horse"},
+    {"no": "hane", "tl": "tandang", "en": "rooster"},
+    {"no": "høne", "tl": "manok", "en": "hen"},
+    {"no": "kylling", "tl": "sisiw", "en": "chick"},
+    {"no": "and", "tl": "pato", "en": "duck"},
+    {"no": "gås", "tl": "gansa", "en": "goose"},
+    {"no": "kalkun", "tl": "pabo", "en": "turkey"},
+    {"no": "kanin", "tl": "kuneho", "en": "rabbit"},
+    {"no": "esel", "tl": "asno", "en": "donkey"}
+  ]
+},
+{
+  "level": 33,
+  "themes": {
+    "no": "Hav- og sjøliv",
+    "en": "Sea Life",
+    "tl": "Buhay sa Dagat"
+  },
+  "items": [
+    {"no": "fisk", "tl": "isda", "en": "fish"},
+    {"no": "hai", "tl": "pating", "en": "shark"},
+    {"no": "delfin", "tl": "lumba-lumba", "en": "dolphin"},
+    {"no": "hval", "tl": "balyena", "en": "whale"},
+    {"no": "blekksprut", "tl": "pusit", "en": "squid"},
+    {"no": "krabbe", "tl": "alimango", "en": "crab"},
+    {"no": "hummer", "tl": "ulang", "en": "lobster"},
+    {"no": "skilpadde", "tl": "pawikan", "en": "turtle"},
+    {"no": "manet", "tl": "dikya", "en": "jellyfish"},
+    {"no": "korall", "tl": "korales", "en": "coral"},
+    {"no": "sjøhest", "tl": "kabayo-dagat", "en": "seahorse"},
+    {"no": "sjøstjerne", "tl": "bituin-dagat", "en": "starfish"},
+    {"no": "musling", "tl": "kabibe", "en": "clam"},
+    {"no": "østers", "tl": "talaba", "en": "oyster"},
+    {"no": "sjøpølse", "tl": "balat-dagat", "en": "sea cucumber"}
+  ]
+},
+{
+  "level": 34,
+  "themes": {
+    "no": "Insekter",
+    "en": "Insects",
+    "tl": "Mga Insekto"
+  },
+  "items": [
+    {"no": "bie", "tl": "bubuyog", "en": "bee"},
+    {"no": "maur", "tl": "langgam", "en": "ant"},
+    {"no": "flue", "tl": "langaw", "en": "fly"},
+    {"no": "mygg", "tl": "lamok", "en": "mosquito"},
+    {"no": "møll", "tl": "gamu-gamo", "en": "moth"},
+    {"no": "sommerfugl", "tl": "paruparo", "en": "butterfly"},
+    {"no": "edderkopp", "tl": "gagamba", "en": "spider"},
+    {"no": "gresshoppe", "tl": "tipaklong", "en": "grasshopper"},
+    {"no": "siriss", "tl": "kuliglig", "en": "cricket"},
+    {"no": "tordivel", "tl": "salagubang", "en": "beetle"},
+    {"no": "lus", "tl": "kuto", "en": "lice"},
+    {"no": "tege", "tl": "surot", "en": "bedbug"},
+    {"no": "skorpion", "tl": "alakdan", "en": "scorpion"},
+    {"no": "tusenbein", "tl": "samban", "en": "millipede"},
+    {"no": "saksedyr", "tl": "ipis-daga", "en": "earwig"}
+  ]
+},
+{
+  "level": 35,
+  "themes": {
+    "no": "Planter",
+    "en": "Plants",
+    "tl": "Mga Halaman"
+  },
+  "items": [
+    {"no": "tre", "tl": "puno", "en": "tree"},
+    {"no": "blomst", "tl": "bulaklak", "en": "flower"},
+    {"no": "gress", "tl": "damo", "en": "grass"},
+    {"no": "blad", "tl": "dahon", "en": "leaf"},
+    {"no": "rot", "tl": "ugat", "en": "root"},
+    {"no": "frø", "tl": "buto", "en": "seed"},
+    {"no": "stilk", "tl": "tangkay", "en": "stem"},
+    {"no": "bark", "tl": "balat ng puno", "en": "bark"},
+    {"no": "kratt", "tl": "palumpong", "en": "bush"},
+    {"no": "busk", "tl": "palumpong", "en": "shrub"},
+    {"no": "palme", "tl": "palma", "en": "palm"},
+    {"no": "furu", "tl": "pino", "en": "pine"},
+    {"no": "eik", "tl": "roble", "en": "oak"},
+    {"no": "lav", "tl": "lumot", "en": "moss"},
+    {"no": "sopp", "tl": "kabute", "en": "mushroom"}
+  ]
+},
+{
+  "level": 36,
+  "themes": {
+    "no": "Kjøkkenredskaper",
+    "en": "Kitchen Tools",
+    "tl": "Mga Kasangkapan sa Kusina"
+  },
+  "items": [
+    {"no": "visp", "tl": "panghalo", "en": "whisk"},
+    {"no": "sleiv", "tl": "sandok", "en": "ladle"},
+    {"no": "potetskreller", "tl": "pangbalat ng patatas", "en": "peeler"},
+    {"no": "rivjern", "tl": "kudkuran", "en": "grater"},
+    {"no": "målebeger", "tl": "tasa-panukat", "en": "measuring cup"},
+    {"no": "måleskje", "tl": "kutsarang panukat", "en": "measuring spoon"},
+    {"no": "kakespade", "tl": "panggupit ng cake", "en": "cake server"},
+    {"no": "kjevle", "tl": "panggiling", "en": "rolling pin"},
+    {"no": "sil", "tl": "salaan", "en": "strainer"},
+    {"no": "trakt", "tl": "imbudo", "en": "funnel"},
+    {"no": "kjøkkenvekt", "tl": "timbangan", "en": "kitchen scale"},
+    {"no": "steikespade", "tl": "pangbaligtad", "en": "spatula"},
+    {"no": "gryteklut", "tl": "pot holder", "en": "pot holder"},
+    {"no": "matpinne", "tl": "chopstick", "en": "chopstick"},
+    {"no": "flaskeåpner", "tl": "pambukas ng bote", "en": "bottle opener"}
+  ]
+},
+{
+  "level": 37,
+  "themes": {
+    "no": "Baderom",
+    "en": "Bathroom",
+    "tl": "Banyo"
+  },
+  "items": [
+    {"no": "dusj", "tl": "shower", "en": "shower"},
+    {"no": "badekar", "tl": "bathtub", "en": "bathtub"},
+    {"no": "toalett", "tl": "kubeta", "en": "toilet"},
+    {"no": "vask", "tl": "lababo", "en": "sink"},
+    {"no": "speil", "tl": "salamin", "en": "mirror"},
+    {"no": "såpe", "tl": "sabon", "en": "soap"},
+    {"no": "sjampo", "tl": "shampoo", "en": "shampoo"},
+    {"no": "balsam", "tl": "conditioner", "en": "conditioner"},
+    {"no": "håndkle", "tl": "tuwalya", "en": "towel"},
+    {"no": "tannbørste", "tl": "sipilyo", "en": "toothbrush"},
+    {"no": "tannkrem", "tl": "toothpaste", "en": "toothpaste"},
+    {"no": "barberhøvel", "tl": "labaha", "en": "razor"},
+    {"no": "kam", "tl": "suklay", "en": "comb"},
+    {"no": "hårføner", "tl": "blower", "en": "hair dryer"},
+    {"no": "toalettpapir", "tl": "toilet paper", "en": "toilet paper"}
+  ]
+},
+{
+  "level": 38,
+  "themes": {
+    "no": "Kontorutstyr",
+    "en": "Office Supplies",
+    "tl": "Mga Gamit sa Opisina"
+  },
+  "items": [
+    {"no": "papir", "tl": "papel", "en": "paper"},
+    {"no": "notatbok", "tl": "notebook", "en": "notebook"},
+    {"no": "perm", "tl": "binder", "en": "binder"},
+    {"no": "binders", "tl": "paper clip", "en": "paper clip"},
+    {"no": "stiftemaskin", "tl": "stapler", "en": "stapler"},
+    {"no": "stift", "tl": "staple", "en": "staple"},
+    {"no": "konvolutt", "tl": "sobre", "en": "envelope"},
+    {"no": "frimerke", "tl": "selyo", "en": "stamp"},
+    {"no": "tape", "tl": "tape", "en": "tape"},
+    {"no": "lim", "tl": "pandikit", "en": "glue"},
+    {"no": "hullemaskin", "tl": "hole punch", "en": "hole punch"},
+    {"no": "tavle", "tl": "pisara", "en": "board"},
+    {"no": "whiteboardtusj", "tl": "marker", "en": "marker"},
+    {"no": "markør", "tl": "highlighter", "en": "highlighter"},
+    {"no": "papirkurv", "tl": "basurahan", "en": "wastebasket"}
+  ]
+},
+{
+  "level": 39,
+  "themes": {
+    "no": "Verktøy",
+    "en": "Tools",
+    "tl": "Mga Kasangkapan"
+  },
+  "items": [
+    {"no": "hammer", "tl": "martilyo", "en": "hammer"},
+    {"no": "skrutrekker", "tl": "distornilyador", "en": "screwdriver"},
+    {"no": "skiftenøkkel", "tl": "liyabe", "en": "wrench"},
+    {"no": "tang", "tl": "pliers", "en": "pliers"},
+    {"no": "sag", "tl": "lagari", "en": "saw"},
+    {"no": "bor", "tl": "drill", "en": "drill"},
+    {"no": "vater", "tl": "level", "en": "level"},
+    {"no": "målebånd", "tl": "metro", "en": "tape measure"},
+    {"no": "kniv", "tl": "patalim", "en": "knife"},
+    {"no": "fil", "tl": "file", "en": "file"},
+    {"no": "meisel", "tl": "pait", "en": "chisel"},
+    {"no": "stiger", "tl": "hagdan", "en": "ladder"},
+    {"no": "limpistol", "tl": "glue gun", "en": "glue gun"},
+    {"no": "verktøykasse", "tl": "toolbox", "en": "toolbox"},
+    {"no": "hansker", "tl": "guwantes", "en": "gloves"}
+  ]
+},
+{
+  "level": 40,
+  "themes": {
+    "no": "Musikkinstrumenter",
+    "en": "Musical Instruments",
+    "tl": "Mga Instrumentong Pangmusika"
+  },
+  "items": [
+    {"no": "gitar", "tl": "gitara", "en": "guitar"},
+    {"no": "piano", "tl": "piyano", "en": "piano"},
+    {"no": "fiolin", "tl": "biyulin", "en": "violin"},
+    {"no": "tromme", "tl": "tambol", "en": "drum"},
+    {"no": "fløyte", "tl": "plauta", "en": "flute"},
+    {"no": "saksofon", "tl": "saksofono", "en": "saxophone"},
+    {"no": "trompet", "tl": "trumpeta", "en": "trumpet"},
+    {"no": "harpe", "tl": "alpa", "en": "harp"},
+    {"no": "orgel", "tl": "organo", "en": "organ"},
+    {"no": "banjo", "tl": "banjo", "en": "banjo"},
+    {"no": "ukulele", "tl": "ukulele", "en": "ukulele"},
+    {"no": "kontrabass", "tl": "kontrabajo", "en": "double bass"},
+    {"no": "cello", "tl": "selo", "en": "cello"},
+    {"no": "trommesett", "tl": "drum set", "en": "drum set"},
+    {"no": "xylofon", "tl": "silofono", "en": "xylophone"}
+  ]
+},
+{
+  "level": 41,
+  "themes": {
+    "no": "Drikkevarer",
+    "en": "Beverages",
+    "tl": "Mga Inumin"
+  },
+  "items": [
+    {"no": "vann", "tl": "tubig", "en": "water"},
+    {"no": "juice", "tl": "dyus", "en": "juice"},
+    {"no": "kaffe", "tl": "kape", "en": "coffee"},
+    {"no": "te", "tl": "tsaa", "en": "tea"},
+    {"no": "melk", "tl": "gatas", "en": "milk"},
+    {"no": "øl", "tl": "beer", "en": "beer"},
+    {"no": "vin", "tl": "alak", "en": "wine"},
+    {"no": "brus", "tl": "softdrink", "en": "soda"},
+    {"no": "smoothie", "tl": "smoothie", "en": "smoothie"},
+    {"no": "energidrikk", "tl": "energy drink", "en": "energy drink"},
+    {"no": "sjokolademelk", "tl": "gatas na tsokolate", "en": "chocolate milk"},
+    {"no": "milkshake", "tl": "milkshake", "en": "milkshake"},
+    {"no": "kokosvann", "tl": "tubig ng niyog", "en": "coconut water"},
+    {"no": "sitronvann", "tl": "lemon water", "en": "lemon water"},
+    {"no": "is-te", "tl": "iced tea", "en": "iced tea"}
+  ]
+},
+{
+  "level": 42,
+  "themes": {
+    "no": "Bakeri",
+    "en": "Bakery",
+    "tl": "Panaderya"
+  },
+  "items": [
+    {"no": "brød", "tl": "tinapay", "en": "bread"},
+    {"no": "baguette", "tl": "baguette", "en": "baguette"},
+    {"no": "rundstykke", "tl": "bun", "en": "roll"},
+    {"no": "croissant", "tl": "croissant", "en": "croissant"},
+    {"no": "kake", "tl": "keyk", "en": "cake"},
+    {"no": "muffins", "tl": "muffin", "en": "muffin"},
+    {"no": "pai", "tl": "pay", "en": "pie"},
+    {"no": "smultring", "tl": "donat", "en": "doughnut"},
+    {"no": "boller", "tl": "pandesal", "en": "buns"},
+    {"no": "kjeks", "tl": "biskwit", "en": "biscuit"},
+    {"no": "terte", "tl": "tart", "en": "tart"},
+    {"no": "wienerbrød", "tl": "danish", "en": "danish pastry"},
+    {"no": "makron", "tl": "macaron", "en": "macaron"},
+    {"no": "brownie", "tl": "brownie", "en": "brownie"},
+    {"no": "kringle", "tl": "pretzel", "en": "pretzel"}
+  ]
+},
+{
+  "level": 43,
+  "themes": {
+    "no": "Krydder og urter",
+    "en": "Spices and Herbs",
+    "tl": "Mga Pampalasa at Halaman"
+  },
+  "items": [
+    {"no": "salt", "tl": "asin", "en": "salt"},
+    {"no": "pepper", "tl": "paminta", "en": "pepper"},
+    {"no": "sukker", "tl": "asukal", "en": "sugar"},
+    {"no": "kanel", "tl": "kanela", "en": "cinnamon"},
+    {"no": "ingefær", "tl": "luya", "en": "ginger"},
+    {"no": "hvitløk", "tl": "bawang", "en": "garlic"},
+    {"no": "løk", "tl": "sibuyas", "en": "onion"},
+    {"no": "basilikum", "tl": "basil", "en": "basil"},
+    {"no": "persille", "tl": "perehil", "en": "parsley"},
+    {"no": "oregano", "tl": "oregano", "en": "oregano"},
+    {"no": "timian", "tl": "thyme", "en": "thyme"},
+    {"no": "rosmarin", "tl": "rosemary", "en": "rosemary"},
+    {"no": "chili", "tl": "sili", "en": "chili"},
+    {"no": "karri", "tl": "curry", "en": "curry"},
+    {"no": "paprika", "tl": "paprika", "en": "paprika"}
+  ]
+},
+{
+  "level": 44,
+  "themes": {
+    "no": "Transportmidler",
+    "en": "Means of Transport",
+    "tl": "Mga Uri ng Transportasyon"
+  },
+  "items": [
+    {"no": "bil", "tl": "kotse", "en": "car"},
+    {"no": "buss", "tl": "bus", "en": "bus"},
+    {"no": "tog", "tl": "tren", "en": "train"},
+    {"no": "trikk", "tl": "tram", "en": "tram"},
+    {"no": "t-bane", "tl": "subway", "en": "subway"},
+    {"no": "ferge", "tl": "ferry", "en": "ferry"},
+    {"no": "båt", "tl": "barko", "en": "boat"},
+    {"no": "fly", "tl": "eroplano", "en": "airplane"},
+    {"no": "helikopter", "tl": "helikopter", "en": "helicopter"},
+    {"no": "sykkel", "tl": "bisikleta", "en": "bicycle"},
+    {"no": "sparkesykkel", "tl": "scooter", "en": "scooter"},
+    {"no": "motorsykkel", "tl": "motorsiklo", "en": "motorcycle"},
+    {"no": "traktor", "tl": "traktor", "en": "tractor"},
+    {"no": "lastebil", "tl": "trak", "en": "truck"},
+    {"no": "pickup", "tl": "pickup", "en": "pickup"}
+  ]
+},
+{
+  "level": 45,
+  "themes": {
+    "no": "Yrkesutstyr",
+    "en": "Work Equipment",
+    "tl": "Kagamitan sa Trabaho"
+  },
+  "items": [
+    {"no": "hjelm", "tl": "helmet", "en": "helmet"},
+    {"no": "vernebriller", "tl": "safety glasses", "en": "safety glasses"},
+    {"no": "arbeidshansker", "tl": "guwantes sa trabaho", "en": "work gloves"},
+    {"no": "vernesko", "tl": "safety shoes", "en": "safety shoes"},
+    {"no": "refleksvest", "tl": "reflective vest", "en": "reflective vest"},
+    {"no": "sikkerhetssele", "tl": "safety harness", "en": "safety harness"},
+    {"no": "verktøykasse", "tl": "toolbox", "en": "toolbox"},
+    {"no": "bor", "tl": "drill", "en": "drill"},
+    {"no": "hammer", "tl": "martilyo", "en": "hammer"},
+    {"no": "skrutrekker", "tl": "distornilyador", "en": "screwdriver"},
+    {"no": "skiftenøkkel", "tl": "liyabe", "en": "wrench"},
+    {"no": "tang", "tl": "pliers", "en": "pliers"},
+    {"no": "sag", "tl": "lagari", "en": "saw"},
+    {"no": "målebånd", "tl": "metro", "en": "tape measure"},
+    {"no": "nivåmåler", "tl": "level", "en": "level"}
+  ]
+},
+{
+  "level": 46,
+  "themes": {
+    "no": "Bygninger",
+    "en": "Buildings",
+    "tl": "Mga Gusali"
+  },
+  "items": [
+    {"no": "hus", "tl": "bahay", "en": "house"},
+    {"no": "leilighet", "tl": "apartment", "en": "apartment"},
+    {"no": "skole", "tl": "paaralan", "en": "school"},
+    {"no": "sykehus", "tl": "ospital", "en": "hospital"},
+    {"no": "butikk", "tl": "tindahan", "en": "store"},
+    {"no": "fabrikk", "tl": "pabrika", "en": "factory"},
+    {"no": "kontor", "tl": "opisina", "en": "office"},
+    {"no": "kirke", "tl": "simbahan", "en": "church"},
+    {"no": "moské", "tl": "moske", "en": "mosque"},
+    {"no": "tempel", "tl": "templo", "en": "temple"},
+    {"no": "hotell", "tl": "hotel", "en": "hotel"},
+    {"no": "restaurant", "tl": "restawran", "en": "restaurant"},
+    {"no": "kino", "tl": "sinehan", "en": "cinema"},
+    {"no": "bibliotek", "tl": "aklatan", "en": "library"},
+    {"no": "museum", "tl": "museo", "en": "museum"}
+  ]
+},
+{
+  "level": 47,
+  "themes": {
+    "no": "Møbler og interiør",
+    "en": "Furniture and Interior",
+    "tl": "Mga Muwebles at Panloob"
+  },
+  "items": [
+    {"no": "sofa", "tl": "sofa", "en": "sofa"},
+    {"no": "stol", "tl": "silya", "en": "chair"},
+    {"no": "bord", "tl": "mesa", "en": "table"},
+    {"no": "seng", "tl": "kama", "en": "bed"},
+    {"no": "skap", "tl": "aparador", "en": "wardrobe"},
+    {"no": "hylle", "tl": "estante", "en": "shelf"},
+    {"no": "teppe", "tl": "karpet", "en": "carpet"},
+    {"no": "gardiner", "tl": "kortina", "en": "curtains"},
+    {"no": "lampe", "tl": "ilaw", "en": "lamp"},
+    {"no": "speil", "tl": "salamin", "en": "mirror"},
+    {"no": "pute", "tl": "unan", "en": "pillow"},
+    {"no": "dyne", "tl": "kumot", "en": "duvet"},
+    {"no": "klokke", "tl": "orasan", "en": "clock"},
+    {"no": "krakk", "tl": "bangko", "en": "stool"},
+    {"no": "nattbord", "tl": "mesa sa tabi ng kama", "en": "nightstand"}
+  ]
+},
+{
+  "level": 48,
+  "themes": {
+    "no": "Elektriske apparater",
+    "en": "Electrical Appliances",
+    "tl": "Mga Kagamitang Elektrikal"
+  },
+  "items": [
+    {"no": "kjøleskap", "tl": "pridyeder", "en": "refrigerator"},
+    {"no": "fryser", "tl": "freezer", "en": "freezer"},
+    {"no": "ovn", "tl": "hurno", "en": "oven"},
+    {"no": "mikrobølgeovn", "tl": "microwave", "en": "microwave"},
+    {"no": "vaskemaskin", "tl": "washing machine", "en": "washing machine"},
+    {"no": "tørketrommel", "tl": "dryer", "en": "dryer"},
+    {"no": "oppvaskmaskin", "tl": "dishwasher", "en": "dishwasher"},
+    {"no": "brødrister", "tl": "toaster", "en": "toaster"},
+    {"no": "støvsuger", "tl": "vacuum cleaner", "en": "vacuum cleaner"},
+    {"no": "strykjern", "tl": "plantsa", "en": "iron"},
+    {"no": "vifte", "tl": "bentilador", "en": "fan"},
+    {"no": "aircondition", "tl": "aircon", "en": "air conditioner"},
+    {"no": "varmeovn", "tl": "heater", "en": "heater"},
+    {"no": "hårføner", "tl": "blower", "en": "hair dryer"},
+    {"no": "kaffetrakter", "tl": "coffee maker", "en": "coffee maker"}
+  ]
+},
+{
+  "level": 49,
+  "themes": {
+    "no": "Digitale enheter",
+    "en": "Digital Devices",
+    "tl": "Mga Digital na Aparato"
+  },
+  "items": [
+    {"no": "smarttelefon", "tl": "smartphone", "en": "smartphone"},
+    {"no": "nettbrett", "tl": "tablet", "en": "tablet"},
+    {"no": "bærbar PC", "tl": "laptop", "en": "laptop"},
+    {"no": "stasjonær PC", "tl": "desktop", "en": "desktop"},
+    {"no": "smartklokke", "tl": "smartwatch", "en": "smartwatch"},
+    {"no": "spillkonsoll", "tl": "game console", "en": "game console"},
+    {"no": "TV", "tl": "telebisyon", "en": "TV"},
+    {"no": "kamera", "tl": "kamera", "en": "camera"},
+    {"no": "hodetelefoner", "tl": "headphones", "en": "headphones"},
+    {"no": "høyttaler", "tl": "speaker", "en": "speaker"},
+    {"no": "mikrofon", "tl": "mikropono", "en": "microphone"},
+    {"no": "webkamera", "tl": "webcam", "en": "webcam"},
+    {"no": "ekstern harddisk", "tl": "external hard drive", "en": "external hard drive"},
+    {"no": "minnepinne", "tl": "USB", "en": "USB flash drive"},
+    {"no": "lader", "tl": "charger", "en": "charger"}
+  ]
+},
+{
+  "level": 50,
+  "themes": {
+    "no": "Internett og teknologi",
+    "en": "Internet and Technology",
+    "tl": "Internet at Teknolohiya"
+  },
+  "items": [
+    {"no": "internett", "tl": "internet", "en": "internet"},
+    {"no": "nettsted", "tl": "website", "en": "website"},
+    {"no": "e-post", "tl": "email", "en": "email"},
+    {"no": "sosiale medier", "tl": "social media", "en": "social media"},
+    {"no": "nedlasting", "tl": "download", "en": "download"},
+    {"no": "opplasting", "tl": "upload", "en": "upload"},
+    {"no": "brukernavn", "tl": "username", "en": "username"},
+    {"no": "passord", "tl": "password", "en": "password"},
+    {"no": "server", "tl": "server", "en": "server"},
+    {"no": "database", "tl": "database", "en": "database"},
+    {"no": "sky", "tl": "cloud", "en": "cloud"},
+    {"no": "programvare", "tl": "software", "en": "software"},
+    {"no": "maskinvare", "tl": "hardware", "en": "hardware"},
+    {"no": "applikasjon", "tl": "application", "en": "application"},
+    {"no": "fil", "tl": "file", "en": "file"}
+  ]
+},
+{
+  "level": 51,
+  "themes": {
+    "no": "Natur",
+    "en": "Nature",
+    "tl": "Kalikasan"
+  },
+  "items": [
+    {"no": "skog", "tl": "gubat", "en": "forest"},
+    {"no": "tre", "tl": "puno", "en": "tree"},
+    {"no": "blad", "tl": "dahon", "en": "leaf"},
+    {"no": "blomst", "tl": "bulaklak", "en": "flower"},
+    {"no": "gress", "tl": "damo", "en": "grass"},
+    {"no": "stein", "tl": "bato", "en": "stone"},
+    {"no": "fjell", "tl": "bundok", "en": "mountain"},
+    {"no": "elv", "tl": "ilog", "en": "river"},
+    {"no": "innsjø", "tl": "lawa", "en": "lake"},
+    {"no": "hav", "tl": "dagat", "en": "sea"},
+    {"no": "strand", "tl": "dalampasigan", "en": "beach"},
+    {"no": "øy", "tl": "isla", "en": "island"},
+    {"no": "ørken", "tl": "disyerto", "en": "desert"},
+    {"no": "foss", "tl": "talon", "en": "waterfall"},
+    {"no": "hule", "tl": "kuweba", "en": "cave"}
+  ]
+},
+{
+  "level": 52,
+  "themes": {
+    "no": "Ville dyr",
+    "en": "Wild Animals",
+    "tl": "Mga Mailap na Hayop"
+  },
+  "items": [
+    {"no": "løve", "tl": "leon", "en": "lion"},
+    {"no": "tiger", "tl": "tigre", "en": "tiger"},
+    {"no": "elefant", "tl": "elepante", "en": "elephant"},
+    {"no": "bjørn", "tl": "oso", "en": "bear"},
+    {"no": "ulv", "tl": "lobo", "en": "wolf"},
+    {"no": "rev", "tl": "aso ng gubat", "en": "fox"},
+    {"no": "hjort", "tl": "usa", "en": "deer"},
+    {"no": "ape", "tl": "unggoy", "en": "monkey"},
+    {"no": "sjiraff", "tl": "jiraf", "en": "giraffe"},
+    {"no": "sebra", "tl": "sebra", "en": "zebra"},
+    {"no": "kenguru", "tl": "kanggaro", "en": "kangaroo"},
+    {"no": "panda", "tl": "panda", "en": "panda"},
+    {"no": "flodhest", "tl": "hipopotamo", "en": "hippopotamus"},
+    {"no": "krokodille", "tl": "buwaya", "en": "crocodile"},
+    {"no": "ørn", "tl": "agila", "en": "eagle"}
+  ]
+},
+{
+  "level": 53,
+  "themes": {
+    "no": "Husdyr",
+    "en": "Domestic Animals",
+    "tl": "Mga Alagang Hayop"
+  },
+  "items": [
+    {"no": "hund", "tl": "aso", "en": "dog"},
+    {"no": "katt", "tl": "pusa", "en": "cat"},
+    {"no": "ku", "tl": "baka", "en": "cow"},
+    {"no": "gris", "tl": "baboy", "en": "pig"},
+    {"no": "sau", "tl": "tupa", "en": "sheep"},
+    {"no": "geit", "tl": "kambing", "en": "goat"},
+    {"no": "hest", "tl": "kabayo", "en": "horse"},
+    {"no": "høne", "tl": "manok", "en": "hen"},
+    {"no": "hane", "tl": "tandang", "en": "rooster"},
+    {"no": "and", "tl": "pato", "en": "duck"},
+    {"no": "gås", "tl": "gansa", "en": "goose"},
+    {"no": "kalkun", "tl": "pabo", "en": "turkey"},
+    {"no": "kanin", "tl": "kuneho", "en": "rabbit"},
+    {"no": "esel", "tl": "asno", "en": "donkey"},
+    {"no": "due", "tl": "kalapati", "en": "pigeon"}
+  ]
+},
+{
+  "level": 54,
+  "themes": {
+    "no": "Sjøliv",
+    "en": "Marine Life",
+    "tl": "Buhay sa Dagat"
+  },
+  "items": [
+    {"no": "fisk", "tl": "isda", "en": "fish"},
+    {"no": "hai", "tl": "pating", "en": "shark"},
+    {"no": "delfin", "tl": "lumba-lumba", "en": "dolphin"},
+    {"no": "hval", "tl": "balena", "en": "whale"},
+    {"no": "blekksprut", "tl": "pusit", "en": "squid"},
+    {"no": "krabbe", "tl": "alimango", "en": "crab"},
+    {"no": "hummer", "tl": "ulang", "en": "lobster"},
+    {"no": "reke", "tl": "hipon", "en": "shrimp"},
+    {"no": "manet", "tl": "dikya", "en": "jellyfish"},
+    {"no": "sjøstjerne", "tl": "bituing dagat", "en": "starfish"},
+    {"no": "skilpadde", "tl": "pagong", "en": "turtle"},
+    {"no": "sjøhest", "tl": "kabayo ng dagat", "en": "seahorse"},
+    {"no": "musling", "tl": "kabibi", "en": "clam"},
+    {"no": "østers", "tl": "talaba", "en": "oyster"},
+    {"no": "korall", "tl": "korales", "en": "coral"}
+  ]
+},
+{
+  "level": 55,
+  "themes": {
+    "no": "Insekter",
+    "en": "Insects",
+    "tl": "Mga Insekto"
+  },
+  "items": [
+    {"no": "maur", "tl": "langgam", "en": "ant"},
+    {"no": "bie", "tl": "bubuyog", "en": "bee"},
+    {"no": "veps", "tl": "putakti", "en": "wasp"},
+    {"no": "flue", "tl": "langaw", "en": "fly"},
+    {"no": "mygg", "tl": "lamok", "en": "mosquito"},
+    {"no": "edderkopp", "tl": "gagamba", "en": "spider"},
+    {"no": "marihøne", "tl": "kulisap", "en": "ladybug"},
+    {"no": "gresshoppe", "tl": "tipaklong", "en": "grasshopper"},
+    {"no": "sommerfugl", "tl": "paruparo", "en": "butterfly"},
+    {"no": "møll", "tl": "gamu-gamo", "en": "moth"},
+    {"no": "tusenbein", "tl": "alupihan", "en": "centipede"},
+    {"no": "saksedyr", "tl": "sipitik", "en": "earwig"},
+    {"no": "kakerlakk", "tl": "ipis", "en": "cockroach"},
+    {"no": "bille", "tl": "salagubang", "en": "beetle"},
+    {"no": "skorpion", "tl": "alakdan", "en": "scorpion"}
+  ]
+},
+{
+  "level": 56,
+  "themes": {
+    "no": "Værfenomener",
+    "en": "Weather Phenomena",
+    "tl": "Mga Panahon at Klima"
+  },
+  "items": [
+    {"no": "solskinn", "tl": "maaraw", "en": "sunshine"},
+    {"no": "regn", "tl": "ulan", "en": "rain"},
+    {"no": "snø", "tl": "niyebe", "en": "snow"},
+    {"no": "hagel", "tl": "yelo", "en": "hail"},
+    {"no": "vind", "tl": "hangin", "en": "wind"},
+    {"no": "storm", "tl": "bagyo", "en": "storm"},
+    {"no": "torden", "tl": "kulog", "en": "thunder"},
+    {"no": "lyn", "tl": "kidlat", "en": "lightning"},
+    {"no": "tåke", "tl": "hamog", "en": "fog"},
+    {"no": "frost", "tl": "yelo", "en": "frost"},
+    {"no": "orkan", "tl": "bagyong malakas", "en": "hurricane"},
+    {"no": "syklon", "tl": "bagyong paikot", "en": "cyclone"},
+    {"no": "tornado", "tl": "ipo-ipo", "en": "tornado"},
+    {"no": "regnbue", "tl": "bahaghari", "en": "rainbow"},
+    {"no": "skyer", "tl": "ulap", "en": "clouds"}
+  ]
+},
+{
+  "level": 57,
+  "themes": {
+    "no": "Rom i huset",
+    "en": "Rooms in the House",
+    "tl": "Mga Silid sa Bahay"
+  },
+  "items": [
+    {"no": "stue", "tl": "sala", "en": "living room"},
+    {"no": "soverom", "tl": "silid-tulugan", "en": "bedroom"},
+    {"no": "kjøkken", "tl": "kusina", "en": "kitchen"},
+    {"no": "bad", "tl": "banyo", "en": "bathroom"},
+    {"no": "spisestue", "tl": "silid-kainan", "en": "dining room"},
+    {"no": "gang", "tl": "pasilyo", "en": "hallway"},
+    {"no": "kontor", "tl": "opisina", "en": "office"},
+    {"no": "kjeller", "tl": "silong", "en": "basement"},
+    {"no": "loft", "tl": "atik", "en": "attic"},
+    {"no": "vaskerom", "tl": "labahan", "en": "laundry room"},
+    {"no": "garasje", "tl": "garahe", "en": "garage"},
+    {"no": "balkong", "tl": "beranda", "en": "balcony"},
+    {"no": "terrasse", "tl": "teras", "en": "terrace"},
+    {"no": "hage", "tl": "hardin", "en": "garden"},
+    {"no": "bibliotek", "tl": "aklatan", "en": "library"}
+  ]
+},
+{
+  "level": 58,
+  "themes": {
+    "no": "Verktøy",
+    "en": "Tools",
+    "tl": "Mga Kasangkapan"
+  },
+  "items": [
+    {"no": "hammer", "tl": "martilyo", "en": "hammer"},
+    {"no": "skrutrekker", "tl": "distornilyador", "en": "screwdriver"},
+    {"no": "tang", "tl": "pliers", "en": "pliers"},
+    {"no": "skiftenøkkel", "tl": "liyabe", "en": "wrench"},
+    {"no": "sag", "tl": "lagari", "en": "saw"},
+    {"no": "bor", "tl": "drill", "en": "drill"},
+    {"no": "nivåmåler", "tl": "level", "en": "level"},
+    {"no": "målebånd", "tl": "metro", "en": "tape measure"},
+    {"no": "høvel", "tl": "katam", "en": "plane"},
+    {"no": "meisel", "tl": "pait", "en": "chisel"},
+    {"no": "fil", "tl": "lima", "en": "file"},
+    {"no": "stiftepistol", "tl": "staple gun", "en": "staple gun"},
+    {"no": "limpistol", "tl": "glue gun", "en": "glue gun"},
+    {"no": "kniv", "tl": "kutsilyo", "en": "knife"},
+    {"no": "vernebriller", "tl": "safety glasses", "en": "safety glasses"}
+  ]
+},
+{
+  "level": 59,
+  "themes": {
+    "no": "Kontorutstyr",
+    "en": "Office Supplies",
+    "tl": "Mga Kagamitan sa Opisina"
+  },
+  "items": [
+    {"no": "penn", "tl": "panulat", "en": "pen"},
+    {"no": "blyant", "tl": "lapis", "en": "pencil"},
+    {"no": "viskelær", "tl": "pambura", "en": "eraser"},
+    {"no": "papir", "tl": "papel", "en": "paper"},
+    {"no": "notatbok", "tl": "kwaderno", "en": "notebook"},
+    {"no": "perm", "tl": "folder", "en": "binder"},
+    {"no": "stiftemaskin", "tl": "stapler", "en": "stapler"},
+    {"no": "hullmaskin", "tl": "hole puncher", "en": "hole punch"},
+    {"no": "linjal", "tl": "pinuno", "en": "ruler"},
+    {"no": "saks", "tl": "gunting", "en": "scissors"},
+    {"no": "lim", "tl": "pandikit", "en": "glue"},
+    {"no": "tape", "tl": "tape", "en": "tape"},
+    {"no": "post-it", "tl": "post-it", "en": "sticky notes"},
+    {"no": "papirkurv", "tl": "basurahan", "en": "waste bin"},
+    {"no": "skrivebord", "tl": "mesa de trabaho", "en": "desk"}
+  ]
+},
+{
+  "level": 60,
+  "themes": {
+    "no": "Hobbyer",
+    "en": "Hobbies",
+    "tl": "Mga Libangan"
+  },
+  "items": [
+    {"no": "lesing", "tl": "pagbabasa", "en": "reading"},
+    {"no": "skriving", "tl": "pagsusulat", "en": "writing"},
+    {"no": "tegning", "tl": "pagguhit", "en": "drawing"},
+    {"no": "maling", "tl": "pagpipinta", "en": "painting"},
+    {"no": "fotografering", "tl": "potograpiya", "en": "photography"},
+    {"no": "sying", "tl": "pananahi", "en": "sewing"},
+    {"no": "strikking", "tl": "pagniniting", "en": "knitting"},
+    {"no": "hagearbeid", "tl": "paghahardin", "en": "gardening"},
+    {"no": "matlaging", "tl": "pagluluto", "en": "cooking"},
+    {"no": "baking", "tl": "pagbe-bake", "en": "baking"},
+    {"no": "fisking", "tl": "pangingisda", "en": "fishing"},
+    {"no": "sykling", "tl": "pagbibisikleta", "en": "cycling"},
+    {"no": "fjelltur", "tl": "pag-akyat ng bundok", "en": "hiking"},
+    {"no": "spill", "tl": "laro", "en": "gaming"},
+    {"no": "musikk", "tl": "musika", "en": "music"}
+  ]
+},
+{
+  "level": 61,
+  "themes": {
+    "no": "Transportmidler",
+    "en": "Means of Transport",
+    "tl": "Mga Sasakyan"
+  },
+  "items": [
+    {"no": "bil", "tl": "kotse", "en": "car"},
+    {"no": "buss", "tl": "bus", "en": "bus"},
+    {"no": "tog", "tl": "tren", "en": "train"},
+    {"no": "trikk", "tl": "tram", "en": "tram"},
+    {"no": "ferge", "tl": "barko", "en": "ferry"},
+    {"no": "sykkel", "tl": "bisikleta", "en": "bicycle"},
+    {"no": "motorsykkel", "tl": "motorsiklo", "en": "motorcycle"},
+    {"no": "fly", "tl": "eroplano", "en": "airplane"},
+    {"no": "helikopter", "tl": "helikopter", "en": "helicopter"},
+    {"no": "skip", "tl": "bapor", "en": "ship"},
+    {"no": "seilbåt", "tl": "bangka", "en": "sailboat"},
+    {"no": "traktor", "tl": "traktor", "en": "tractor"},
+    {"no": "lastebil", "tl": "trak", "en": "truck"},
+    {"no": "pickup", "tl": "pickup", "en": "pickup"},
+    {"no": "elsparkesykkel", "tl": "e-scooter", "en": "electric scooter"}
+  ]
+},
+{
+  "level": 62,
+  "themes": {
+    "no": "By og steder",
+    "en": "City and Places",
+    "tl": "Lungsod at mga Lugar"
+  },
+  "items": [
+    {"no": "butikk", "tl": "tindahan", "en": "store"},
+    {"no": "marked", "tl": "pamilihan", "en": "market"},
+    {"no": "postkontor", "tl": "post office", "en": "post office"},
+    {"no": "bank", "tl": "bangko", "en": "bank"},
+    {"no": "restaurant", "tl": "restawran", "en": "restaurant"},
+    {"no": "kafé", "tl": "kapihan", "en": "cafe"},
+    {"no": "sykehus", "tl": "ospital", "en": "hospital"},
+    {"no": "apotek", "tl": "botika", "en": "pharmacy"},
+    {"no": "bibliotek", "tl": "aklatan", "en": "library"},
+    {"no": "kino", "tl": "sinehan", "en": "cinema"},
+    {"no": "park", "tl": "parke", "en": "park"},
+    {"no": "lekeplass", "tl": "palalaruan", "en": "playground"},
+    {"no": "museum", "tl": "museo", "en": "museum"},
+    {"no": "kirke", "tl": "simbahan", "en": "church"},
+    {"no": "moské", "tl": "moske", "en": "mosque"}
+  ]
+},
+{
+  "level": 63,
+  "themes": {
+    "no": "Matlagingredienser",
+    "en": "Cooking Ingredients",
+    "tl": "Mga Sangkap sa Pagluluto"
+  },
+  "items": [
+    {"no": "salt", "tl": "asin", "en": "salt"},
+    {"no": "pepper", "tl": "paminta", "en": "pepper"},
+    {"no": "sukker", "tl": "asukal", "en": "sugar"},
+    {"no": "mel", "tl": "harina", "en": "flour"},
+    {"no": "olje", "tl": "langis", "en": "oil"},
+    {"no": "eddik", "tl": "suka", "en": "vinegar"},
+    {"no": "honning", "tl": "pulot", "en": "honey"},
+    {"no": "krydder", "tl": "spices", "en": "spices"},
+    {"no": "urter", "tl": "herbs", "en": "herbs"},
+    {"no": "smør", "tl": "mantikilya", "en": "butter"},
+    {"no": "gjær", "tl": "pampaalsa", "en": "yeast"},
+    {"no": "tomatpuré", "tl": "tomato paste", "en": "tomato paste"},
+    {"no": "soyasaus", "tl": "toyo", "en": "soy sauce"},
+    {"no": "buljong", "tl": "sabaw", "en": "broth"},
+    {"no": "saus", "tl": "sarsa", "en": "sauce"}
+  ]
+},
+{
+  "level": 64,
+  "themes": {
+    "no": "Måltider",
+    "en": "Meals",
+    "tl": "Mga Pagkain"
+  },
+  "items": [
+    {"no": "frokost", "tl": "almusal", "en": "breakfast"},
+    {"no": "lunsj", "tl": "tanghalian", "en": "lunch"},
+    {"no": "middag", "tl": "hapunan", "en": "dinner"},
+    {"no": "kveldsmat", "tl": "hapunan sa gabi", "en": "supper"},
+    {"no": "forrett", "tl": "pampagana", "en": "appetizer"},
+    {"no": "hovedrett", "tl": "pangunahing ulam", "en": "main course"},
+    {"no": "dessert", "tl": "panghimagas", "en": "dessert"},
+    {"no": "snacks", "tl": "meryenda", "en": "snack"},
+    {"no": "buffet", "tl": "buffet", "en": "buffet"},
+    {"no": "piknik", "tl": "piknik", "en": "picnic"},
+    {"no": "takeaway", "tl": "pag-takeout", "en": "takeaway"},
+    {"no": "gatekjøkken", "tl": "street food", "en": "street food"},
+    {"no": "festmåltid", "tl": "piging", "en": "feast"},
+    {"no": "familielunsj", "tl": "pamilya tanghalian", "en": "family lunch"},
+    {"no": "barnemeny", "tl": "menyu ng bata", "en": "kids menu"}
+  ]
+},
+{
+  "level": 65,
+  "themes": {
+    "no": "Kroppsdeler (avansert)",
+    "en": "Body Parts (Advanced)",
+    "tl": "Mga Bahagi ng Katawan (Mas Detalyado)"
+  },
+  "items": [
+    {"no": "albue", "tl": "siko", "en": "elbow"},
+    {"no": "kne", "tl": "tuhod", "en": "knee"},
+    {"no": "ankel", "tl": "bukong-bukong", "en": "ankle"},
+    {"no": "hæl", "tl": "sakong", "en": "heel"},
+    {"no": "hofte", "tl": "balakang", "en": "hip"},
+    {"no": "bryst", "tl": "dibdib", "en": "chest"},
+    {"no": "mage", "tl": "tiyan", "en": "stomach"},
+    {"no": "ryggrad", "tl": "gulugod", "en": "spine"},
+    {"no": "lever", "tl": "atay", "en": "liver"},
+    {"no": "nyre", "tl": "bato", "en": "kidney"},
+    {"no": "lunge", "tl": "baga", "en": "lung"},
+    {"no": "hjerte", "tl": "puso", "en": "heart"},
+    {"no": "hjerne", "tl": "utak", "en": "brain"},
+    {"no": "hud", "tl": "balat", "en": "skin"},
+    {"no": "blod", "tl": "dugo", "en": "blood"}
+  ]
+},
+{
+  "level": 66,
+  "themes": {
+    "no": "Elektroniske enheter",
+    "en": "Electronic Devices",
+    "tl": "Mga Elektronikong Kagamitan"
+  },
+  "items": [
+    {"no": "smarttelefon", "tl": "smartphone", "en": "smartphone"},
+    {"no": "nettbrett", "tl": "tablet", "en": "tablet"},
+    {"no": "bærbar PC", "tl": "laptop", "en": "laptop"},
+    {"no": "stasjonær PC", "tl": "desktop", "en": "desktop computer"},
+    {"no": "spillkonsoll", "tl": "game console", "en": "game console"},
+    {"no": "smartklokke", "tl": "smartwatch", "en": "smartwatch"},
+    {"no": "TV", "tl": "telebisyon", "en": "television"},
+    {"no": "projektor", "tl": "proyektor", "en": "projector"},
+    {"no": "kamera", "tl": "kamera", "en": "camera"},
+    {"no": "mikrofon", "tl": "mikropono", "en": "microphone"},
+    {"no": "hodetelefoner", "tl": "headphone", "en": "headphones"},
+    {"no": "høyttaler", "tl": "speaker", "en": "speaker"},
+    {"no": "skanner", "tl": "scanner", "en": "scanner"},
+    {"no": "printer", "tl": "printer", "en": "printer"},
+    {"no": "drone", "tl": "drone", "en": "drone"}
+  ]
+},
+{
+  "level": 67,
+  "themes": {
+    "no": "Husholdningsapparater",
+    "en": "Household Appliances",
+    "tl": "Mga Kagamitang Pangbahay"
+  },
+  "items": [
+    {"no": "kjøleskap", "tl": "pridyeder", "en": "refrigerator"},
+    {"no": "fryser", "tl": "freezer", "en": "freezer"},
+    {"no": "komfyr", "tl": "stove", "en": "stove"},
+    {"no": "mikrobølgeovn", "tl": "microwave", "en": "microwave"},
+    {"no": "oppvaskmaskin", "tl": "dishwasher", "en": "dishwasher"},
+    {"no": "vaskemaskin", "tl": "washing machine", "en": "washing machine"},
+    {"no": "tørketrommel", "tl": "dryer", "en": "dryer"},
+    {"no": "støvsuger", "tl": "vacuum cleaner", "en": "vacuum cleaner"},
+    {"no": "strykejern", "tl": "plantsa", "en": "iron"},
+    {"no": "vifte", "tl": "ventilador", "en": "fan"},
+    {"no": "varmeovn", "tl": "heater", "en": "heater"},
+    {"no": "blender", "tl": "blender", "en": "blender"},
+    {"no": "brødrister", "tl": "toaster", "en": "toaster"},
+    {"no": "kaffetrakter", "tl": "coffee maker", "en": "coffee maker"},
+    {"no": "ris-koker", "tl": "rice cooker", "en": "rice cooker"}
+  ]
+},
+{
+  "level": 68,
+  "themes": {
+    "no": "Yrker (avansert)",
+    "en": "Professions (Advanced)",
+    "tl": "Mga Propesyon (Mas Detalyado)"
+  },
+  "items": [
+    {"no": "pilot", "tl": "piloto", "en": "pilot"},
+    {"no": "flyvert", "tl": "flight attendant", "en": "flight attendant"},
+    {"no": "forsker", "tl": "mananaliksik", "en": "scientist"},
+    {"no": "programmerer", "tl": "programador", "en": "programmer"},
+    {"no": "arkitekt", "tl": "arkitekto", "en": "architect"},
+    {"no": "design", "tl": "disenyador", "en": "designer"},
+    {"no": "journalist", "tl": "mamamahayag", "en": "journalist"},
+    {"no": "fotograf", "tl": "litratista", "en": "photographer"},
+    {"no": "musiker", "tl": "musikero", "en": "musician"},
+    {"no": "skuespiller", "tl": "aktor", "en": "actor"},
+    {"no": "idrettsutøver", "tl": "atleta", "en": "athlete"},
+    {"no": "politiker", "tl": "politiko", "en": "politician"},
+    {"no": "tannlege", "tl": "dentista", "en": "dentist"},
+    {"no": "psykolog", "tl": "psikolohista", "en": "psychologist"},
+    {"no": "kokk", "tl": "kusinero", "en": "chef"}
+  ]
+},
+{
+  "level": 69,
+  "themes": {
+    "no": "Fritidsaktiviteter",
+    "en": "Leisure Activities",
+    "tl": "Mga Libangan"
+  },
+  "items": [
+    {"no": "kino", "tl": "sinehan", "en": "cinema"},
+    {"no": "teater", "tl": "teatro", "en": "theater"},
+    {"no": "museum", "tl": "museo", "en": "museum"},
+    {"no": "konsert", "tl": "konsiyerto", "en": "concert"},
+    {"no": "festival", "tl": "pista", "en": "festival"},
+    {"no": "danse", "tl": "sayaw", "en": "dance"},
+    {"no": "sang", "tl": "pag-awit", "en": "singing"},
+    {"no": "spille instrument", "tl": "tumugtog ng instrumento", "en": "playing instrument"},
+    {"no": "sportsarrangement", "tl": "paligsahan sa sports", "en": "sports event"},
+    {"no": "utstilling", "tl": "eksibisyon", "en": "exhibition"},
+    {"no": "markedsdag", "tl": "araw ng palengke", "en": "market day"},
+    {"no": "strandtur", "tl": "pagpunta sa dalampasigan", "en": "beach trip"},
+    {"no": "fjelltur", "tl": "pag-akyat ng bundok", "en": "hiking"},
+    {"no": "camping", "tl": "kamping", "en": "camping"},
+    {"no": "fotografering", "tl": "potograpiya", "en": "photography"}
+  ]
+},
+{
+  "level": 70,
+  "themes": {
+    "no": "Miljø og bærekraft",
+    "en": "Environment and Sustainability",
+    "tl": "Kapaligiran at Pagpapanatili"
+  },
+  "items": [
+    {"no": "resirkulering", "tl": "recycling", "en": "recycling"},
+    {"no": "avfall", "tl": "basura", "en": "waste"},
+    {"no": "plast", "tl": "plastik", "en": "plastic"},
+    {"no": "papir", "tl": "papel", "en": "paper"},
+    {"no": "glass", "tl": "salamin", "en": "glass"},
+    {"no": "metall", "tl": "metal", "en": "metal"},
+    {"no": "forurensning", "tl": "polusyon", "en": "pollution"},
+    {"no": "klimaendring", "tl": "pagbabago ng klima", "en": "climate change"},
+    {"no": "fornybar energi", "tl": "renewable energy", "en": "renewable energy"},
+    {"no": "solenergi", "tl": "solar energy", "en": "solar energy"},
+    {"no": "vindkraft", "tl": "wind energy", "en": "wind power"},
+    {"no": "vannkraft", "tl": "hydroelectric power", "en": "hydropower"},
+    {"no": "bevaring", "tl": "konserbasyon", "en": "conservation"},
+    {"no": "biologisk mangfold", "tl": "biodiversity", "en": "biodiversity"},
+    {"no": "naturvern", "tl": "pangalaga sa kalikasan", "en": "nature conservation"}
+  ]
+},
+{
+  "level": 71,
+  "themes": {
+    "no": "Verktøy",
+    "en": "Tools",
+    "tl": "Mga Kasangkapan"
+  },
+  "items": [
+    {"no": "hammer", "tl": "martilyo", "en": "hammer"},
+    {"no": "skrutrekker", "tl": "distornilyador", "en": "screwdriver"},
+    {"no": "tang", "tl": "pliers", "en": "pliers"},
+    {"no": "skiftenøkkel", "tl": "wrench", "en": "wrench"},
+    {"no": "bor", "tl": "drill", "en": "drill"},
+    {"no": "sag", "tl": "lagari", "en": "saw"},
+    {"no": "vater", "tl": "level", "en": "level"},
+    {"no": "målebånd", "tl": "metro", "en": "tape measure"},
+    {"no": "høvel", "tl": "plano", "en": "plane"},
+    {"no": "kniv", "tl": "kutsilyo", "en": "knife"},
+    {"no": "fil", "tl": "lima", "en": "file"},
+    {"no": "meisel", "tl": "pait", "en": "chisel"},
+    {"no": "spiker", "tl": "pako", "en": "nail"},
+    {"no": "skrue", "tl": "turnilyo", "en": "screw"},
+    {"no": "lim", "tl": "pandikit", "en": "glue"}
+  ]
+},
+{
+  "level": 72,
+  "themes": {
+    "no": "Musikkinstrumenter",
+    "en": "Musical Instruments",
+    "tl": "Mga Instrumentong Pangmusika"
+  },
+  "items": [
+    {"no": "gitar", "tl": "gitara", "en": "guitar"},
+    {"no": "piano", "tl": "piyano", "en": "piano"},
+    {"no": "fiolin", "tl": "biyolin", "en": "violin"},
+    {"no": "trommer", "tl": "drums", "en": "drums"},
+    {"no": "fløyte", "tl": "plauta", "en": "flute"},
+    {"no": "saksofon", "tl": "saksofono", "en": "saxophone"},
+    {"no": "trompet", "tl": "trumpeta", "en": "trumpet"},
+    {"no": "harpe", "tl": "alpa", "en": "harp"},
+    {"no": "orgel", "tl": "organo", "en": "organ"},
+    {"no": "bass", "tl": "baho", "en": "bass"},
+    {"no": "banjo", "tl": "banjo", "en": "banjo"},
+    {"no": "tamburin", "tl": "tamburin", "en": "tambourine"},
+    {"no": "cello", "tl": "tselo", "en": "cello"},
+    {"no": "klarinett", "tl": "klarinete", "en": "clarinet"},
+    {"no": "xylofon", "tl": "xylophone", "en": "xylophone"}
+  ]
+},
+{
+  "level": 73,
+  "themes": {
+    "no": "Ville dyr",
+    "en": "Wild Animals",
+    "tl": "Mga Mababangis na Hayop"
+  },
+  "items": [
+    {"no": "løve", "tl": "leon", "en": "lion"},
+    {"no": "tiger", "tl": "tigre", "en": "tiger"},
+    {"no": "bjørn", "tl": "oso", "en": "bear"},
+    {"no": "ulv", "tl": "lobo", "en": "wolf"},
+    {"no": "rev", "tl": "aso ng gubat", "en": "fox"},
+    {"no": "hjort", "tl": "usa", "en": "deer"},
+    {"no": "elg", "tl": "moose", "en": "moose"},
+    {"no": "sebra", "tl": "sebra", "en": "zebra"},
+    {"no": "sjiraff", "tl": "dyirap", "en": "giraffe"},
+    {"no": "flodhest", "tl": "hipopotamo", "en": "hippopotamus"},
+    {"no": "nesehorn", "tl": "rinosero", "en": "rhinoceros"},
+    {"no": "kenguru", "tl": "kanggaro", "en": "kangaroo"},
+    {"no": "panda", "tl": "panda", "en": "panda"},
+    {"no": "ape", "tl": "unggoy", "en": "monkey"},
+    {"no": "ørn", "tl": "agila", "en": "eagle"}
+  ]
+},
+{
+  "level": 74,
+  "themes": {
+    "no": "Husdyr",
+    "en": "Domestic Animals",
+    "tl": "Mga Alagang Hayop"
+  },
+  "items": [
+    {"no": "hund", "tl": "aso", "en": "dog"},
+    {"no": "katt", "tl": "pusa", "en": "cat"},
+    {"no": "ku", "tl": "baka", "en": "cow"},
+    {"no": "hest", "tl": "kabayo", "en": "horse"},
+    {"no": "sau", "tl": "tupa", "en": "sheep"},
+    {"no": "geit", "tl": "kambing", "en": "goat"},
+    {"no": "gris", "tl": "baboy", "en": "pig"},
+    {"no": "høne", "tl": "manok", "en": "hen"},
+    {"no": "hane", "tl": "tandang", "en": "rooster"},
+    {"no": "and", "tl": "pato", "en": "duck"},
+    {"no": "gås", "tl": "gansa", "en": "goose"},
+    {"no": "kalkun", "tl": "pabo", "en": "turkey"},
+    {"no": "kanin", "tl": "kuneho", "en": "rabbit"},
+    {"no": "esel", "tl": "asno", "en": "donkey"},
+    {"no": "lama", "tl": "llama", "en": "llama"}
+  ]
+},
+{
+  "level": 75,
+  "themes": {
+    "no": "Havdyr",
+    "en": "Sea Animals",
+    "tl": "Mga Hayop sa Dagat"
+  },
+  "items": [
+    {"no": "fisk", "tl": "isda", "en": "fish"},
+    {"no": "hai", "tl": "pating", "en": "shark"},
+    {"no": "hval", "tl": "balena", "en": "whale"},
+    {"no": "delfin", "tl": "lumba-lumba", "en": "dolphin"},
+    {"no": "blekksprut", "tl": "pusit", "en": "squid"},
+    {"no": "krabbe", "tl": "alimango", "en": "crab"},
+    {"no": "hummer", "tl": "ulang", "en": "lobster"},
+    {"no": "skilpadde", "tl": "pagong", "en": "turtle"},
+    {"no": "manet", "tl": "dikya", "en": "jellyfish"},
+    {"no": "sjøhest", "tl": "kabayo-kabayohan", "en": "seahorse"},
+    {"no": "sjøstjerne", "tl": "bituin-dagat", "en": "starfish"},
+    {"no": "sjøpølse", "tl": "pipino-dagat", "en": "sea cucumber"},
+    {"no": "ål", "tl": "igat", "en": "eel"},
+    {"no": "mulle", "tl": "mullet", "en": "mullet"},
+    {"no": "korall", "tl": "korales", "en": "coral"}
+  ]
+},
+{
+  "level": 76,
+  "themes": {
+    "no": "Insekter",
+    "en": "Insects",
+    "tl": "Mga Insekto"
+  },
+  "items": [
+    {"no": "maur", "tl": "langgam", "en": "ant"},
+    {"no": "bie", "tl": "bubuyog", "en": "bee"},
+    {"no": "veps", "tl": "putakti", "en": "wasp"},
+    {"no": "flue", "tl": "langaw", "en": "fly"},
+    {"no": "mygg", "tl": "lamok", "en": "mosquito"},
+    {"no": "møll", "tl": "gamu-gamo", "en": "moth"},
+    {"no": "sommerfugl", "tl": "paru-paro", "en": "butterfly"},
+    {"no": "gresshoppe", "tl": "tipaklong", "en": "grasshopper"},
+    {"no": "bille", "tl": "salagubang", "en": "beetle"},
+    {"no": "edderkopp", "tl": "gagamba", "en": "spider"},
+    {"no": "skorpion", "tl": "alakdan", "en": "scorpion"},
+    {"no": "tusenbein", "tl": "sanyapo", "en": "centipede"},
+    {"no": "sikade", "tl": "kuliglig", "en": "cicada"},
+    {"no": "siriss", "tl": "kuliglig", "en": "cricket"},
+    {"no": "lus", "tl": "kuto", "en": "louse"}
+  ]
+},
+{
+  "level": 77,
+  "themes": {
+    "no": "Planter",
+    "en": "Plants",
+    "tl": "Mga Halaman"
+  },
+  "items": [
+    {"no": "tre", "tl": "puno", "en": "tree"},
+    {"no": "blomst", "tl": "bulaklak", "en": "flower"},
+    {"no": "busk", "tl": "palumpong", "en": "bush"},
+    {"no": "gress", "tl": "damo", "en": "grass"},
+    {"no": "blad", "tl": "dahon", "en": "leaf"},
+    {"no": "rot", "tl": "ugat", "en": "root"},
+    {"no": "frø", "tl": "buto", "en": "seed"},
+    {"no": "stilk", "tl": "tangkay", "en": "stem"},
+    {"no": "gren", "tl": "sanga", "en": "branch"},
+    {"no": "mose", "tl": "lumot", "en": "moss"},
+    {"no": "lav", "tl": "lumot", "en": "lichen"},
+    {"no": "palme", "tl": "palma", "en": "palm tree"},
+    {"no": "kaktus", "tl": "kaktus", "en": "cactus"},
+    {"no": "orkidé", "tl": "orkidya", "en": "orchid"},
+    {"no": "solsikke", "tl": "mirasol", "en": "sunflower"}
+  ]
+},
+{
+  "level": 78,
+  "themes": {
+    "no": "Romfart",
+    "en": "Space Exploration",
+    "tl": "Paggalugad sa Kalawakan"
+  },
+  "items": [
+    {"no": "romskip", "tl": "sasakyang pangkalawakan", "en": "spaceship"},
+    {"no": "rakett", "tl": "raketa", "en": "rocket"},
+    {"no": "satellitt", "tl": "satelayt", "en": "satellite"},
+    {"no": "romstasjon", "tl": "istasyong pangkalawakan", "en": "space station"},
+    {"no": "astronaut", "tl": "astronawta", "en": "astronaut"},
+    {"no": "måne", "tl": "buwan", "en": "moon"},
+    {"no": "planet", "tl": "planeta", "en": "planet"},
+    {"no": "stjerne", "tl": "bituin", "en": "star"},
+    {"no": "galakse", "tl": "kalawakan", "en": "galaxy"},
+    {"no": "meteoroide", "tl": "meteoroid", "en": "meteoroid"},
+    {"no": "komet", "tl": "kometa", "en": "comet"},
+    {"no": "asteroide", "tl": "asteroid", "en": "asteroid"},
+    {"no": "sol", "tl": "araw", "en": "sun"},
+    {"no": "formørkelse", "tl": "eclipse", "en": "eclipse"},
+    {"no": "teleskop", "tl": "teleskopyo", "en": "telescope"}
+  ]
+},
+{
+  "level": 79,
+  "themes": {
+    "no": "Vannrelaterte ord",
+    "en": "Water Related Words",
+    "tl": "Mga Salitang May Kaugnayan sa Tubig"
+  },
+  "items": [
+    {"no": "elv", "tl": "ilog", "en": "river"},
+    {"no": "innsjø", "tl": "lawa", "en": "lake"},
+    {"no": "hav", "tl": "karagatan", "en": "ocean"},
+    {"no": "sjø", "tl": "dagat", "en": "sea"},
+    {"no": "bekk", "tl": "batis", "en": "stream"},
+    {"no": "fossefall", "tl": "talon", "en": "waterfall"},
+    {"no": "kilde", "tl": "bukal", "en": "spring"},
+    {"no": "dam", "tl": "dam", "en": "dam"},
+    {"no": "bølge", "tl": "alon", "en": "wave"},
+    {"no": "tidevann", "tl": "daloy", "en": "tide"},
+    {"no": "flom", "tl": "baha", "en": "flood"},
+    {"no": "regn", "tl": "ulan", "en": "rain"},
+    {"no": "damp", "tl": "singaw", "en": "steam"},
+    {"no": "is", "tl": "yelo", "en": "ice"},
+    {"no": "snø", "tl": "niyebe", "en": "snow"}
+  ]
+},
+{
+  "level": 80,
+  "themes": {
+    "no": "Medisin og helse",
+    "en": "Medicine and Health",
+    "tl": "Medisina at Kalusugan"
+  },
+  "items": [
+    {"no": "lege", "tl": "doktor", "en": "doctor"},
+    {"no": "sykepleier", "tl": "nars", "en": "nurse"},
+    {"no": "tannlege", "tl": "dentista", "en": "dentist"},
+    {"no": "legekontor", "tl": "klinika", "en": "clinic"},
+    {"no": "sykehus", "tl": "ospital", "en": "hospital"},
+    {"no": "apotek", "tl": "botika", "en": "pharmacy"},
+    {"no": "resept", "tl": "reseta", "en": "prescription"},
+    {"no": "medisin", "tl": "gamot", "en": "medicine"},
+    {"no": "vaksine", "tl": "bakuna", "en": "vaccine"},
+    {"no": "operasjon", "tl": "operasyon", "en": "surgery"},
+    {"no": "blodprøve", "tl": "blood test", "en": "blood test"},
+    {"no": "bandasje", "tl": "bendaje", "en": "bandage"},
+    {"no": "plaster", "tl": "plaster", "en": "plaster"},
+    {"no": "rullestol", "tl": "wheelchair", "en": "wheelchair"},
+    {"no": "førstehjelp", "tl": "unang lunas", "en": "first aid"}
+  ]
+},
+{
+  "level": 81,
+  "themes": {
+    "no": "Kontorutstyr",
+    "en": "Office Supplies",
+    "tl": "Mga Kagamitan sa Opisina"
+  },
+  "items": [
+    {"no": "penn", "tl": "panulat", "en": "pen"},
+    {"no": "blyant", "tl": "lapis", "en": "pencil"},
+    {"no": "viskelær", "tl": "pambura", "en": "eraser"},
+    {"no": "papir", "tl": "papel", "en": "paper"},
+    {"no": "notatbok", "tl": "kuwaderno", "en": "notebook"},
+    {"no": "perm", "tl": "folder", "en": "binder"},
+    {"no": "hullmaskin", "tl": "hole punch", "en": "hole punch"},
+    {"no": "stiftemaskin", "tl": "stapler", "en": "stapler"},
+    {"no": "binders", "tl": "paper clip", "en": "paper clip"},
+    {"no": "linjal", "tl": "pinuno", "en": "ruler"},
+    {"no": "saks", "tl": "gunting", "en": "scissors"},
+    {"no": "teip", "tl": "tape", "en": "tape"},
+    {"no": "kalender", "tl": "kalendaryo", "en": "calendar"},
+    {"no": "post-it-lapper", "tl": "post-it", "en": "post-it notes"},
+    {"no": "skriver", "tl": "printer", "en": "printer"}
+  ]
+},
+{
+  "level": 82,
+  "themes": {
+    "no": "Høytider",
+    "en": "Holidays",
+    "tl": "Mga Pista Opisyal"
+  },
+  "items": [
+    {"no": "nyttårsaften", "tl": "bisperas ng bagong taon", "en": "New Year's Eve"},
+    {"no": "nyttårsdag", "tl": "araw ng bagong taon", "en": "New Year's Day"},
+    {"no": "påske", "tl": "Pasko ng Pagkabuhay", "en": "Easter"},
+    {"no": "17. mai", "tl": "Araw ng Kalayaan ng Norway", "en": "Norwegian Constitution Day"},
+    {"no": "pinse", "tl": "Pentekostes", "en": "Pentecost"},
+    {"no": "allehelgensdag", "tl": "Araw ng mga Santo", "en": "All Saints' Day"},
+    {"no": "morsdag", "tl": "araw ng mga ina", "en": "Mother's Day"},
+    {"no": "farsdag", "tl": "araw ng mga ama", "en": "Father's Day"},
+    {"no": "arbeidernes dag", "tl": "araw ng manggagawa", "en": "Labour Day"},
+    {"no": "valentinsdag", "tl": "araw ng mga puso", "en": "Valentine's Day"},
+    {"no": "halloween", "tl": "Halloween", "en": "Halloween"},
+    {"no": "fastelavn", "tl": "karnabal", "en": "Carnival"},
+    {"no": "hanukka", "tl": "Hanukkah", "en": "Hanukkah"},
+    {"no": "eid", "tl": "Eid", "en": "Eid"},
+    {"no": "ramadan", "tl": "Ramadan", "en": "Ramadan"}
+  ]
+},
+{
+  "level": 83,
+  "themes": {
+    "no": "Bygninger",
+    "en": "Buildings",
+    "tl": "Mga Gusali"
+  },
+  "items": [
+    {"no": "hus", "tl": "bahay", "en": "house"},
+    {"no": "skole", "tl": "paaralan", "en": "school"},
+    {"no": "sykehus", "tl": "ospital", "en": "hospital"},
+    {"no": "kirke", "tl": "simbahan", "en": "church"},
+    {"no": "moské", "tl": "moske", "en": "mosque"},
+    {"no": "tempel", "tl": "templo", "en": "temple"},
+    {"no": "kontor", "tl": "opisina", "en": "office"},
+    {"no": "butikk", "tl": "tindahan", "en": "shop"},
+    {"no": "fabrikk", "tl": "pabrika", "en": "factory"},
+    {"no": "kino", "tl": "sinehan", "en": "cinema"},
+    {"no": "bibliotek", "tl": "aklatan", "en": "library"},
+    {"no": "museum", "tl": "museo", "en": "museum"},
+    {"no": "idrettshall", "tl": "sports hall", "en": "sports hall"},
+    {"no": "stadion", "tl": "istadyum", "en": "stadium"},
+    {"no": "rådhus", "tl": "munisipyo", "en": "town hall"}
+  ]
+},
+{
+  "level": 84,
+  "themes": {
+    "no": "Materialer",
+    "en": "Materials",
+    "tl": "Mga Materyales"
+  },
+  "items": [
+    {"no": "tre", "tl": "kahoy", "en": "wood"},
+    {"no": "metall", "tl": "metal", "en": "metal"},
+    {"no": "plast", "tl": "plastik", "en": "plastic"},
+    {"no": "glass", "tl": "salamin", "en": "glass"},
+    {"no": "papir", "tl": "papel", "en": "paper"},
+    {"no": "stein", "tl": "bato", "en": "stone"},
+    {"no": "betong", "tl": "simento", "en": "concrete"},
+    {"no": "leire", "tl": "lupa", "en": "clay"},
+    {"no": "ull", "tl": "lana", "en": "wool"},
+    {"no": "bomull", "tl": "koton", "en": "cotton"},
+    {"no": "silke", "tl": "sutla", "en": "silk"},
+    {"no": "lær", "tl": "katad", "en": "leather"},
+    {"no": "gummi", "tl": "goma", "en": "rubber"},
+    {"no": "sement", "tl": "simento", "en": "cement"},
+    {"no": "keramikk", "tl": "seramika", "en": "ceramic"}
+  ]
+},
+{
+  "level": 85,
+  "themes": {
+    "no": "Kjøretøy",
+    "en": "Vehicles",
+    "tl": "Mga Sasakyan"
+  },
+  "items": [
+    {"no": "bil", "tl": "kotse", "en": "car"},
+    {"no": "buss", "tl": "bus", "en": "bus"},
+    {"no": "tog", "tl": "tren", "en": "train"},
+    {"no": "trikk", "tl": "tram", "en": "tram"},
+    {"no": "t-bane", "tl": "subway", "en": "subway"},
+    {"no": "sykkel", "tl": "bisikleta", "en": "bicycle"},
+    {"no": "motorsykkel", "tl": "motorsiklo", "en": "motorcycle"},
+    {"no": "lastebil", "tl": "trak", "en": "truck"},
+    {"no": "pickup", "tl": "pickup", "en": "pickup"},
+    {"no": "båt", "tl": "barko", "en": "boat"},
+    {"no": "ferge", "tl": "ferry", "en": "ferry"},
+    {"no": "skip", "tl": "bapor", "en": "ship"},
+    {"no": "fly", "tl": "eroplano", "en": "airplane"},
+    {"no": "helikopter", "tl": "helikopter", "en": "helicopter"},
+    {"no": "traktor", "tl": "traktor", "en": "tractor"}
+  ]
+},
+{
+  "level": 86,
+  "themes": {
+    "no": "Jobbrelaterte ord",
+    "en": "Work Related Words",
+    "tl": "Mga Salitang Kaugnay sa Trabaho"
+  },
+  "items": [
+    {"no": "arbeid", "tl": "trabaho", "en": "work"},
+    {"no": "jobb", "tl": "trabaho", "en": "job"},
+    {"no": "ansatt", "tl": "empleyado", "en": "employee"},
+    {"no": "sjef", "tl": "boss", "en": "boss"},
+    {"no": "kollega", "tl": "kasamahan", "en": "colleague"},
+    {"no": "møte", "tl": "miting", "en": "meeting"},
+    {"no": "lønn", "tl": "suweldo", "en": "salary"},
+    {"no": "kontrakt", "tl": "kontrata", "en": "contract"},
+    {"no": "prosjekt", "tl": "proyekto", "en": "project"},
+    {"no": "rapport", "tl": "ulat", "en": "report"},
+    {"no": "ferie", "tl": "bakasyon", "en": "vacation"},
+    {"no": "sykemelding", "tl": "sick leave", "en": "sick leave"},
+    {"no": "ansettelse", "tl": "pagkuha", "en": "hiring"},
+    {"no": "oppsigelse", "tl": "pagtatapos", "en": "termination"},
+    {"no": "arbeidsplass", "tl": "lugar ng trabaho", "en": "workplace"}
+  ]
+},
+{
+  "level": 87,
+  "themes": {
+    "no": "Miljø og natur",
+    "en": "Environment and Nature",
+    "tl": "Kapaligiran at Kalikasan"
+  },
+  "items": [
+    {"no": "miljø", "tl": "kapaligiran", "en": "environment"},
+    {"no": "natur", "tl": "kalikasan", "en": "nature"},
+    {"no": "skog", "tl": "gubat", "en": "forest"},
+    {"no": "fjell", "tl": "bundok", "en": "mountain"},
+    {"no": "elv", "tl": "ilog", "en": "river"},
+    {"no": "innsjø", "tl": "lawa", "en": "lake"},
+    {"no": "hav", "tl": "karagatan", "en": "ocean"},
+    {"no": "ørken", "tl": "disyerto", "en": "desert"},
+    {"no": "dyreliv", "tl": "buhay-ilang", "en": "wildlife"},
+    {"no": "klima", "tl": "klima", "en": "climate"},
+    {"no": "forurensning", "tl": "polusyon", "en": "pollution"},
+    {"no": "resirkulering", "tl": "recycling", "en": "recycling"},
+    {"no": "energi", "tl": "enerhiya", "en": "energy"},
+    {"no": "ressurser", "tl": "yaman", "en": "resources"},
+    {"no": "økosystem", "tl": "ekosistema", "en": "ecosystem"}
+  ]
+},
+{
+  "level": 88,
+  "themes": {
+    "no": "Kunst og kultur",
+    "en": "Art and Culture",
+    "tl": "Sining at Kultura"
+  },
+  "items": [
+    {"no": "kunst", "tl": "sining", "en": "art"},
+    {"no": "maleri", "tl": "larawan", "en": "painting"},
+    {"no": "skulptur", "tl": "eskultura", "en": "sculpture"},
+    {"no": "tegning", "tl": "guhit", "en": "drawing"},
+    {"no": "musikk", "tl": "musika", "en": "music"},
+    {"no": "dans", "tl": "sayaw", "en": "dance"},
+    {"no": "teater", "tl": "teatro", "en": "theater"},
+    {"no": "film", "tl": "pelikula", "en": "film"},
+    {"no": "litteratur", "tl": "panitikan", "en": "literature"},
+    {"no": "poesi", "tl": "tula", "en": "poetry"},
+    {"no": "festival", "tl": "pista", "en": "festival"},
+    {"no": "museum", "tl": "museo", "en": "museum"},
+    {"no": "bibliotek", "tl": "aklatan", "en": "library"},
+    {"no": "utstilling", "tl": "eksibisyon", "en": "exhibition"},
+    {"no": "konsert", "tl": "konsiyerto", "en": "concert"}
+  ]
+},
+{
+  "level": 89,
+  "themes": {
+    "no": "Kjøkkenredskaper",
+    "en": "Kitchen Utensils",
+    "tl": "Mga Kagamitang Pangkusina"
+  },
+  "items": [
+    {"no": "gryte", "tl": "kaldero", "en": "pot"},
+    {"no": "panne", "tl": "kawali", "en": "pan"},
+    {"no": "skjærefjøl", "tl": "cutting board", "en": "cutting board"},
+    {"no": "visp", "tl": "panghalo", "en": "whisk"},
+    {"no": "sleiv", "tl": "sandok", "en": "ladle"},
+    {"no": "øsehull", "tl": "strainer", "en": "strainer"},
+    {"no": "rivjern", "tl": "pangkayod", "en": "grater"},
+    {"no": "korketrekker", "tl": "corkscrew", "en": "corkscrew"},
+    {"no": "boksåpner", "tl": "pambukas ng lata", "en": "can opener"},
+    {"no": "skreller", "tl": "pangbalat", "en": "peeler"},
+    {"no": "målebeger", "tl": "measuring cup", "en": "measuring cup"},
+    {"no": "måleskje", "tl": "measuring spoon", "en": "measuring spoon"},
+    {"no": "kjevle", "tl": "rolling pin", "en": "rolling pin"},
+    {"no": "gryteklut", "tl": "pot holder", "en": "pot holder"},
+    {"no": "tang", "tl": "pangipit", "en": "tongs"}
+  ]
+},
+{
+  "level": 90,
+  "themes": {
+    "no": "Elektriske apparater",
+    "en": "Electrical Appliances",
+    "tl": "Mga Kagamitang Elektrikal"
+  },
+  "items": [
+    {"no": "kjøleskap", "tl": "pridyeder", "en": "refrigerator"},
+    {"no": "fryser", "tl": "freezer", "en": "freezer"},
+    {"no": "komfyr", "tl": "stove", "en": "stove"},
+    {"no": "mikrobølgeovn", "tl": "microwave", "en": "microwave"},
+    {"no": "oppvaskmaskin", "tl": "dishwasher", "en": "dishwasher"},
+    {"no": "vaskemaskin", "tl": "washing machine", "en": "washing machine"},
+    {"no": "tørketrommel", "tl": "dryer", "en": "dryer"},
+    {"no": "støvsuger", "tl": "vacuum cleaner", "en": "vacuum cleaner"},
+    {"no": "strykjern", "tl": "plantsa", "en": "iron"},
+    {"no": "brødrister", "tl": "toaster", "en": "toaster"},
+    {"no": "kaffetrakter", "tl": "coffee maker", "en": "coffee maker"},
+    {"no": "vannkoker", "tl": "takure", "en": "kettle"},
+    {"no": "blender", "tl": "blender", "en": "blender"},
+    {"no": "mikser", "tl": "mixer", "en": "mixer"},
+    {"no": "juicer", "tl": "juicer", "en": "juicer"}
+  ]
+},
+{
+  "level": 91,
+  "themes": {
+    "no": "Hagearbeid",
+    "en": "Gardening",
+    "tl": "Paghahalaman"
+  },
+  "items": [
+    {"no": "hage", "tl": "hardin", "en": "garden"},
+    {"no": "gress", "tl": "damo", "en": "grass"},
+    {"no": "blomst", "tl": "bulaklak", "en": "flower"},
+    {"no": "tre", "tl": "puno", "en": "tree"},
+    {"no": "busk", "tl": "palumpong", "en": "bush"},
+    {"no": "plante", "tl": "halaman", "en": "plant"},
+    {"no": "jord", "tl": "lupa", "en": "soil"},
+    {"no": "vannkanne", "tl": "watering can", "en": "watering can"},
+    {"no": "hagearbeid", "tl": "paghahalaman", "en": "gardening"},
+    {"no": "hageredskap", "tl": "kasangkapang panghardin", "en": "garden tool"},
+    {"no": "spade", "tl": "pala", "en": "shovel"},
+    {"no": "rive", "tl": "kalaykay", "en": "rake"},
+    {"no": "hageslange", "tl": "hose", "en": "garden hose"},
+    {"no": "gressklipper", "tl": "pangtabas ng damo", "en": "lawn mower"},
+    {"no": "gjødsel", "tl": "pataba", "en": "fertilizer"}
+  ]
+},
+{
+  "level": 92,
+  "themes": {
+    "no": "Bygningsarbeid",
+    "en": "Construction Work",
+    "tl": "Trabahong Panggusali"
+  },
+  "items": [
+    {"no": "hammer", "tl": "martilyo", "en": "hammer"},
+    {"no": "spiker", "tl": "pako", "en": "nail"},
+    {"no": "skrue", "tl": "turnilyo", "en": "screw"},
+    {"no": "skrutekker", "tl": "distornilyador", "en": "screwdriver"},
+    {"no": "tang", "tl": "pang-ipit", "en": "pliers"},
+    {"no": "sag", "tl": "lagari", "en": "saw"},
+    {"no": "bor", "tl": "drill", "en": "drill"},
+    {"no": "vater", "tl": "pantay", "en": "spirit level"},
+    {"no": "målestokk", "tl": "panukat", "en": "measuring stick"},
+    {"no": "hanske", "tl": "guwantes", "en": "glove"},
+    {"no": "hjelm", "tl": "helmet", "en": "helmet"},
+    {"no": "arbeidsstøvler", "tl": "bota", "en": "work boots"},
+    {"no": "stillaser", "tl": "bakal na balag", "en": "scaffolding"},
+    {"no": "sementblander", "tl": "panggiling ng semento", "en": "cement mixer"},
+    {"no": "byggemateriale", "tl": "materyales sa pagtatayo", "en": "building material"}
+  ]
+},
+{
+  "level": 93,
+  "themes": {
+    "no": "Husholdningsartikler",
+    "en": "Household Items",
+    "tl": "Mga Gamit sa Bahay"
+  },
+  "items": [
+    {"no": "lys", "tl": "kandila", "en": "candle"},
+    {"no": "lyspære", "tl": "bombilya", "en": "light bulb"},
+    {"no": "batteri", "tl": "baterya", "en": "battery"},
+    {"no": "kost", "tl": "walis tingting", "en": "broom"},
+    {"no": "mopp", "tl": "mop", "en": "mop"},
+    {"no": "søppelbøtte", "tl": "basurahan", "en": "trash can"},
+    {"no": "søppelpose", "tl": "plastic ng basura", "en": "trash bag"},
+    {"no": "klut", "tl": "basahan", "en": "cloth"},
+    {"no": "bøtte", "tl": "balde", "en": "bucket"},
+    {"no": "svamp", "tl": "espongha", "en": "sponge"},
+    {"no": "strikk", "tl": "lastiko", "en": "rubber band"},
+    {"no": "nøkkel", "tl": "susi", "en": "key"},
+    {"no": "nøkkelring", "tl": "keychain", "en": "keychain"},
+    {"no": "hengelås", "tl": "padlock", "en": "padlock"},
+    {"no": "lås", "tl": "serrur", "en": "lock"}
+  ]
+},
+{
+  "level": 94,
+  "themes": {
+    "no": "Leketøy",
+    "en": "Toys",
+    "tl": "Mga Laruan"
+  },
+  "items": [
+    {"no": "ball", "tl": "bola", "en": "ball"},
+    {"no": "dukke", "tl": "manika", "en": "doll"},
+    {"no": "teddybjørn", "tl": "stuffed bear", "en": "teddy bear"},
+    {"no": "puslespill", "tl": "puzzle", "en": "puzzle"},
+    {"no": "lego", "tl": "lego", "en": "lego"},
+    {"no": "spill", "tl": "laro", "en": "game"},
+    {"no": "biler", "tl": "kotse", "en": "toy cars"},
+    {"no": "tog", "tl": "tren", "en": "toy train"},
+    {"no": "ballong", "tl": "lobo", "en": "balloon"},
+    {"no": "jojo", "tl": "yo-yo", "en": "yo-yo"},
+    {"no": "snurrebass", "tl": "top", "en": "spinning top"},
+    {"no": "bamse", "tl": "stuffed toy", "en": "stuffed toy"},
+    {"no": "byggesett", "tl": "construction set", "en": "construction set"},
+    {"no": "bobleblåser", "tl": "bubble blower", "en": "bubble blower"},
+    {"no": "hoppetau", "tl": "jump rope", "en": "jump rope"}
+  ]
+},
+{
+  "level": 95,
+  "themes": {
+    "no": "Skjønnhetsprodukter",
+    "en": "Beauty Products",
+    "tl": "Mga Produktong Pampaganda"
+  },
+  "items": [
+    {"no": "sjampo", "tl": "shampoo", "en": "shampoo"},
+    {"no": "balsam", "tl": "conditioner", "en": "conditioner"},
+    {"no": "såpe", "tl": "sabong panlaba", "en": "soap"},
+    {"no": "håndkrem", "tl": "hand cream", "en": "hand cream"},
+    {"no": "ansiktskrem", "tl": "face cream", "en": "face cream"},
+    {"no": "sminke", "tl": "make-up", "en": "make-up"},
+    {"no": "leppestift", "tl": "lipstick", "en": "lipstick"},
+    {"no": "maskara", "tl": "mascara", "en": "mascara"},
+    {"no": "eyeliner", "tl": "eyeliner", "en": "eyeliner"},
+    {"no": "parfyme", "tl": "pabango", "en": "perfume"},
+    {"no": "deodorant", "tl": "deodorant", "en": "deodorant"},
+    {"no": "neglelakk", "tl": "nail polish", "en": "nail polish"},
+    {"no": "neglefil", "tl": "nail file", "en": "nail file"},
+    {"no": "bomullspad", "tl": "cotton pad", "en": "cotton pad"},
+    {"no": "barberhøvel", "tl": "labaha", "en": "razor"}
+  ]
+},
+{
+  "level": 96,
+  "themes": {
+    "no": "Medisinsk utstyr",
+    "en": "Medical Equipment",
+    "tl": "Kagamitan Medikal"
+  },
+  "items": [
+    {"no": "termometer", "tl": "termometro", "en": "thermometer"},
+    {"no": "blodtrykksmåler", "tl": "blood pressure monitor", "en": "blood pressure monitor"},
+    {"no": "stetoskop", "tl": "stetoskop", "en": "stethoscope"},
+    {"no": "sprøyte", "tl": "syringe", "en": "syringe"},
+    {"no": "bandasje", "tl": "benda", "en": "bandage"},
+    {"no": "plaster", "tl": "band-aid", "en": "plaster"},
+    {"no": "hanske", "tl": "guwantes", "en": "gloves"},
+    {"no": "munnbind", "tl": "face mask", "en": "face mask"},
+    {"no": "rullestol", "tl": "wheelchair", "en": "wheelchair"},
+    {"no": "krykke", "tl": "saklay", "en": "crutch"},
+    {"no": "båre", "tl": "stretcher", "en": "stretcher"},
+    {"no": "førstehjelpsskrin", "tl": "first aid kit", "en": "first aid kit"},
+    {"no": "inhalator", "tl": "inhaler", "en": "inhaler"},
+    {"no": "blodsukkermåler", "tl": "blood sugar meter", "en": "blood sugar meter"},
+    {"no": "antiseptisk middel", "tl": "antiseptic", "en": "antiseptic"}
+  ]
+},
+{
+  "level": 97,
+  "themes": {
+    "no": "Datamaskin og teknologi",
+    "en": "Computers and Technology",
+    "tl": "Mga Kompyuter at Teknolohiya"
+  },
+  "items": [
+    {"no": "datamaskin", "tl": "kompyuter", "en": "computer"},
+    {"no": "bærbar PC", "tl": "laptop", "en": "laptop"},
+    {"no": "nettbrett", "tl": "tablet", "en": "tablet"},
+    {"no": "smarttelefon", "tl": "smartphone", "en": "smartphone"},
+    {"no": "mus", "tl": "mouse", "en": "mouse"},
+    {"no": "tastatur", "tl": "keyboard", "en": "keyboard"},
+    {"no": "skjerm", "tl": "monitor", "en": "monitor"},
+    {"no": "skriver", "tl": "printer", "en": "printer"},
+    {"no": "harddisk", "tl": "hard drive", "en": "hard drive"},
+    {"no": "minnepinne", "tl": "USB flash drive", "en": "USB stick"},
+    {"no": "router", "tl": "router", "en": "router"},
+    {"no": "modem", "tl": "modem", "en": "modem"},
+    {"no": "kamera", "tl": "kamera", "en": "camera"},
+    {"no": "mikrofon", "tl": "microphone", "en": "microphone"},
+    {"no": "høyttaler", "tl": "speaker", "en": "speaker"}
+  ]
+},
+{
+  "level": 98,
+  "themes": {
+    "no": "Kjøkken og matlaging",
+    "en": "Kitchen and Cooking",
+    "tl": "Kusina at Pagluluto"
+  },
+  "items": [
+    {"no": "kjøkken", "tl": "kusina", "en": "kitchen"},
+    {"no": "komfyr", "tl": "stove", "en": "stove"},
+    {"no": "ovn", "tl": "hurno", "en": "oven"},
+    {"no": "gryte", "tl": "kaldero", "en": "pot"},
+    {"no": "panne", "tl": "kawali", "en": "pan"},
+    {"no": "sleiv", "tl": "sandok", "en": "ladle"},
+    {"no": "visp", "tl": "panghalo", "en": "whisk"},
+    {"no": "rivjern", "tl": "pangkayod", "en": "grater"},
+    {"no": "skjærebrett", "tl": "cutting board", "en": "cutting board"},
+    {"no": "kniv", "tl": "kutsilyo", "en": "knife"},
+    {"no": "gaffel", "tl": "tinidor", "en": "fork"},
+    {"no": "skje", "tl": "kutsara", "en": "spoon"},
+    {"no": "tallerken", "tl": "pinggan", "en": "plate"},
+    {"no": "glass", "tl": "baso", "en": "glass"},
+    {"no": "kopp", "tl": "tasâ", "en": "cup"}
+  ]
+},
+{
+  "level": 99,
+  "themes": {
+    "no": "Musikkinstrumenter",
+    "en": "Musical Instruments",
+    "tl": "Mga Instrumentong Pangmusika"
+  },
+  "items": [
+    {"no": "gitar", "tl": "gitara", "en": "guitar"},
+    {"no": "piano", "tl": "piyano", "en": "piano"},
+    {"no": "fiolin", "tl": "biyolin", "en": "violin"},
+    {"no": "tromme", "tl": "tambol", "en": "drum"},
+    {"no": "fløyte", "tl": "plauta", "en": "flute"},
+    {"no": "saksofon", "tl": "saksofon", "en": "saxophone"},
+    {"no": "trompet", "tl": "trompeta", "en": "trumpet"},
+    {"no": "harmonika", "tl": "akordyon", "en": "accordion"},
+    {"no": "ukulele", "tl": "ukulele", "en": "ukulele"},
+    {"no": "bass", "tl": "baho", "en": "bass"},
+    {"no": "orgel", "tl": "organo", "en": "organ"},
+    {"no": "harpe", "tl": "arpa", "en": "harp"},
+    {"no": "tamburin", "tl": "tamburin", "en": "tambourine"},
+    {"no": "kastanjetter", "tl": "kastanyetas", "en": "castanets"},
+    {"no": "banjo", "tl": "banjo", "en": "banjo"}
+  ]
+},
+{
+  "level": 100,
+  "themes": {
+    "no": "Vitenskap og romfart",
+    "en": "Science and Space",
+    "tl": "Agham at Kalawakan"
+  },
+  "items": [
+    {"no": "vitenskap", "tl": "agham", "en": "science"},
+    {"no": "fysikk", "tl": "pisika", "en": "physics"},
+    {"no": "kjemi", "tl": "kemistri", "en": "chemistry"},
+    {"no": "biologi", "tl": "biyolohiya", "en": "biology"},
+    {"no": "astronomi", "tl": "astronomiya", "en": "astronomy"},
+    {"no": "romfart", "tl": "paglalakbay sa kalawakan", "en": "space travel"},
+    {"no": "rakett", "tl": "raketa", "en": "rocket"},
+    {"no": "satellitt", "tl": "satelayt", "en": "satellite"},
+    {"no": "planet", "tl": "planeta", "en": "planet"},
+    {"no": "stjerne", "tl": "bituin", "en": "star"},
+    {"no": "galakse", "tl": "kalawakan", "en": "galaxy"},
+    {"no": "måne", "tl": "buwan", "en": "moon"},
+    {"no": "sol", "tl": "araw", "en": "sun"},
+    {"no": "teleskop", "tl": "teleskopyo", "en": "telescope"},
+    {"no": "mikroskop", "tl": "mikroskopyo", "en": "microscope"}
+  ]
+}
+]
