@@ -6,57 +6,52 @@
   <title>Språkquiz</title>
   <style>
     :root{
-      --bg:#1a1a1a; --bg2:#222; --panel:#2c2c2c; --panel2:#333; --text:#fff; --muted:#bbb;
-      --btn:#f0f0f0; --ok:#2ecc71; --warn:#f1c40f; --bad:#e74c3c; --cyan:#28d7d7;
+      --bg:#1a1a1a; --bg2:#222; --panel:#2c2c2c; --text:#fff; --muted:#bbb;
+      --btn:#f0f0f0; --ok:#2ecc71; --warn:#f1c40f; --bad:#e74c3c;
     }
     *{box-sizing:border-box}
     html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
-    a{color:#7de0ff}
     .app{min-height:100dvh;display:flex;flex-direction:column}
-    header{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.75rem 1rem;background:var(--bg2);position:sticky;top:0;z-index:10}
-    header .row{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
-    header .title{font-weight:800}
-    main{flex:1;display:flex;justify-content:center;align-items:center;padding:1rem}
-    .card{width:min(1100px,100%);background:var(--panel);border-radius:16px;padding:1rem;box-shadow:0 8px 28px rgba(0,0,0,.3)}
-    .center{display:flex;flex-direction:column;align-items:center;text-align:center}
-    .row{display:flex;gap:1rem;flex-wrap:wrap}
-    .col{flex:1 1 280px}
-    .btn{appearance:none;border:0;border-radius:12px;background:var(--btn);color:#000;padding:.8rem 1rem;font-weight:700;cursor:pointer}
-    .btn.block{width:100%}
+    header{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.65rem .9rem;background:var(--bg2);position:sticky;top:0;z-index:10}
+    header .left{display:flex;align-items:center;gap:.6rem}
+    header .right{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+    .title{font-weight:800}
+    .pill{background:#555;color:#fff;padding:.25rem .6rem;border-radius:999px;font-size:.85rem}
+    .btn{appearance:none;border:0;border-radius:12px;background:var(--btn);color:#000;padding:.7rem 1rem;font-weight:700;cursor:pointer}
     .btn.ghost{background:transparent;border:1px solid #666;color:#fff}
     .btn.ok{background:var(--ok);color:#000}
-    .btn.bad{background:var(--bad);color:#fff}
     .btn.warn{background:var(--warn);color:#000}
-    .pill{background:#555;color:#fff;padding:.2rem .55rem;border-radius:999px;font-size:.85rem}
-    input,select{width:100%;padding:.7rem .9rem;border-radius:10px;border:1px solid #555;background:#1e1e1e;color:#fff;font-size:1rem}
-    label{display:block;margin:.4rem 0 .25rem}
-    hr{border:0;border-top:1px solid #444;margin:1rem 0}
-    .muted{color:var(--muted)}
+    .btn.bad{background:var(--bad);color:#fff}
+    select,input{width:100%;padding:.7rem .9rem;border-radius:10px;border:1px solid #555;background:#1e1e1e;color:#fff;font-size:1rem}
+    .card{width:min(1100px,100%);background:var(--panel);border-radius:16px;padding:1rem;box-shadow:0 8px 28px rgba(0,0,0,.3)}
+    .row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    .col{flex:1 1 280px}
+    main{flex:1;display:flex;justify-content:center;align-items:center;padding:1rem}
     .levels{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.6rem}
-    .level{display:flex;flex-direction:column;gap:.25rem;align-items:center;justify-content:center;padding:.6rem;border-radius:12px;background:#f0f0f0;color:#000;text-align:center;font-weight:700;min-height:82px;cursor:pointer;user-select:none}
-    .level.locked{filter:grayscale(1) contrast(.8);opacity:.55;cursor:not-allowed}
+    .level{display:flex;flex-direction:column;gap:.25rem;align-items:center;justify-content:center;padding:.6rem;border-radius:12px;background:#f0f0f0;color:#000;text-align:center;font-weight:700;min-height:82px;cursor:pointer}
+    .muted{color:var(--muted)}
+    .hidden{display:none !important}
     table{width:100%;border-collapse:collapse}
     th,td{border-bottom:1px solid #444;padding:.45rem;text-align:left}
     th{background:#3a3a3a}
-    .hidden{display:none !important}
-    @media (max-width: 960px){.layout{display:flex;flex-direction:column;gap:1rem}}
+
     /* Modal */
-    .modalBackdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:1rem;z-index:1000;}
-    .modalCard{background:#2c2c2c;border-radius:14px;width:min(640px,100%);max-height:80dvh;overflow:auto;box-shadow:0 10px 30px rgba(0,0,0,.4);}
-    .modalHeader{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;border-bottom:1px solid #444;position:sticky;top:0;background:#2c2c2c;z-index:1;}
-    .modalBody{padding:.8rem 1rem 1rem;}
-    .modalClose{appearance:none;border:0;background:#444;color:#fff;border-radius:10px;padding:.35rem .6rem;cursor:pointer;}
-    .modalSmall{font-size:.95rem;color:var(--muted);}
+    .modalBackdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:1rem;z-index:1000}
+    .modalCard{background:#2c2c2c;border-radius:14px;width:min(640px,100%);max-height:80dvh;overflow:auto;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+    .modalHeader{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;border-bottom:1px solid #444;position:sticky;top:0;background:#2c2c2c;z-index:1}
+    .modalBody{padding:.8rem 1rem 1rem}
+    .modalClose{appearance:none;border:0;background:#444;color:#fff;border-radius:10px;padding:.35rem .6rem;cursor:pointer}
   </style>
 </head>
 <body>
 <div class="app">
   <header>
-    <div class="row">
+    <div class="left">
+      <button id="btnBackTop" class="btn ghost" style="padding:.45rem .7rem;border-radius:10px">⬅</button>
       <div class="title">🌍 <span id="appTitle">Språkquiz</span></div>
       <span class="pill" id="signedInAs">Gjest</span>
     </div>
-    <div class="row">
+    <div class="right">
       <select id="uiLangSel" aria-label="UI language">
         <option value="no">Norsk</option>
         <option value="en">English</option>
@@ -69,119 +64,98 @@
   <main>
     <!-- Login -->
     <div class="card" id="screenLogin">
-      <div class="center">
-        <h1 id="loginTitle">Logg inn</h1>
-        <div class="row" style="width:100%">
-          <div class="col">
-            <label data-t="username">Brukernavn</label>
-            <input id="liUser" autocomplete="username"/>
-          </div>
-          <div class="col">
-            <label data-t="password">Passord</label>
-            <input id="liPass" type="password" autocomplete="current-password"/>
-          </div>
+      <h1 id="loginTitle">Logg inn</h1>
+      <div class="row">
+        <div class="col">
+          <label data-t="username">Brukernavn</label>
+          <input id="liUser" autocomplete="username"/>
         </div>
-        <div class="row" style="margin-top:.5rem">
-          <button class="btn ok" id="doLogin">✅ <span data-t="login">Logg inn</span></button>
-          <button class="btn" id="toRegister">🆕 <span data-t="register">Registrer</span></button>
-          <button class="btn ghost" id="asGuest">👤 <span data-t="guest">Gjest</span></button>
+        <div class="col">
+          <label data-t="password">Passord</label>
+          <input id="liPass" type="password" autocomplete="current-password"/>
         </div>
+      </div>
+      <div class="row" style="margin-top:.6rem">
+        <button class="btn ok" id="doLogin">✅ <span data-t="login">Logg inn</span></button>
+        <button class="btn" id="toRegister">🆕 <span data-t="register">Registrer</span></button>
+        <button class="btn ghost" id="asGuest">👤 <span data-t="guest">Gjest</span></button>
       </div>
     </div>
 
     <!-- Register -->
     <div class="card hidden" id="screenRegister">
-      <div class="center">
-        <h1 data-t="register_title">Registrer</h1>
-        <div class="row" style="width:100%">
-          <div class="col">
-            <label data-t="username">Brukernavn</label>
-            <input id="rgUser" autocomplete="username"/>
-          </div>
-          <div class="col">
-            <label data-t="password">Passord</label>
-            <input id="rgPass" type="password" autocomplete="new-password"/>
-          </div>
+      <h1 data-t="register_title">Registrer</h1>
+      <div class="row">
+        <div class="col">
+          <label data-t="username">Brukernavn</label>
+          <input id="rgUser" autocomplete="username"/>
         </div>
-        <div class="row" style="margin-top:.5rem">
-          <button class="btn ok" id="doRegister">🆕 <span data-t="register">Registrer</span></button>
-          <button class="btn ghost" id="backToLogin">⬅ <span data-t="back">Tilbake</span></button>
+        <div class="col">
+          <label data-t="password">Passord</label>
+          <input id="rgPass" type="password" autocomplete="new-password"/>
         </div>
+      </div>
+      <div class="row" style="margin-top:.6rem">
+        <button class="btn ok" id="doRegister">🆕 <span data-t="register">Registrer</span></button>
+        <button class="btn ghost" id="backToLogin">⬅ <span data-t="back">Tilbake</span></button>
       </div>
     </div>
 
     <!-- Hjem -->
     <div class="card hidden" id="screenHome">
-      <div class="center">
-        <h1>🌍 <span data-t="app_title">Språkquiz</span></h1>
-        <div class="row">
-          <button class="btn" id="toLevels">🎯 <span data-t="levels">Nivåer</span></button>
-          <button class="btn ghost" id="toSettings">⚙️ <span data-t="settings">Innstillinger</span></button>
-          <button class="btn ghost" id="toHelp">❓ <span data-t="help">Hjelp</span></button>
-        </div>
+      <h1>🌍 <span data-t="app_title">Språkquiz</span></h1>
+      <div class="row">
+        <button class="btn" id="toLevels">🎯 <span data-t="levels">Nivåer</span></button>
+        <button class="btn ghost" id="toSettings">⚙️ <span data-t="settings">Innstillinger</span></button>
+        <button class="btn ghost" id="toHelp">❓ <span data-t="help">Hjelp</span></button>
       </div>
     </div>
 
     <!-- Velg modus -->
     <div class="card hidden" id="screenPickMode">
-      <div class="center">
-        <h2 data-t="choose_mode">Velg modus</h2>
-        <div class="row">
-          <button class="btn" id="btnModePractice">🧠 <span data-t="practice">Øv</span></button>
-          <button class="btn" id="btnModeTest">🎯 <span data-t="test">Test</span></button>
-          <button class="btn ghost" id="backToHome">⬅ <span data-t="back">Tilbake</span></button>
-        </div>
+      <h2 data-t="choose_mode">Velg modus</h2>
+      <div class="row">
+        <button class="btn" id="btnModePractice">🧠 <span data-t="practice">Øv</span></button>
+        <button class="btn" id="btnModeTest">🎯 <span data-t="test">Test</span></button>
       </div>
     </div>
 
     <!-- Nivåvalg -->
     <div class="card hidden" id="screenLevels">
-      <div class="center">
-        <h2 id="levelsTitle">Velg nivå</h2>
-        <div class="levels" id="levelsGrid"></div>
-        <div class="row" style="margin-top:1rem">
-          <button class="btn ghost" id="levelsBack">⬅ <span data-t="back">Tilbake</span></button>
-        </div>
-      </div>
+      <h2 id="levelsTitle">Velg nivå</h2>
+      <div class="levels" id="levelsGrid"></div>
     </div>
 
     <!-- Quiz -->
     <div class="card hidden" id="screenQuiz">
-      <div class="center" style="align-items:stretch">
-        <h3 id="quizTitle"></h3>
-        <div class="row" style="align-items:center;justify-content:space-between">
-          <div class="pill" id="dirText"></div>
-          <div class="row">
-            <div id="timerWrap" class="pill hidden">⏳ <span data-t="timer_left">Tid igjen</span>: <span id="timeLeft">15:00</span></div>
-            <div id="progressPill" class="pill">0% riktig</div>
-          </div>
+      <h3 id="quizTitle"></h3>
+      <div class="row" style="justify-content:space-between;align-items:center;gap:.6rem">
+        <span class="pill" id="dirText"></span>
+        <div class="row" style="gap:.5rem">
+          <button class="btn ghost hidden" id="btnShowAnswers">👁 <span data-t="show_answer">Vis fasit</span></button>
+          <span class="pill hidden" id="timerWrap">⏳ <span data-t="timer_left">Tid igjen</span>: <span id="timeLeft">15:00</span></span>
+          <span class="pill" id="progressPill">0% riktig</span>
         </div>
-
-        <div id="prompt" style="font-size:1.25rem;margin:.75rem 0 .35rem"></div>
-        <input id="answer" placeholder="Skriv svaret her"/>
-        <div id="resultMsg" style="margin:.4rem 0 .2rem"></div>
-        <div id="hintMsg" class="muted" style="min-height:1.2em"></div>
-
-        <div class="row" style="margin-top:.5rem">
-          <button class="btn" id="btnCheck"><span data-t="check_answer">Sjekk svar</span></button>
-          <button class="btn" id="btnNext" disabled><span data-t="next_question">Neste spørsmål</span></button>
-        </div>
-        <div class="row" style="margin-top:.5rem">
-          <button class="btn ghost" id="btnRestart"><span data-t="restart_level">Start nivået på nytt</span></button>
-          <button class="btn ghost" id="btnBackToLevels"><span data-t="pick_new_level">Velg nytt nivå</span></button>
-        </div>
-        <div class="row" style="margin-top:.75rem">
-          <button class="btn ghost" id="btnShowAnswers">👁 <span data-t="show_answer">Vis fasit</span></button>
-        </div>
-        <div id="finalMsg" style="margin-top:.75rem;font-weight:700"></div>
       </div>
+
+      <div id="prompt" style="font-size:1.25rem;margin:.6rem 0 .35rem"></div>
+      <input id="answer" placeholder="Skriv svaret her"/>
+      <div id="resultMsg" style="margin:.4rem 0 .2rem"></div>
+      <div id="hintMsg" class="muted" style="min-height:1.2em"></div>
+
+      <div class="row" style="margin-top:.5rem">
+        <button class="btn" id="btnCheck"><span data-t="check_answer">Sjekk svar</span></button>
+        <button class="btn" id="btnNext" disabled><span data-t="next_question">Neste spørsmål</span></button>
+        <button class="btn ghost" id="btnRestart"><span data-t="restart_level">Start nivået på nytt</span></button>
+        <button class="btn ghost" id="btnBackToLevels"><span data-t="pick_new_level">Velg nytt nivå</span></button>
+      </div>
+      <div id="finalMsg" style="margin-top:.75rem;font-weight:700"></div>
     </div>
 
     <!-- Hjelp -->
     <div class="card hidden" id="screenHelp">
       <h2>❓ <span data-t="help">Hjelp</span></h2>
       <pre id="helpText" style="white-space:pre-wrap"></pre>
-      <button class="btn ghost" id="helpBack">⬅ <span data-t="back">Tilbake</span></button>
     </div>
 
     <!-- Innstillinger -->
@@ -203,11 +177,10 @@
       </div>
       <div class="row" style="margin-top:.5rem">
         <button class="btn ok" id="applySettings"><span data-t="apply">Bruk</span></button>
-        <button class="btn ghost" id="settingsBack">⬅ <span data-t="back">Tilbake</span></button>
       </div>
     </div>
 
-    <!-- Modal (FASIT) -->
+    <!-- Modal (Fasit) -->
     <div id="answersModal" class="modalBackdrop hidden" aria-hidden="true">
       <div class="modalCard" role="dialog" aria-modal="true" aria-labelledby="answersTitle">
         <div class="modalHeader">
@@ -215,11 +188,9 @@
           <button class="modalClose" id="answersClose" aria-label="Lukk">✕</button>
         </div>
         <div class="modalBody">
-          <div class="modalSmall" id="answersLangLine"></div>
+          <div class="muted" id="answersLangLine"></div>
           <table style="margin-top:.5rem">
-            <thead>
-            <tr><th id="thSrc">Kilde</th><th id="thDst">Mål</th></tr>
-            </thead>
+            <thead><tr><th id="thSrc">Kilde</th><th id="thDst">Mål</th></tr></thead>
             <tbody id="answersTbody"></tbody>
           </table>
         </div>
@@ -230,21 +201,17 @@
 </div>
 
 <script>
-/* ====== Konstanter / i18n ====== */
+/* ===== i18n / konstanter ===== */
 const TEST_TID_SEK = 900;
 const LANG_CODES = ["no","en","tl"];
-const LANG_NAMES = {
-  no:{no:"norsk",en:"engelsk",tl:"tagalog"},
-  en:{no:"Norwegian",en:"English",tl:"Tagalog"},
-  tl:{no:"Norwegian",en:"Ingles",tl:"Tagalog"}
-};
+const LANG_NAMES = {no:{no:"norsk",en:"engelsk",tl:"tagalog"},en:{no:"Norwegian",en:"English",tl:"Tagalog"},tl:{no:"Norwegian",en:"Ingles",tl:"Tagalog"}};
 const T={
   no:{app_title:"Språkquiz",logout:"Logg ut / bytt",username:"Brukernavn",password:"Passord",login:"Logg inn",register:"Registrer",guest:"Gjest",register_title:"Registrer",levels:"Nivåer",settings:"Innstillinger",help:"Hjelp",back:"Tilbake",choose_mode:"Velg modus",practice:"Øv",test:"Test",choose_level:"Velg nivå",choose_level_practice:"Velg nivå – Øv",choose_level_test:"Velg nivå – Test",check_answer:"Sjekk svar",next_question:"Neste spørsmål",restart_level:"Start nivået på nytt",pick_new_level:"Velg nytt nivå",level_finished:"Nivå ferdig!",timer_left:"Tid igjen",result:o=>`Resultat nivå ${o.level}: ${o.score}/${o.total} riktige`,pct_correct:"% riktig",show_answer:"Vis fasit",hide_answer:"Skjul fasit",src:"Kilde",dst:"Mål",i_know:"Jeg kan",i_want_to_learn:"Jeg vil lære",language:"Grensesnittspråk",settings_title:"Innstillinger",apply:"Bruk",wrong_try_again:"❌ Feil. Prøv igjen!",wrong_again_reveal:ans=>`❌ Feil igjen. Riktig: ${ans}`,right:"✅ Riktig!",wrong:"❌ Feil.",help_text:`• Velg «Nivåer» → «Øv» eller «Test».\n• Øv: hjelpemidler (ordbok, fasit, hint). Test: ingen hjelp + nedtelling.\n• I Test spørres hvert ord begge veier (30 spørsmål = 2×15).\n• Full pott i Test låser opp neste nivå.\n• ENTER sjekker svaret; ENTER igjen går videre.`,enter_user_pass:"Skriv inn brukernavn og passord.",bad_creds:"Feil brukernavn eller passord.",user_exists:"Brukernavn er allerede i bruk.",reg_success:"Bruker opprettet. Du kan nå logge inn.",guest_info:"Du er gjest. Fremdrift lagres ikke.",error_same_lang:"Kilde- og mål-språk kan ikke være like.",settings_updated:"Oppdatert"},
   en:{app_title:"Language Quiz",logout:"Log out / switch",username:"Username",password:"Password",login:"Log in",register:"Register",guest:"Guest",register_title:"Register",levels:"Levels",settings:"Settings",help:"Help",back:"Back",choose_mode:"Choose mode",practice:"Practice",test:"Test",choose_level:"Choose level",choose_level_practice:"Choose Level – Practice",choose_level_test:"Choose Level – Test",check_answer:"Check answer",next_question:"Next question",restart_level:"Restart level",pick_new_level:"Pick another level",level_finished:"Level finished!",timer_left:"Time left",result:o=>`Result Level ${o.level}: ${o.score}/${o.total} correct`,pct_correct:"% correct",show_answer:"Show answers",hide_answer:"Hide answers",src:"Source",dst:"Target",i_know:"I know",i_want_to_learn:"I want to learn",language:"Interface language",settings_title:"Settings",apply:"Apply",wrong_try_again:"❌ Wrong. Try again!",wrong_again_reveal:ans=>`❌ Still wrong. Correct: ${ans}`,right:"✅ Correct!",wrong:"❌ Wrong.",help_text:`• Choose “Levels” → “Practice” or “Test”.\n• Practice: helpers (word list, answers, hints). Test: no help + countdown.\n• In Test each word is asked both directions (30 questions = 2×15).\n• A perfect Test unlocks the next level.\n• ENTER checks the answer; press ENTER again to go next.`,enter_user_pass:"Enter username and password.",bad_creds:"Wrong username or password.",user_exists:"Username is already taken.",reg_success:"User created. You can log in now.",guest_info:"You are a guest. Progress is not saved.",error_same_lang:"Source and target can’t be the same.",settings_updated:"Updated"},
   tl:{app_title:"Pagsusulit sa Wika",logout:"Mag-sign out / palitan",username:"Username",password:"Password",login:"Mag-sign in",register:"Magrehistro",guest:"Bisita",register_title:"Magrehistro",levels:"Mga Antas",settings:"Mga Setting",help:"Tulong",back:"Bumalik",choose_mode:"Pumili ng mode",practice:"Ehersisyo",test:"Pagsusulit",choose_level:"Piliin ang antas",choose_level_practice:"Piliin ang Antas – Ehersisyo",choose_level_test:"Piliin ang Antas – Pagsusulit",check_answer:"Suriin ang sagot",next_question:"Susunod na tanong",restart_level:"Ulitin ang antas",pick_new_level:"Pumili ng ibang antas",level_finished:"Tapos na ang antas!",timer_left:"Natitirang oras",result:o=>`Resulta Antas ${o.level}: ${o.score}/${o.total} tama`,pct_correct:"% tama",show_answer:"Ipakita ang mga sagot",hide_answer:"Itago ang mga sagot",src:"Pinagmulan",dst:"Patungo",i_know:"Alam ko",i_want_to_learn:"Nais kong matutunan",language:"Wika ng UI",settings_title:"Mga Setting",apply:"Ilapat",wrong_try_again:"❌ Mali. Subukan muli!",wrong_again_reveal:ans=>`❌ Mali pa rin. Tama: ${ans}`,right:"✅ Tama!",wrong:"❌ Mali.",help_text:`• Piliin ang “Mga Antas” → “Ehersisyo” o “Pagsusulit”.\n• Ehersisyo: may tulong (talaan ng salita, sagot, pahiwatig). Pagsusulit: walang tulong + countdown.\n• Sa Pagsusulit, parehong direksyon ang tanong sa bawat salita (30 tanong = 2×15).\n• Perpektong iskor sa Pagsusulit ay magbubukas ng susunod na antas.\n• ENTER para suriin; ENTER muli para magpatuloy.`,enter_user_pass:"Ilagay ang username at password.",bad_creds:"Maling username o password.",user_exists:"Nagamit na ang username.",reg_success:"Nagawa ang user. Maaari ka nang mag-sign in.",guest_info:"Bisita ka. Hindi ise-save ang progreso.",error_same_lang:"Hindi maaaring magkapareho ang pinagmulan at patungo.",settings_updated:"Na-update"}
 };
 
-/* ====== Persistens (localStorage) ====== */
+/* ===== Persistens ===== */
 const store={
   get settings(){return JSON.parse(localStorage.getItem('sq_settings')||'{}')},
   set settings(v){localStorage.setItem('sq_settings',JSON.stringify(v))},
@@ -254,141 +221,162 @@ const store={
   saveResults(user,data){localStorage.setItem('sq_results_'+user,JSON.stringify(data))}
 };
 
-/* ====== App state ====== */
-let UI_LANG='no';
-let CURRENT_USER=null;
-let LEVELS=[];
-let MODE='ov';
-let CURRENT_LEVEL=1;
-let ORD=[];
-let QLIST=[];
-let qi=0,right=0,wrong=0;
-let wrongCounter={}, rightCounter={};
+/* ===== App state ===== */
+let UI_LANG='no', CURRENT_USER=null;
+let LEVELS=[], MODE='ov', CURRENT_LEVEL=1;
+let ORD=[], QLIST=[], qi=0, right=0, wrong=0;
 let timer={active:false,sec:TEST_TID_SEK};
+let currentScreen='screenLogin', navStack=[];
 
-/* ====== Helpers ====== */
+/* ===== Utils ===== */
 const $=s=>document.querySelector(s); const $$=s=>Array.from(document.querySelectorAll(s));
-function show(id){['screenLogin','screenRegister','screenHome','screenPickMode','screenLevels','screenQuiz','screenHelp','screenSettings'].forEach(x=>$('#'+x).classList.add('hidden')); $('#'+id).classList.remove('hidden');}
-function tr(k, arg){const t=T[UI_LANG][k]; return typeof t==='function'? t(arg): (t||k);}
-function applyI18n(){ $('#appTitle').textContent=tr('app_title'); $('[data-t="logout"]').textContent=tr('logout'); $('#loginTitle').textContent=tr('login'); $$('#screenLogin [data-t], #screenHome [data-t], #screenPickMode [data-t], #screenLevels [data-t], #screenHelp [data-t], #screenSettings [data-t], #screenQuiz [data-t]').forEach(el=>{const k=el.getAttribute('data-t'); const val=T[UI_LANG][k]; if(typeof val==='string') el.textContent=val;}); $('#helpText').textContent=tr('help_text'); }
-function persistUiLang(){const s=store.settings; s.lang=UI_LANG; if(!s.known) s.known='no'; if(!s.learn) s.learn='tl'; store.settings=s;}
+function tr(k,arg){const t=T[UI_LANG][k]; return typeof t==='function'? t(arg):(t||k);}
+function applyI18n(){ $('#appTitle').textContent=tr('app_title'); $('[data-t="logout"]').textContent=tr('logout'); $('#loginTitle').textContent=tr('login');
+  $$('#screenLogin [data-t], #screenHome [data-t], #screenPickMode [data-t], #screenLevels [data-t], #screenHelp [data-t], #screenSettings [data-t], #screenQuiz [data-t]').forEach(el=>{const k=el.getAttribute('data-t'); const v=T[UI_LANG][k]; if(typeof v==='string') el.textContent=v;});
+  $('#helpText').textContent=tr('help_text');
+}
+function setSignedInLabel(){ $('#signedInAs').textContent = CURRENT_USER? `Innlogget: ${CURRENT_USER}` : 'Gjest'; }
+function show(id,{push=true}={}){
+  if(push && currentScreen && currentScreen!==id){ navStack.push(currentScreen); }
+  ['screenLogin','screenRegister','screenHome','screenPickMode','screenLevels','screenQuiz','screenHelp','screenSettings'].forEach(x=>$('#'+x).classList.add('hidden'));
+  $('#'+id).classList.remove('hidden'); currentScreen=id; updateBackState();
+}
+function updateBackState(){ $('#btnBackTop').disabled = navStack.length===0; }
+function goBack(){
+  // Hvis fasit-modal er åpen: lukk den først
+  if(!$('#answersModal').classList.contains('hidden')){ closeAnswersModal(); return; }
+  if(navStack.length===0) return;
+  const prev = navStack.pop();
+  show(prev,{push:false});
+}
 function percentCorrect(){const total=Math.max(1,right+wrong); return (right/total)*100;}
-function updateProgress(){ $('#progressPill').textContent = `${Math.round(percentCorrect())}${tr('pct_correct')}`; }
+function updateProgress(){ $('#progressPill').textContent = `${Math.round(percentCorrect())}${tr('pct_correct')}`;}
 function colorForScore(sc){const total=30; const p=Math.max(0,Math.min(100,(sc/total)*100)); const r=Math.round(255*(1-p/100)), g=Math.round(255*(p/100)); return `rgb(${r},${g},0)`;}
 async function sha256(str){const enc=new TextEncoder().encode(str); const buf=await crypto.subtle.digest('SHA-256',enc); return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');}
 
-/* ====== Data (nivåer) ====== */
+/* ===== Nivå-data ===== */
 async function loadLevels(){
   const res=await fetch('./nivaaer_2.json',{cache:'no-store'});
   if(!res.ok){alert('Fant ikke "nivaaer_2.json" i samme mappe som index.html'); return;}
   const raw=await res.json();
-  LEVELS = raw.map(n=>({themes:n.themes||{}, items:(n.items||[]).slice(0,15).map(it=>({no:(it.no||'').trim(), en:(it.en||'').trim(), tl:(it.tl||'').trim()}))})).filter(n=>n.items.length===15);
+  LEVELS = raw.map(n=>({themes:n.themes||{}, items:(n.items||[]).slice(0,15).map(it=>({no:(it.no||'').trim(),en:(it.en||'').trim(),tl:(it.tl||'').trim()}))})).filter(n=>n.items.length===15);
 }
 
-/* ====== Brukere ====== */
-function setSignedInLabel(){ $('#signedInAs').textContent = CURRENT_USER? `Innlogget: ${CURRENT_USER}` : 'Gjest'; }
-async function doLogin(){const u=$('#liUser').value.trim(); const p=$('#liPass').value; if(!u||!p){alert(tr('enter_user_pass'));return;} const db=store.users(); if(!db.users[u]){alert(tr('bad_creds'));return;} const h=await sha256(p); if(db.users[u].password_hash!==h){alert(tr('bad_creds'));return;} CURRENT_USER=u; setSignedInLabel(); show('screenHome');}
-async function doRegister(){const u=$('#rgUser').value.trim(); const p=$('#rgPass').value; if(!u||!p){alert(tr('enter_user_pass'));return;} const db=store.users(); if(db.users[u]){alert(tr('user_exists'));return;} db.users[u]={password_hash:await sha256(p), created:new Date().toISOString().slice(0,16).replace('T',' ')}; store.saveUsers(db); alert(tr('reg_success')); show('screenLogin');}
+/* ===== Brukere ===== */
+async function doLogin(){const u=$('#liUser').value.trim(); const p=$('#liPass').value;
+  if(!u||!p){alert(tr('enter_user_pass'));return;}
+  const db=store.users(); if(!db.users[u]){alert(tr('bad_creds'));return;}
+  const h=await sha256(p); if(db.users[u].password_hash!==h){alert(tr('bad_creds'));return;}
+  CURRENT_USER=u; setSignedInLabel(); show('screenHome');
+}
+async function doRegister(){const u=$('#rgUser').value.trim(); const p=$('#rgPass').value;
+  if(!u||!p){alert(tr('enter_user_pass'));return;}
+  const db=store.users(); if(db.users[u]){alert(tr('user_exists'));return;}
+  db.users[u]={password_hash:await sha256(p), created:new Date().toISOString().slice(0,16).replace('T',' ')}; store.saveUsers(db);
+  alert(tr('reg_success')); show('screenLogin');
+}
 function asGuest(){CURRENT_USER=null; setSignedInLabel(); alert(tr('guest_info')); show('screenHome');}
-function logout(){CURRENT_USER=null; setSignedInLabel(); show('screenLogin');}
+function logout(){CURRENT_USER=null; setSignedInLabel(); show('screenLogin'); navStack=[]; updateBackState();}
 
-/* ====== Innstillinger ====== */
-function loadSettingsUI(){const s=store.settings||{}; UI_LANG=s.lang||'no'; $('#uiLangSel').value=UI_LANG; applyI18n();
+/* ===== Innstillinger ===== */
+function loadSettingsUI(){
+  const s=store.settings||{}; UI_LANG=s.lang||'no'; $('#uiLangSel').value=UI_LANG; applyI18n();
   const selUi=$('#selUiLang'), selK=$('#selKnown'), selL=$('#selLearn'); selUi.innerHTML=''; selK.innerHTML=''; selL.innerHTML='';
-  for(const code of LANG_CODES){ selUi.add(new Option(code,code, code===UI_LANG, code===UI_LANG));
+  for(const code of ["no","en","tl"]){
+    selUi.add(new Option(code,code, code===UI_LANG, code===UI_LANG));
     selK.add(new Option(LANG_NAMES[UI_LANG][code],code,false,(s.known||'no')===code));
-    selL.add(new Option(LANG_NAMES[UI_LANG][code],code,false,(s.learn||'tl')===code)); } }
-function applySettings(){const s=store.settings||{}; s.lang=$('#selUiLang').value; s.known=$('#selKnown').value; s.learn=$('#selLearn').value; if(s.known===s.learn){alert(tr('error_same_lang'));return;} store.settings=s; UI_LANG=s.lang; $('#uiLangSel').value=UI_LANG; applyI18n(); alert(tr('settings_updated'));}
+    selL.add(new Option(LANG_NAMES[UI_LANG][code],code,false,(s.learn||'tl')===code));
+  }
+}
+function applySettings(){
+  const s=store.settings||{}; s.lang=$('#selUiLang').value; s.known=$('#selKnown').value; s.learn=$('#selLearn').value;
+  if(s.known===s.learn){alert(tr('error_same_lang'));return;}
+  store.settings=s; UI_LANG=s.lang; $('#uiLangSel').value=UI_LANG; applyI18n(); alert(tr('settings_updated'));
+}
 
-/* ====== Nivåvalg ====== */
+/* ===== Nivåvalg ===== */
 function openPickMode(){ show('screenPickMode'); }
 function openLevels(){
   const title = MODE==='ov'? tr('choose_level_practice'): tr('choose_level_test');
   $('#levelsTitle').textContent=title; const grid=$('#levelsGrid'); grid.innerHTML='';
   const res = CURRENT_USER? store.results(CURRENT_USER): {opplåst:1, nivåer:{}};
   for(let i=0;i<LEVELS.length;i++){
-    const lvl=i+1; const theme=LEVELS[i].themes[UI_LANG]||''; const sc=(res.nivåer[String(lvl)]||{}).poeng;
-    const btn=document.createElement('button'); btn.className='level';
-    btn.style.background= sc!=null? colorForScore(sc): '#f0f0f0'; btn.style.border='2px solid #0001';
-    btn.innerHTML=`${tr('level')||'Nivå'} ${lvl}${sc!=null? ` (${sc}/30)`:''}${theme? `<br><span class="muted" style="font-weight:500">${theme}</span>`:''}`;
-    btn.onclick=()=> startLevel(lvl); grid.appendChild(btn);
+    const lvl=i+1, theme=LEVELS[i].themes[UI_LANG]||'', sc=(res.nivåer[String(lvl)]||{}).poeng;
+    const b=document.createElement('button'); b.className='level';
+    b.style.background = sc!=null? colorForScore(sc): '#f0f0f0';
+    b.innerHTML=`Nivå ${lvl}${sc!=null? ` (${sc}/30)`:''}${theme? `<br><span class="muted" style="font-weight:500">${theme}</span>`:''}`;
+    b.onclick=()=> startLevel(lvl); grid.appendChild(b);
   }
   show('screenLevels');
 }
 
-/* ====== Quiz ====== */
+/* ===== Quiz ===== */
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];}return a;}
 function buildQuestions(mode){
   const s=store.settings||{known:'no',learn:'tl'}; const src=s.known||'no', dst=s.learn||'tl';
   const srcName=LANG_NAMES[UI_LANG][src], dstName=LANG_NAMES[UI_LANG][dst];
   const t=LEVELS[CURRENT_LEVEL-1].items.slice(); shuffle(t);
-  ORD=t.map(it=>({Source:it[src], Target:it[dst]}));
-  wrongCounter=Object.fromEntries(ORD.map(o=>[o.Source,0])); rightCounter=Object.fromEntries(ORD.map(o=>[o.Source,0]));
-  QLIST=[];
-  const pSrc2Dst=(T[UI_LANG].prompt_src2dst||"Hva er '{word}' på {dst}?");
-  const pDst2Src=(T[UI_LANG].prompt_dst2src||"Hva er '{word}' på {src}?");
+  ORD=t.map(it=>({Source:it[src], Target:it[dst]})); QLIST=[];
   if(mode==='ov'){
     for(const it of ORD){
-      if(Math.random()<0.5){ QLIST.push({prompt:pSrc2Dst.replace('{word}',it.Source).replace('{dst}',dstName), answers:String(it.Target).toLowerCase().split('.').map(s=>s.trim()), key:it.Source}); }
-      else{ QLIST.push({prompt:pDst2Src.replace('{word}',it.Target).replace('{src}',srcName), answers:String(it.Source).toLowerCase().split('.').map(s=>s.trim()), key:it.Source}); }
-    }
-    shuffle(QLIST);
+      if(Math.random()<0.5){ QLIST.push({prompt:`Hva er '${it.Source}' på ${dstName}?`, answers:String(it.Target).toLowerCase().split('.').map(s=>s.trim()), key:it.Source}); }
+      else{ QLIST.push({prompt:`Hva er '${it.Target}' på ${srcName}?`, answers:String(it.Source).toLowerCase().split('.').map(s=>s.trim()), key:it.Source}); }
+    } shuffle(QLIST);
   }else{
     for(const it of ORD){
-      QLIST.push({prompt:pSrc2Dst.replace('{word}',it.Source).replace('{dst}',dstName), answers:String(it.Target).toLowerCase().split('.').map(s=>s.trim()), key:it.Source});
-      QLIST.push({prompt:pDst2Src.replace('{word}',it.Target).replace('{src}',srcName), answers:String(it.Source).toLowerCase().split('.').map(s=>s.trim()), key:it.Source});
-    }
-    shuffle(QLIST);
+      QLIST.push({prompt:`Hva er '${it.Source}' på ${dstName}?`, answers:String(it.Target).toLowerCase().split('.').map(s=>s.trim()), key:it.Source});
+      QLIST.push({prompt:`Hva er '${it.Target}' på ${srcName}?`, answers:String(it.Source).toLowerCase().split('.').map(s=>s.trim()), key:it.Source});
+    } shuffle(QLIST);
   }
 }
 function startLevel(lvl){
-  CURRENT_LEVEL=lvl;
-  const s=store.settings||{known:'no',learn:'tl'}; if((s.known||'no')===(s.learn||'tl')){alert(tr('error_same_lang'));return;}
-  buildQuestions(MODE); qi=0; right=0; wrong=0;
+  CURRENT_LEVEL=lvl; const s=store.settings||{known:'no',learn:'tl'};
+  if((s.known||'no')===(s.learn||'tl')){alert(tr('error_same_lang'));return;}
+  buildQuestions(MODE); qi=0; right=0; wrong=0; updateProgress();
   $('#finalMsg').textContent=''; $('#resultMsg').textContent=''; $('#hintMsg').textContent='';
   $('#answer').value=''; $('#answer').disabled=false; $('#btnCheck').disabled=false; $('#btnNext').disabled=true;
   $('#btnRestart').disabled=(MODE==='test');
-  $('#btnShowAnswers').classList.toggle('hidden', MODE!=='ov'); // bare i Øv
-  updateProgress();
-  const total=QLIST.length; const modeTxt = MODE==='ov'? (T[UI_LANG].mode_practice||'Øv') : (T[UI_LANG].mode_test||'Test');
+  $('#btnShowAnswers').classList.toggle('hidden', MODE!=='ov'); // kun i Øv
+  const total=QLIST.length; const modeTxt = MODE==='ov'?'Øv':'Test';
   $('#quizTitle').textContent = `Språkquiz – Nivå ${CURRENT_LEVEL} (${total} spørsmål) – ${modeTxt}`;
-  const src=s.known||'no', dst=s.learn||'tl'; $('#dirText').textContent = `${LANG_NAMES[UI_LANG][src]} → ${LANG_NAMES[UI_LANG][dst]}`;
+  $('#dirText').textContent = `${LANG_NAMES[UI_LANG][s.known||'no']} → ${LANG_NAMES[UI_LANG][s.learn||'tl']}`;
   timer.active=(MODE==='test'); timer.sec=TEST_TID_SEK; $('#timerWrap').classList.toggle('hidden', MODE!=='test'); if(timer.active) tick();
   nextQuestion(); show('screenQuiz');
 }
 function nextQuestion(){
   if(qi>=QLIST.length){showResult(); return;}
-  const q=QLIST[qi];
-  $('#prompt').textContent=q.prompt; $('#answer').value=''; $('#answer').disabled=false; $('#btnCheck').disabled=false; $('#btnNext').disabled=true; $('#resultMsg').textContent=''; $('#hintMsg').textContent=''; $('#answer').focus(); q.tries=0;
+  const q=QLIST[qi]; $('#prompt').textContent=q.prompt;
+  $('#answer').value=''; $('#answer').disabled=false; $('#btnCheck').disabled=false; $('#btnNext').disabled=true;
+  $('#resultMsg').textContent=''; $('#hintMsg').textContent=''; $('#answer').focus(); q.tries=0;
 }
 function checkAnswer(){
   const q=QLIST[qi]; if($('#btnCheck').disabled) return;
   const ans=$('#answer').value.trim().toLowerCase(); q.tries=(q.tries||0)+1;
-  const correct=q.answers.includes(ans);
-  if(correct){
-    $('#resultMsg').textContent=tr('right'); $('#resultMsg').style.color='#8ef28e';
-    rightCounter[q.key]++; if(q.tries>1 && MODE==='ov'){wrongCounter[q.key]++;} right++;
-    $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
-  } else {
+  const ok=q.answers.includes(ans);
+  if(ok){
+    $('#resultMsg').textContent='✅ Riktig!'; $('#resultMsg').style.color='#8ef28e';
+    right++; $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
+  }else{
     if(MODE==='ov'){
       if(q.tries>=2){
-        $('#resultMsg').textContent=(T[UI_LANG].wrong_again_reveal? T[UI_LANG].wrong_again_reveal(q.answers.join(', ')) : `Feil igjen. Riktig: ${q.answers.join(', ')}`); $('#resultMsg').style.color='#ff6b6b';
-        wrongCounter[q.key]++; wrong++; $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
-      } else {
-        const first=(q.answers[0]||'')[0]||'?'; const hp=(T[UI_LANG].hint_prefix||"Hint: Første bokstav er '{ch}'").replace('{ch}',first);
-        $('#hintMsg').textContent=hp; $('#resultMsg').textContent=tr('wrong_try_again'); $('#resultMsg').style.color='#ff6b6b';
+        $('#resultMsg').textContent=`❌ Feil igjen. Riktig: ${q.answers.join(', ')}`; $('#resultMsg').style.color='#ff6b6b';
+        wrong++; $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
+      }else{
+        const first=(q.answers[0]||'')[0]||'?'; $('#hintMsg').textContent=`Hint: Første bokstav er '${first}'`;
+        $('#resultMsg').textContent='❌ Feil. Prøv igjen!'; $('#resultMsg').style.color='#ff6b6b';
       }
-    } else {
-      $('#resultMsg').textContent=tr('wrong'); $('#resultMsg').style.color='#ff6b6b';
-      wrongCounter[q.key]++; wrong++; $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
+    }else{
+      $('#resultMsg').textContent='❌ Feil.'; $('#resultMsg').style.color='#ff6b6b';
+      wrong++; $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
     }
   }
 }
 function showResult(){
   if(MODE==='test') timer.active=false;
-  const total=QLIST.length; const score=right;
-  $('#finalMsg').textContent=(T[UI_LANG].result? T[UI_LANG].result({level:CURRENT_LEVEL,score,total}):`Resultat nivå ${CURRENT_LEVEL}: ${score}/${total}`);
-  $('#prompt').textContent=tr('level_finished'); $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=true;
+  const total=QLIST.length, score=right;
+  $('#finalMsg').textContent=`Resultat nivå ${CURRENT_LEVEL}: ${score}/${total} riktige`;
+  $('#prompt').textContent='Nivå ferdig!';
+  $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=true;
   if(MODE==='test' && CURRENT_USER){
     const res=store.results(CURRENT_USER); const key=String(CURRENT_LEVEL); const prev=(res.nivåer[key]||{}).poeng||0;
     if(score>prev){res.nivåer[key]={poeng:score,dato:new Date().toISOString().slice(0,16).replace('T',' ')}; store.saveResults(CURRENT_USER,res);}
@@ -397,15 +385,18 @@ function showResult(){
   }
 }
 function tick(){
-  if(!timer.active) return; const m=Math.floor(timer.sec/60), s=String(timer.sec%60).padStart(2,'0'); $('#timeLeft').textContent=`${m}:${s}`;
-  if(timer.sec<=0){showResult();return;} timer.sec--; setTimeout(tick,1000);
+  if(!timer.active) return;
+  const m=Math.floor(timer.sec/60), s=String(timer.sec%60).padStart(2,'0');
+  $('#timeLeft').textContent=`${m}:${s}`;
+  if(timer.sec<=0){showResult();return;}
+  timer.sec--; setTimeout(tick,1000);
 }
 
-/* ====== Modal (fasit) ====== */
+/* ===== Fasit-modal ===== */
 function openAnswersModal(){
   const s=store.settings||{known:'no',learn:'tl'}; const src=s.known||'no', dst=s.learn||'tl';
-  $('#thSrc').textContent=`${tr('src')}: ${LANG_NAMES[UI_LANG][src]}`;
-  $('#thDst').textContent=`${tr('dst')}: ${LANG_NAMES[UI_LANG][dst]}`;
+  $('#thSrc').textContent=`Kilde: ${LANG_NAMES[UI_LANG][src]}`;
+  $('#thDst').textContent=`Mål: ${LANG_NAMES[UI_LANG][dst]}`;
   $('#answersLangLine').textContent=`${LANG_NAMES[UI_LANG][src]} → ${LANG_NAMES[UI_LANG][dst]}`;
   const tb=$('#answersTbody'); tb.innerHTML='';
   for(const it of ORD){ const trEl=document.createElement('tr'); const td1=document.createElement('td'); const td2=document.createElement('td'); td1.textContent=it.Source; td2.textContent=it.Target; trEl.append(td1,td2); tb.appendChild(trEl); }
@@ -413,19 +404,19 @@ function openAnswersModal(){
 }
 function closeAnswersModal(){ $('#answersModal').classList.add('hidden'); }
 
-/* ====== Navigasjon / events ====== */
+/* ===== Events / navigasjon ===== */
+$('#btnBackTop').onclick=goBack;
+
 $('#toRegister').onclick=()=>show('screenRegister');
 $('#backToLogin').onclick=()=>show('screenLogin');
 $('#asGuest').onclick=asGuest;
-$('#doLogin').onclick=()=>{doLogin()};
-$('#doRegister').onclick=()=>{doRegister()};
+$('#doLogin').onclick=doLogin;
+$('#doRegister').onclick=doRegister;
 $('#btnLogout').onclick=logout;
 
-$('#toLevels').onclick=()=>{openPickMode()};
-$('#backToHome').onclick=()=>show('screenHome');
+$('#toLevels').onclick=()=>openPickMode();
 $('#btnModePractice').onclick=()=>{MODE='ov'; openLevels();};
 $('#btnModeTest').onclick=()=>{MODE='test'; openLevels();};
-$('#levelsBack').onclick=()=>show('screenPickMode');
 
 $('#btnBackToLevels').onclick=()=>openLevels();
 $('#btnRestart').onclick=()=>startLevel(CURRENT_LEVEL);
@@ -436,13 +427,12 @@ $('#answersClose').onclick=closeAnswersModal;
 $('#answersModal').addEventListener('click',e=>{ if(e.target.id==='answersModal') closeAnswersModal(); });
 
 $('#toHelp').onclick=()=>{ $('#helpText').textContent=tr('help_text'); show('screenHelp'); };
-$('#helpBack').onclick=()=>show('screenHome');
 $('#toSettings').onclick=()=>{loadSettingsUI(); show('screenSettings');};
-$('#settingsBack').onclick=()=>show('screenHome');
-$('#applySettings').onclick=applySettings;
-$('#uiLangSel').onchange=(e)=>{UI_LANG=e.target.value; persistUiLang(); applyI18n();};
 
-// ENTER-håndtering i quiz
+$('#applySettings').onclick=applySettings;
+$('#uiLangSel').onchange=(e)=>{UI_LANG=e.target.value; const s=store.settings||{}; s.lang=UI_LANG; store.settings=s; applyI18n();};
+
+// ENTER i quiz
 window.addEventListener('keydown',e=>{
   if($('#screenQuiz').classList.contains('hidden')) return;
   if(e.key==='Enter'){
@@ -451,10 +441,10 @@ window.addEventListener('keydown',e=>{
   }
 });
 
-/* ====== Oppstart ====== */
+/* ===== Oppstart ===== */
 (async function init(){
   const s=store.settings||{}; UI_LANG=s.lang||'no'; $('#uiLangSel').value=UI_LANG; applyI18n(); setSignedInLabel();
-  await loadLevels(); show('screenLogin'); updateProgress();
+  await loadLevels(); show('screenLogin',{push:false}); updateBackState();
 })();
 </script>
 </body>
