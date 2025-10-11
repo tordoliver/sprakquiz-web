@@ -253,6 +253,8 @@ function percentCorrect(){const total=Math.max(1,right+wrong); return (right/tot
 function updateProgress(){ $('#progressPill').textContent = `${Math.round(percentCorrect())}${tr('pct_correct')}`;}
 function colorForScore(sc){const total=30; const p=Math.max(0,Math.min(100,(sc/total)*100)); const r=Math.round(255*(1-p/100)), g=Math.round(255*(p/100)); return `rgb(${r},${g},0)`;}
 async function sha256(str){const enc=new TextEncoder().encode(str); const buf=await crypto.subtle.digest('SHA-256',enc); return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');}
+/* Ny: normalize-hjelper for trygg matching */
+function norm(s){ return String(s||'').toLowerCase().trim(); }
 
 /* ===== Nivå-data ===== */
 async function loadLevels(){
@@ -312,23 +314,82 @@ function openLevels(){
 
 /* ===== Quiz ===== */
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];}return a;}
+
+/* Ny: buildQuestions som håndterer duplikater riktig */
 function buildQuestions(mode){
-  const s=store.settings||{known:'no',learn:'tl'}; const src=s.known||'no', dst=s.learn||'tl';
+  const s=store.settings||{known:'no',learn:'tl'};
+  const src=s.known||'no', dst=s.learn||'tl';
   const srcName=LANG_NAMES[UI_LANG][src], dstName=LANG_NAMES[UI_LANG][dst];
-  const t=LEVELS[CURRENT_LEVEL-1].items.slice(); shuffle(t);
-  ORD=t.map(it=>({Source:it[src], Target:it[dst]})); QLIST=[];
+
+  // Ta 15 items i nivået (som før), men la rekkefølgen variere
+  const t=LEVELS[CURRENT_LEVEL-1].items.slice();
+  shuffle(t);
+
+  // ORD brukes i fasit-modal
+  ORD = t.map(it => ({ Source: it[src], Target: it[dst] }));
+
+  // Bygg mapping mål → alle kilder for den målverdien i dette nivået
+  // eks: "siya" -> {"han","hun"}, "sa kanya" -> {"ham","henne"}, "hello" -> {"hei","hallo"}
+  const dstToAllSrc = new Map();
+  for(const it of t){
+    const d = norm(it[dst]);
+    const sTerm = norm(it[src]);
+    if(!dstToAllSrc.has(d)) dstToAllSrc.set(d, new Set());
+    dstToAllSrc.get(d).add(sTerm);
+  }
+
+  // Hjelper: generer fasit-liste (alle gyldige svar) for én oppgave
+  const answersFor = (questionFrom, expectedTo, dir) => {
+    if(dir === 'src2dst'){
+      // Kilde -> Mål: la det være som før; støtt ev. flere varianter separert av '.'
+      return String(expectedTo).toLowerCase().split('.').map(s=>s.trim()).filter(Boolean);
+    }else{
+      // Mål -> Kilde: godta ALLE kildesvar knyttet til dette målordet i nivået
+      const key = norm(questionFrom);
+      const set = dstToAllSrc.get(key) || new Set();
+      return Array.from(set);
+    }
+  };
+
+  // Bygg QLIST
+  QLIST = [];
   if(mode==='ov'){
     for(const it of ORD){
-      if(Math.random()<0.5){ QLIST.push({prompt:`Hva er '${it.Source}' på ${dstName}?`, answers:String(it.Target).toLowerCase().split('.').map(s=>s.trim()), key:it.Source}); }
-      else{ QLIST.push({prompt:`Hva er '${it.Target}' på ${srcName}?`, answers:String(it.Source).toLowerCase().split('.').map(s=>s.trim()), key:it.Source}); }
-    } shuffle(QLIST);
+      if(Math.random()<0.5){
+        // src -> dst
+        QLIST.push({
+          prompt:`Hva er '${it.Source}' på ${dstName}?`,
+          answers:answersFor(it.Source, it.Target, 'src2dst'),
+          key:it.Source
+        });
+      }else{
+        // dst -> src
+        QLIST.push({
+          prompt:`Hva er '${it.Target}' på ${srcName}?`,
+          answers:answersFor(it.Target, it.Source, 'dst2src'),
+          key:it.Source
+        });
+      }
+    }
+    shuffle(QLIST);
   }else{
+    // Test: begge retninger for hvert ord
     for(const it of ORD){
-      QLIST.push({prompt:`Hva er '${it.Source}' på ${dstName}?`, answers:String(it.Target).toLowerCase().split('.').map(s=>s.trim()), key:it.Source});
-      QLIST.push({prompt:`Hva er '${it.Target}' på ${srcName}?`, answers:String(it.Source).toLowerCase().split('.').map(s=>s.trim()), key:it.Source});
-    } shuffle(QLIST);
+      QLIST.push({
+        prompt:`Hva er '${it.Source}' på ${dstName}?`,
+        answers:answersFor(it.Source, it.Target, 'src2dst'),
+        key:it.Source
+      });
+      QLIST.push({
+        prompt:`Hva er '${it.Target}' på ${srcName}?`,
+        answers:answersFor(it.Target, it.Source, 'dst2src'),
+        key:it.Source
+      });
+    }
+    shuffle(QLIST);
   }
 }
+
 function startLevel(lvl){
   CURRENT_LEVEL=lvl; const s=store.settings||{known:'no',learn:'tl'};
   if((s.known||'no')===(s.learn||'tl')){alert(tr('error_same_lang'));return;}
