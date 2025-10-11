@@ -1282,21 +1282,81 @@
       "tl": "Kagamitan sa Bahay"
     },
     "items": [
-      {"no": "stol", "tl": "silya", "en": "chair"},
-      {"no": "bord", "tl": "mesa", "en": "table"},
-      {"no": "sofa", "tl": "sofa", "en": "sofa"},
-      {"no": "seng", "tl": "kama", "en": "bed"},
-      {"no": "skrivebord", "tl": "mesa de trabaho", "en": "desk"},
-      {"no": "skap", "tl": "aparador", "en": "wardrobe"},
-      {"no": "hylle", "tl": "estante", "en": "shelf"},
-      {"no": "skuff", "tl": "drawer", "en": "drawer"},
-      {"no": "speil", "tl": "salamin", "en": "mirror"},
-      {"no": "teppe", "tl": "karpet", "en": "carpet"},
-      {"no": "gardin", "tl": "kortina", "en": "curtain"},
-      {"no": "pute", "tl": "unan", "en": "pillow"},
-      {"no": "dyne", "tl": "kumot", "en": "duvet"},
-      {"no": "lampe", "tl": "lampara", "en": "lamp"},
-      {"no": "klokke", "tl": "orasan", "en": "clock"}
+      {
+        "no": "stol",
+        "tl": "silya",
+        "en": "chair"
+      },
+      {
+        "no": "bord",
+        "tl": "mesa",
+        "en": "table"
+      },
+      {
+        "no": "sofa",
+        "tl": "sopa",
+        "en": "sofa"
+      },
+      {
+        "no": "seng",
+        "tl": "kama",
+        "en": "bed"
+      },
+      {
+        "no": "skrivebord",
+        "tl": "lamesa ng trabaho",
+        "en": "desk"
+      },
+      {
+        "no": "skap",
+        "tl": "aparador",
+        "en": "wardrobe"
+      },
+      {
+        "no": "hylle",
+        "tl": "estante",
+        "en": "shelf"
+      },
+      {
+        "no": "skuff",
+        "tl": "gaveta",
+        "en": "drawer"
+      },
+      {
+        "no": "speil",
+        "tl": "salamin",
+        "en": "mirror"
+      },
+      {
+        "no": "teppe",
+        "tl": "karpet",
+        "en": "carpet"
+      },
+      {
+        "no": "gardin",
+        "tl": "kurtina",
+        "en": "curtain"
+      },
+      {
+        "no": "pute",
+        "tl": "unan",
+        "en": "pillow"
+      },
+      {
+        "no": "dyne",
+        "tl": "kumot",
+        "en": "duvet"
+      },
+      {
+        "no": "lampe",
+        "tl": "lampara",
+        "en": "lamp"
+      },
+      {
+        "no": "klokke",
+        "tl": "orasan",
+        "en": "clock"
+      }
     ]
   },
   {
@@ -1307,21 +1367,81 @@
       "tl": "Elektronika"
     },
     "items": [
-      {"no": "telefon", "tl": "telepono", "en": "phone"},
-      {"no": "mobiltelefon", "tl": "cellphone", "en": "mobile phone"},
-      {"no": "datamaskin", "tl": "kompyuter", "en": "computer"},
-      {"no": "bærbar PC", "tl": "laptop", "en": "laptop"},
-      {"no": "nettbrett", "tl": "tablet", "en": "tablet"},
-      {"no": "fjernsyn", "tl": "telebisyon", "en": "television"},
-      {"no": "kamera", "tl": "kamera", "en": "camera"},
-      {"no": "radio", "tl": "radyo", "en": "radio"},
-      {"no": "høyttaler", "tl": "speaker", "en": "speaker"},
-      {"no": "hodetelefoner", "tl": "headphone", "en": "headphones"},
-      {"no": "mus", "tl": "mouse", "en": "mouse"},
-      {"no": "tastatur", "tl": "keyboard", "en": "keyboard"},
-      {"no": "skjerm", "tl": "monitor", "en": "screen"},
-      {"no": "printer", "tl": "printer", "en": "printer"},
-      {"no": "lader", "tl": "charger", "en": "charger"}
+      {
+        "no": "telefon",
+        "tl": "telepono",
+        "en": "phone"
+      },
+      {
+        "no": "mobiltelefon",
+        "tl": "cellphone",
+        "en": "mobile phone"
+      },
+      {
+        "no": "datamaskin",
+        "tl": "kompyuter",
+        "en": "computer"
+      },
+      {
+        "no": "bærbar PC",
+        "tl": "laptop",
+        "en": "laptop"
+      },
+      {
+        "no": "nettbrett",
+        "tl": "tablet",
+        "en": "tablet"
+      },
+      {
+        "no": "fjernsyn",
+        "tl": "telebisyon",
+        "en": "television"
+      },
+      {
+        "no": "kamera",
+        "tl": "kamera",
+        "en": "camera"
+      },
+      {
+        "no": "radio",
+        "tl": "radyo",
+        "en": "radio"
+      },
+      {
+        "no": "høyttaler",
+        "tl": "speaker",
+        "en": "speaker"
+      },
+      {
+        "no": "hodetelefoner",
+        "tl": "headset",
+        "en": "headphones"
+      },
+      {
+        "no": "mus",
+        "tl": "mouse",
+        "en": "mouse"
+      },
+      {
+        "no": "tastatur",
+        "tl": "keyboard",
+        "en": "keyboard"
+      },
+      {
+        "no": "skjerm",
+        "tl": "monitor",
+        "en": "screen"
+      },
+      {
+        "no": "printer",
+        "tl": "printer",
+        "en": "printer"
+      },
+      {
+        "no": "lader",
+        "tl": "charger",
+        "en": "charger"
+      }
     ]
   },
   {
@@ -1332,21 +1452,81 @@
       "tl": "Katawan"
     },
     "items": [
-      {"no": "hode", "tl": "ulo", "en": "head"},
-      {"no": "hår", "tl": "buhok", "en": "hair"},
-      {"no": "øye", "tl": "mata", "en": "eye"},
-      {"no": "nese", "tl": "ilong", "en": "nose"},
-      {"no": "munn", "tl": "bibig", "en": "mouth"},
-      {"no": "øre", "tl": "tainga", "en": "ear"},
-      {"no": "tann", "tl": "ngipin", "en": "tooth"},
-      {"no": "hals", "tl": "leeg", "en": "neck"},
-      {"no": "skulder", "tl": "balikat", "en": "shoulder"},
-      {"no": "arm", "tl": "braso", "en": "arm"},
-      {"no": "hånd", "tl": "kamay", "en": "hand"},
-      {"no": "finger", "tl": "daliri", "en": "finger"},
-      {"no": "rygg", "tl": "likod", "en": "back"},
-      {"no": "bein", "tl": "binti", "en": "leg"},
-      {"no": "fot", "tl": "paa", "en": "foot"}
+      {
+        "no": "hode",
+        "tl": "ulo",
+        "en": "head"
+      },
+      {
+        "no": "hår",
+        "tl": "buhok",
+        "en": "hair"
+      },
+      {
+        "no": "øye",
+        "tl": "mata",
+        "en": "eye"
+      },
+      {
+        "no": "nese",
+        "tl": "ilong",
+        "en": "nose"
+      },
+      {
+        "no": "munn",
+        "tl": "bibig",
+        "en": "mouth"
+      },
+      {
+        "no": "øre",
+        "tl": "tainga",
+        "en": "ear"
+      },
+      {
+        "no": "tann",
+        "tl": "ngipin",
+        "en": "tooth"
+      },
+      {
+        "no": "hals",
+        "tl": "leeg",
+        "en": "neck"
+      },
+      {
+        "no": "skulder",
+        "tl": "balikat",
+        "en": "shoulder"
+      },
+      {
+        "no": "arm",
+        "tl": "braso",
+        "en": "arm"
+      },
+      {
+        "no": "hånd",
+        "tl": "kamay",
+        "en": "hand"
+      },
+      {
+        "no": "finger",
+        "tl": "daliri",
+        "en": "finger"
+      },
+      {
+        "no": "rygg",
+        "tl": "likod",
+        "en": "back"
+      },
+      {
+        "no": "bein",
+        "tl": "binti",
+        "en": "leg"
+      },
+      {
+        "no": "fot",
+        "tl": "paa",
+        "en": "foot"
+      }
     ]
   },
   {
@@ -1357,21 +1537,81 @@
       "tl": "Mga Damdamin"
     },
     "items": [
-      {"no": "glad", "tl": "masaya", "en": "happy"},
-      {"no": "trist", "tl": "malungkot", "en": "sad"},
-      {"no": "sint", "tl": "galit", "en": "angry"},
-      {"no": "redd", "tl": "takot", "en": "afraid"},
-      {"no": "overrasket", "tl": "nagulat", "en": "surprised"},
-      {"no": "lei seg", "tl": "nalulungkot", "en": "upset"},
-      {"no": "sliten", "tl": "pagod", "en": "tired"},
-      {"no": "nervøs", "tl": "kinakabahan", "en": "nervous"},
-      {"no": "stolt", "tl": "ipinagmamalaki", "en": "proud"},
-      {"no": "skuffet", "tl": "nadismaya", "en": "disappointed"},
-      {"no": "forelsket", "tl": "umiibig", "en": "in love"},
-      {"no": "ensom", "tl": "malungkot", "en": "lonely"},
-      {"no": "håpefull", "tl": "umaasa", "en": "hopeful"},
-      {"no": "rolig", "tl": "kalma", "en": "calm"},
-      {"no": "spent", "tl": "sabik", "en": "excited"}
+      {
+        "no": "glad",
+        "tl": "masaya",
+        "en": "happy"
+      },
+      {
+        "no": "trist",
+        "tl": "malungkot",
+        "en": "sad"
+      },
+      {
+        "no": "sint",
+        "tl": "galit",
+        "en": "angry"
+      },
+      {
+        "no": "redd",
+        "tl": "takot",
+        "en": "afraid"
+      },
+      {
+        "no": "overrasket",
+        "tl": "nagulat",
+        "en": "surprised"
+      },
+      {
+        "no": "lei seg",
+        "tl": "nalulungkot",
+        "en": "upset"
+      },
+      {
+        "no": "sliten",
+        "tl": "pagod",
+        "en": "tired"
+      },
+      {
+        "no": "nervøs",
+        "tl": "kinakabahan",
+        "en": "nervous"
+      },
+      {
+        "no": "stolt",
+        "tl": "ipinagmamalaki",
+        "en": "proud"
+      },
+      {
+        "no": "skuffet",
+        "tl": "nadismaya",
+        "en": "disappointed"
+      },
+      {
+        "no": "forelsket",
+        "tl": "umiibig",
+        "en": "in love"
+      },
+      {
+        "no": "ensom",
+        "tl": "nag-iisa",
+        "en": "lonely"
+      },
+      {
+        "no": "håpefull",
+        "tl": "umaasa",
+        "en": "hopeful"
+      },
+      {
+        "no": "rolig",
+        "tl": "kalma",
+        "en": "calm"
+      },
+      {
+        "no": "spent",
+        "tl": "sabik",
+        "en": "excited"
+      }
     ]
   },
   {
@@ -1382,21 +1622,81 @@
       "tl": "Mga Propesyon"
     },
     "items": [
-      {"no": "lærer", "tl": "guro", "en": "teacher"},
-      {"no": "lege", "tl": "doktor", "en": "doctor"},
-      {"no": "sykepleier", "tl": "nars", "en": "nurse"},
-      {"no": "sjåfør", "tl": "drayber", "en": "driver"},
-      {"no": "politi", "tl": "pulis", "en": "police officer"},
-      {"no": "brannmann", "tl": "bumbero", "en": "firefighter"},
-      {"no": "kokk", "tl": "kusinero", "en": "chef"},
-      {"no": "servitør", "tl": "waiter", "en": "waiter"},
-      {"no": "bonde", "tl": "magsasaka", "en": "farmer"},
-      {"no": "ingeniør", "tl": "inhinyero", "en": "engineer"},
-      {"no": "mekaniker", "tl": "mekaniko", "en": "mechanic"},
-      {"no": "advokat", "tl": "abogado", "en": "lawyer"},
-      {"no": "arkitekt", "tl": "arkitekto", "en": "architect"},
-      {"no": "kunstner", "tl": "artista", "en": "artist"},
-      {"no": "skuespiller", "tl": "aktor", "en": "actor"}
+      {
+        "no": "lærer",
+        "tl": "guro",
+        "en": "teacher"
+      },
+      {
+        "no": "lege",
+        "tl": "doktor",
+        "en": "doctor"
+      },
+      {
+        "no": "sykepleier",
+        "tl": "nars",
+        "en": "nurse"
+      },
+      {
+        "no": "sjåfør",
+        "tl": "drayber",
+        "en": "driver"
+      },
+      {
+        "no": "politi",
+        "tl": "pulis",
+        "en": "police officer"
+      },
+      {
+        "no": "brannmann",
+        "tl": "bumbero",
+        "en": "firefighter"
+      },
+      {
+        "no": "kokk",
+        "tl": "kusinero",
+        "en": "chef"
+      },
+      {
+        "no": "servitør",
+        "tl": "waiter",
+        "en": "waiter"
+      },
+      {
+        "no": "bonde",
+        "tl": "magsasaka",
+        "en": "farmer"
+      },
+      {
+        "no": "ingeniør",
+        "tl": "inhinyero",
+        "en": "engineer"
+      },
+      {
+        "no": "mekaniker",
+        "tl": "mekaniko",
+        "en": "mechanic"
+      },
+      {
+        "no": "advokat",
+        "tl": "abogado",
+        "en": "lawyer"
+      },
+      {
+        "no": "arkitekt",
+        "tl": "arkitekto",
+        "en": "architect"
+      },
+      {
+        "no": "kunstner",
+        "tl": "alagad ng sining",
+        "en": "artist"
+      },
+      {
+        "no": "skuespiller",
+        "tl": "aktor",
+        "en": "actor"
+      }
     ]
   },
   {
@@ -1407,21 +1707,81 @@
       "tl": "Kagamitan sa Kusina"
     },
     "items": [
-      {"no": "kniv", "tl": "kutsilyo", "en": "knife"},
-      {"no": "gaffel", "tl": "tinidor", "en": "fork"},
-      {"no": "skje", "tl": "kutsara", "en": "spoon"},
-      {"no": "tallerken", "tl": "pinggan", "en": "plate"},
-      {"no": "glass", "tl": "baso", "en": "glass"},
-      {"no": "kopp", "tl": "tasâ", "en": "cup"},
-      {"no": "kjele", "tl": "kaldero", "en": "pot"},
-      {"no": "panne", "tl": "kawali", "en": "pan"},
-      {"no": "ovn", "tl": "hurno", "en": "oven"},
-      {"no": "mikrobølgeovn", "tl": "microwave", "en": "microwave"},
-      {"no": "kjøleskap", "tl": "refrigerador", "en": "refrigerator"},
-      {"no": "fryser", "tl": "pridyider", "en": "freezer"},
-      {"no": "rist", "tl": "grill", "en": "grill"},
-      {"no": "åpner", "tl": "pambukas", "en": "opener"},
-      {"no": "skjærefjøl", "tl": "cutting board", "en": "cutting board"}
+      {
+        "no": "kniv",
+        "tl": "kutsilyo",
+        "en": "knife"
+      },
+      {
+        "no": "gaffel",
+        "tl": "tinidor",
+        "en": "fork"
+      },
+      {
+        "no": "skje",
+        "tl": "kutsara",
+        "en": "spoon"
+      },
+      {
+        "no": "tallerken",
+        "tl": "pinggan",
+        "en": "plate"
+      },
+      {
+        "no": "glass",
+        "tl": "baso",
+        "en": "glass"
+      },
+      {
+        "no": "kopp",
+        "tl": "tasa",
+        "en": "cup"
+      },
+      {
+        "no": "kjele",
+        "tl": "kaldero",
+        "en": "pot"
+      },
+      {
+        "no": "panne",
+        "tl": "kawali",
+        "en": "pan"
+      },
+      {
+        "no": "ovn",
+        "tl": "hurno",
+        "en": "oven"
+      },
+      {
+        "no": "mikrobølgeovn",
+        "tl": "microwave",
+        "en": "microwave"
+      },
+      {
+        "no": "kjøleskap",
+        "tl": "pridyeder",
+        "en": "refrigerator"
+      },
+      {
+        "no": "fryser",
+        "tl": "freezer",
+        "en": "freezer"
+      },
+      {
+        "no": "rist",
+        "tl": "grill",
+        "en": "grill"
+      },
+      {
+        "no": "åpner",
+        "tl": "pambukas",
+        "en": "opener"
+      },
+      {
+        "no": "skjærefjøl",
+        "tl": "sangkalan",
+        "en": "cutting board"
+      }
     ]
   },
   {
@@ -1432,21 +1792,81 @@
       "tl": "Pagkain at Inumin"
     },
     "items": [
-      {"no": "brød", "tl": "tinapay", "en": "bread"},
-      {"no": "ris", "tl": "kanin", "en": "rice"},
-      {"no": "kjøtt", "tl": "karne", "en": "meat"},
-      {"no": "kylling", "tl": "manok", "en": "chicken"},
-      {"no": "fisk", "tl": "isda", "en": "fish"},
-      {"no": "egg", "tl": "itlog", "en": "egg"},
-      {"no": "ost", "tl": "kesyo", "en": "cheese"},
-      {"no": "smør", "tl": "mantikilya", "en": "butter"},
-      {"no": "melk", "tl": "gatas", "en": "milk"},
-      {"no": "kaffe", "tl": "kape", "en": "coffee"},
-      {"no": "te", "tl": "tsaa", "en": "tea"},
-      {"no": "juice", "tl": "dyus", "en": "juice"},
-      {"no": "øl", "tl": "beer", "en": "beer"},
-      {"no": "vin", "tl": "alak", "en": "wine"},
-      {"no": "vann", "tl": "tubig", "en": "water"}
+      {
+        "no": "brød",
+        "tl": "tinapay",
+        "en": "bread"
+      },
+      {
+        "no": "ris",
+        "tl": "kanin",
+        "en": "rice"
+      },
+      {
+        "no": "kjøtt",
+        "tl": "karne",
+        "en": "meat"
+      },
+      {
+        "no": "kylling",
+        "tl": "manok",
+        "en": "chicken"
+      },
+      {
+        "no": "fisk",
+        "tl": "isda",
+        "en": "fish"
+      },
+      {
+        "no": "egg",
+        "tl": "itlog",
+        "en": "egg"
+      },
+      {
+        "no": "ost",
+        "tl": "kesyo",
+        "en": "cheese"
+      },
+      {
+        "no": "smør",
+        "tl": "mantikilya",
+        "en": "butter"
+      },
+      {
+        "no": "melk",
+        "tl": "gatas",
+        "en": "milk"
+      },
+      {
+        "no": "kaffe",
+        "tl": "kape",
+        "en": "coffee"
+      },
+      {
+        "no": "te",
+        "tl": "tsaa",
+        "en": "tea"
+      },
+      {
+        "no": "juice",
+        "tl": "dyus",
+        "en": "juice"
+      },
+      {
+        "no": "øl",
+        "tl": "serbesa",
+        "en": "beer"
+      },
+      {
+        "no": "vin",
+        "tl": "alak",
+        "en": "wine"
+      },
+      {
+        "no": "vann",
+        "tl": "tubig",
+        "en": "water"
+      }
     ]
   },
   {
@@ -1457,21 +1877,81 @@
       "tl": "Mga Prutas"
     },
     "items": [
-      {"no": "eple", "tl": "mansanas", "en": "apple"},
-      {"no": "banan", "tl": "saging", "en": "banana"},
-      {"no": "appelsin", "tl": "kahel", "en": "orange"},
-      {"no": "mango", "tl": "mangga", "en": "mango"},
-      {"no": "druer", "tl": "ubas", "en": "grapes"},
-      {"no": "jordbær", "tl": "presa", "en": "strawberry"},
-      {"no": "ananas", "tl": "pinya", "en": "pineapple"},
-      {"no": "melon", "tl": "melon", "en": "melon"},
-      {"no": "vannmelon", "tl": "pakwan", "en": "watermelon"},
-      {"no": "pære", "tl": "peras", "en": "pear"},
-      {"no": "fersken", "tl": "milokoton", "en": "peach"},
-      {"no": "plomme", "tl": "kaimito", "en": "plum"},
-      {"no": "kiwi", "tl": "kiwi", "en": "kiwi"},
-      {"no": "kokosnøtt", "tl": "niyog", "en": "coconut"},
-      {"no": "papaya", "tl": "papaya", "en": "papaya"}
+      {
+        "no": "eple",
+        "tl": "mansanas",
+        "en": "apple"
+      },
+      {
+        "no": "banan",
+        "tl": "saging",
+        "en": "banana"
+      },
+      {
+        "no": "appelsin",
+        "tl": "kahel",
+        "en": "orange"
+      },
+      {
+        "no": "mango",
+        "tl": "mangga",
+        "en": "mango"
+      },
+      {
+        "no": "druer",
+        "tl": "ubas",
+        "en": "grapes"
+      },
+      {
+        "no": "jordbær",
+        "tl": "presa",
+        "en": "strawberry"
+      },
+      {
+        "no": "ananas",
+        "tl": "pinya",
+        "en": "pineapple"
+      },
+      {
+        "no": "melon",
+        "tl": "melon",
+        "en": "melon"
+      },
+      {
+        "no": "vannmelon",
+        "tl": "pakwan",
+        "en": "watermelon"
+      },
+      {
+        "no": "pære",
+        "tl": "peras",
+        "en": "pear"
+      },
+      {
+        "no": "fersken",
+        "tl": "milokoton",
+        "en": "peach"
+      },
+      {
+        "no": "plomme",
+        "tl": "ciruela",
+        "en": "plum"
+      },
+      {
+        "no": "kiwi",
+        "tl": "kiwi",
+        "en": "kiwi"
+      },
+      {
+        "no": "kokosnøtt",
+        "tl": "niyog",
+        "en": "coconut"
+      },
+      {
+        "no": "papaya",
+        "tl": "papaya",
+        "en": "papaya"
+      }
     ]
   },
   {
@@ -1482,21 +1962,81 @@
       "tl": "Mga Gulay"
     },
     "items": [
-      {"no": "potet", "tl": "patatas", "en": "potato"},
-      {"no": "gulrot", "tl": "karot", "en": "carrot"},
-      {"no": "tomat", "tl": "kamatis", "en": "tomato"},
-      {"no": "løk", "tl": "sibuyas", "en": "onion"},
-      {"no": "hvitløk", "tl": "bawang", "en": "garlic"},
-      {"no": "salat", "tl": "letsugas", "en": "lettuce"},
-      {"no": "agurk", "tl": "pipino", "en": "cucumber"},
-      {"no": "brokkoli", "tl": "brokoli", "en": "broccoli"},
-      {"no": "blomkål", "tl": "koliplor", "en": "cauliflower"},
-      {"no": "spinat", "tl": "espinaka", "en": "spinach"},
-      {"no": "erter", "tl": "gisantes", "en": "peas"},
-      {"no": "bønner", "tl": "sitaw", "en": "beans"},
-      {"no": "paprika", "tl": "sili", "en": "bell pepper"},
-      {"no": "mais", "tl": "mais", "en": "corn"},
-      {"no": "sopp", "tl": "kabute", "en": "mushroom"}
+      {
+        "no": "potet",
+        "tl": "patatas",
+        "en": "potato"
+      },
+      {
+        "no": "gulrot",
+        "tl": "karot",
+        "en": "carrot"
+      },
+      {
+        "no": "tomat",
+        "tl": "kamatis",
+        "en": "tomato"
+      },
+      {
+        "no": "løk",
+        "tl": "sibuyas",
+        "en": "onion"
+      },
+      {
+        "no": "hvitløk",
+        "tl": "bawang",
+        "en": "garlic"
+      },
+      {
+        "no": "salat",
+        "tl": "letsugas",
+        "en": "lettuce"
+      },
+      {
+        "no": "agurk",
+        "tl": "pipino",
+        "en": "cucumber"
+      },
+      {
+        "no": "brokkoli",
+        "tl": "brokoli",
+        "en": "broccoli"
+      },
+      {
+        "no": "blomkål",
+        "tl": "koliplor",
+        "en": "cauliflower"
+      },
+      {
+        "no": "spinat",
+        "tl": "espinaka",
+        "en": "spinach"
+      },
+      {
+        "no": "erter",
+        "tl": "gisantes",
+        "en": "peas"
+      },
+      {
+        "no": "bønner",
+        "tl": "sitaw",
+        "en": "beans"
+      },
+      {
+        "no": "paprika",
+        "tl": "bell pepper",
+        "en": "bell pepper"
+      },
+      {
+        "no": "mais",
+        "tl": "mais",
+        "en": "corn"
+      },
+      {
+        "no": "sopp",
+        "tl": "kabute",
+        "en": "mushroom"
+      }
     ]
   },
   {
@@ -1507,21 +2047,81 @@
       "tl": "Damit"
     },
     "items": [
-      {"no": "skjorte", "tl": "kamisa", "en": "shirt"},
-      {"no": "bukse", "tl": "pantalon", "en": "pants"},
-      {"no": "shorts", "tl": "shorts", "en": "shorts"},
-      {"no": "kjole", "tl": "bestida", "en": "dress"},
-      {"no": "skjørt", "tl": "palda", "en": "skirt"},
-      {"no": "jakke", "tl": "dyaket", "en": "jacket"},
-      {"no": "frakk", "tl": "kapote", "en": "coat"},
-      {"no": "genser", "tl": "sweater", "en": "sweater"},
-      {"no": "t-skjorte", "tl": "t-shirt", "en": "t-shirt"},
-      {"no": "sko", "tl": "sapatos", "en": "shoes"},
-      {"no": "sandaler", "tl": "sandalyas", "en": "sandals"},
-      {"no": "støvler", "tl": "bota", "en": "boots"},
-      {"no": "hatt", "tl": "sumbrero", "en": "hat"},
-      {"no": "caps", "tl": "kap", "en": "cap"},
-      {"no": "belte", "tl": "sinturon", "en": "belt"}
+      {
+        "no": "skjorte",
+        "tl": "kamiseta",
+        "en": "shirt"
+      },
+      {
+        "no": "bukse",
+        "tl": "pantalon",
+        "en": "pants"
+      },
+      {
+        "no": "shorts",
+        "tl": "shorts",
+        "en": "shorts"
+      },
+      {
+        "no": "kjole",
+        "tl": "bestida",
+        "en": "dress"
+      },
+      {
+        "no": "skjørt",
+        "tl": "palda",
+        "en": "skirt"
+      },
+      {
+        "no": "jakke",
+        "tl": "dyaket",
+        "en": "jacket"
+      },
+      {
+        "no": "frakk",
+        "tl": "amerikana",
+        "en": "coat"
+      },
+      {
+        "no": "genser",
+        "tl": "sweater",
+        "en": "sweater"
+      },
+      {
+        "no": "t-skjorte",
+        "tl": "t-shirt",
+        "en": "t-shirt"
+      },
+      {
+        "no": "sko",
+        "tl": "sapatos",
+        "en": "shoes"
+      },
+      {
+        "no": "sandaler",
+        "tl": "sandalyas",
+        "en": "sandals"
+      },
+      {
+        "no": "støvler",
+        "tl": "bota",
+        "en": "boots"
+      },
+      {
+        "no": "hatt",
+        "tl": "sumbrero",
+        "en": "hat"
+      },
+      {
+        "no": "caps",
+        "tl": "cap",
+        "en": "cap"
+      },
+      {
+        "no": "belte",
+        "tl": "sinturon",
+        "en": "belt"
+      }
     ]
   },
   {
@@ -1532,21 +2132,81 @@
       "tl": "Alahas at Aksesorya"
     },
     "items": [
-      {"no": "ring", "tl": "singsing", "en": "ring"},
-      {"no": "halskjede", "tl": "kwintas", "en": "necklace"},
-      {"no": "armbånd", "tl": "pulseras", "en": "bracelet"},
-      {"no": "ørering", "tl": "hikaw", "en": "earring"},
-      {"no": "klokke", "tl": "relo", "en": "watch"},
-      {"no": "solbriller", "tl": "salamin sa araw", "en": "sunglasses"},
-      {"no": "veske", "tl": "bag", "en": "bag"},
-      {"no": "ryggsekk", "tl": "backpack", "en": "backpack"},
-      {"no": "paraply", "tl": "payong", "en": "umbrella"},
-      {"no": "lommebok", "tl": "pitaka", "en": "wallet"},
-      {"no": "skjerf", "tl": "iskarf", "en": "scarf"},
-      {"no": "hansker", "tl": "glab", "en": "gloves"},
-      {"no": "belte", "tl": "sinturon", "en": "belt"},
-      {"no": "hårbånd", "tl": "headband", "en": "headband"},
-      {"no": "slips", "tl": "kurbata", "en": "tie"}
+      {
+        "no": "ring",
+        "tl": "singsing",
+        "en": "ring"
+      },
+      {
+        "no": "halskjede",
+        "tl": "kwintas",
+        "en": "necklace"
+      },
+      {
+        "no": "armbånd",
+        "tl": "pulseras",
+        "en": "bracelet"
+      },
+      {
+        "no": "ørering",
+        "tl": "hikaw",
+        "en": "earring"
+      },
+      {
+        "no": "klokke",
+        "tl": "relo",
+        "en": "watch"
+      },
+      {
+        "no": "solbriller",
+        "tl": "salamin sa araw",
+        "en": "sunglasses"
+      },
+      {
+        "no": "veske",
+        "tl": "bag",
+        "en": "bag"
+      },
+      {
+        "no": "ryggsekk",
+        "tl": "backpack",
+        "en": "backpack"
+      },
+      {
+        "no": "paraply",
+        "tl": "payong",
+        "en": "umbrella"
+      },
+      {
+        "no": "lommebok",
+        "tl": "pitaka",
+        "en": "wallet"
+      },
+      {
+        "no": "skjerf",
+        "tl": "iskarf",
+        "en": "scarf"
+      },
+      {
+        "no": "hansker",
+        "tl": "guwantes",
+        "en": "gloves"
+      },
+      {
+        "no": "belte",
+        "tl": "sinturon",
+        "en": "belt"
+      },
+      {
+        "no": "hårbånd",
+        "tl": "headband",
+        "en": "headband"
+      },
+      {
+        "no": "slips",
+        "tl": "kurbata",
+        "en": "tie"
+      }
     ]
   },
   {
@@ -1557,21 +2217,81 @@
       "tl": "Isports"
     },
     "items": [
-      {"no": "fotball", "tl": "soccer", "en": "football"},
-      {"no": "basketball", "tl": "basketbol", "en": "basketball"},
-      {"no": "tennis", "tl": "tenis", "en": "tennis"},
-      {"no": "volleyball", "tl": "bolibol", "en": "volleyball"},
-      {"no": "svømming", "tl": "paglangoy", "en": "swimming"},
-      {"no": "løping", "tl": "pagpapatakbo", "en": "running"},
-      {"no": "sykling", "tl": "pagbibisikleta", "en": "cycling"},
-      {"no": "ski", "tl": "ski", "en": "skiing"},
-      {"no": "snowboard", "tl": "snowboard", "en": "snowboarding"},
-      {"no": "golf", "tl": "golf", "en": "golf"},
-      {"no": "håndball", "tl": "handbol", "en": "handball"},
-      {"no": "rugby", "tl": "ragbi", "en": "rugby"},
-      {"no": "boksing", "tl": "boksing", "en": "boxing"},
-      {"no": "bryting", "tl": "wrestling", "en": "wrestling"},
-      {"no": "turn", "tl": "gimnastika", "en": "gymnastics"}
+      {
+        "no": "fotball",
+        "tl": "soccer",
+        "en": "football"
+      },
+      {
+        "no": "basketball",
+        "tl": "basketbol",
+        "en": "basketball"
+      },
+      {
+        "no": "tennis",
+        "tl": "tenis",
+        "en": "tennis"
+      },
+      {
+        "no": "volleyball",
+        "tl": "bolibol",
+        "en": "volleyball"
+      },
+      {
+        "no": "svømming",
+        "tl": "paglangoy",
+        "en": "swimming"
+      },
+      {
+        "no": "løping",
+        "tl": "pagtakbo",
+        "en": "running"
+      },
+      {
+        "no": "sykling",
+        "tl": "pagbibisikleta",
+        "en": "cycling"
+      },
+      {
+        "no": "ski",
+        "tl": "ski",
+        "en": "skiing"
+      },
+      {
+        "no": "snowboard",
+        "tl": "snowboard",
+        "en": "snowboarding"
+      },
+      {
+        "no": "golf",
+        "tl": "golf",
+        "en": "golf"
+      },
+      {
+        "no": "håndball",
+        "tl": "handbol",
+        "en": "handball"
+      },
+      {
+        "no": "rugby",
+        "tl": "ragbi",
+        "en": "rugby"
+      },
+      {
+        "no": "boksing",
+        "tl": "boksing",
+        "en": "boxing"
+      },
+      {
+        "no": "bryting",
+        "tl": "wrestling",
+        "en": "wrestling"
+      },
+      {
+        "no": "turn",
+        "tl": "gimnastika",
+        "en": "gymnastics"
+      }
     ]
   },
   {
@@ -1582,21 +2302,81 @@
       "tl": "Paglalakbay"
     },
     "items": [
-      {"no": "flyplass", "tl": "paliparan", "en": "airport"},
-      {"no": "hotell", "tl": "hotel", "en": "hotel"},
-      {"no": "bagasje", "tl": "bagahe", "en": "luggage"},
-      {"no": "pass", "tl": "pasaporte", "en": "passport"},
-      {"no": "billett", "tl": "ticket", "en": "ticket"},
-      {"no": "kart", "tl": "mapa", "en": "map"},
-      {"no": "reise", "tl": "biyahe", "en": "trip"},
-      {"no": "ferie", "tl": "bakasyon", "en": "vacation"},
-      {"no": "guide", "tl": "gabay", "en": "guide"},
-      {"no": "telt", "tl": "tent", "en": "tent"},
-      {"no": "tur", "tl": "lakbay", "en": "tour"},
-      {"no": "strøm", "tl": "kuryente", "en": "electricity"},
-      {"no": "penger", "tl": "pera", "en": "money"},
-      {"no": "valuta", "tl": "salapi", "en": "currency"},
-      {"no": "grense", "tl": "hangganan", "en": "border"}
+      {
+        "no": "flyplass",
+        "tl": "paliparan",
+        "en": "airport"
+      },
+      {
+        "no": "hotell",
+        "tl": "hotel",
+        "en": "hotel"
+      },
+      {
+        "no": "bagasje",
+        "tl": "bagahe",
+        "en": "luggage"
+      },
+      {
+        "no": "pass",
+        "tl": "pasaporte",
+        "en": "passport"
+      },
+      {
+        "no": "billett",
+        "tl": "ticket",
+        "en": "ticket"
+      },
+      {
+        "no": "kart",
+        "tl": "mapa",
+        "en": "map"
+      },
+      {
+        "no": "reise",
+        "tl": "biyahe",
+        "en": "trip"
+      },
+      {
+        "no": "ferie",
+        "tl": "bakasyon",
+        "en": "vacation"
+      },
+      {
+        "no": "guide",
+        "tl": "gabay",
+        "en": "guide"
+      },
+      {
+        "no": "telt",
+        "tl": "tent",
+        "en": "tent"
+      },
+      {
+        "no": "tur",
+        "tl": "paglilibot",
+        "en": "tour"
+      },
+      {
+        "no": "strøm",
+        "tl": "kuryente",
+        "en": "electricity"
+      },
+      {
+        "no": "penger",
+        "tl": "pera",
+        "en": "money"
+      },
+      {
+        "no": "valuta",
+        "tl": "salapi",
+        "en": "currency"
+      },
+      {
+        "no": "grense",
+        "tl": "hangganan",
+        "en": "border"
+      }
     ]
   },
   {
@@ -1607,21 +2387,81 @@
       "tl": "Pamimili"
     },
     "items": [
-      {"no": "butikk", "tl": "tindahan", "en": "store"},
-      {"no": "marked", "tl": "pamilihan", "en": "market"},
-      {"no": "kasse", "tl": "cashier", "en": "cash register"},
-      {"no": "kunde", "tl": "customer", "en": "customer"},
-      {"no": "pris", "tl": "presyo", "en": "price"},
-      {"no": "rabatt", "tl": "diskwento", "en": "discount"},
-      {"no": "tilbud", "tl": "alok", "en": "offer"},
-      {"no": "betaling", "tl": "bayad", "en": "payment"},
-      {"no": "kvittering", "tl": "resibo", "en": "receipt"},
-      {"no": "handlekurv", "tl": "basket", "en": "basket"},
-      {"no": "handlepose", "tl": "bag", "en": "shopping bag"},
-      {"no": "matbutikk", "tl": "grocery", "en": "grocery store"},
-      {"no": "klesbutikk", "tl": "boutique", "en": "clothing store"},
-      {"no": "elektronikkbutikk", "tl": "electronics store", "en": "electronics store"},
-      {"no": "smykkebutikk", "tl": "jewelry store", "en": "jewelry store"}
+      {
+        "no": "butikk",
+        "tl": "tindahan",
+        "en": "store"
+      },
+      {
+        "no": "marked",
+        "tl": "pamilihan",
+        "en": "market"
+      },
+      {
+        "no": "kasse",
+        "tl": "kaha",
+        "en": "cash register"
+      },
+      {
+        "no": "kunde",
+        "tl": "mamimili",
+        "en": "customer"
+      },
+      {
+        "no": "pris",
+        "tl": "presyo",
+        "en": "price"
+      },
+      {
+        "no": "rabatt",
+        "tl": "diskwento",
+        "en": "discount"
+      },
+      {
+        "no": "tilbud",
+        "tl": "alok",
+        "en": "offer"
+      },
+      {
+        "no": "betaling",
+        "tl": "bayad",
+        "en": "payment"
+      },
+      {
+        "no": "kvittering",
+        "tl": "resibo",
+        "en": "receipt"
+      },
+      {
+        "no": "handlekurv",
+        "tl": "basket",
+        "en": "basket"
+      },
+      {
+        "no": "handlepose",
+        "tl": "bag",
+        "en": "shopping bag"
+      },
+      {
+        "no": "matbutikk",
+        "tl": "grocery",
+        "en": "grocery store"
+      },
+      {
+        "no": "klesbutikk",
+        "tl": "boutique",
+        "en": "clothing store"
+      },
+      {
+        "no": "elektronikkbutikk",
+        "tl": "electronics store",
+        "en": "electronics store"
+      },
+      {
+        "no": "smykkebutikk",
+        "tl": "jewelry store",
+        "en": "jewelry store"
+      }
     ]
   },
   {
@@ -1632,23 +2472,83 @@
       "tl": "Paaralan"
     },
     "items": [
-      {"no": "skole", "tl": "paaralan", "en": "school"},
-      {"no": "elev", "tl": "mag-aaral", "en": "student"},
-      {"no": "lærer", "tl": "guro", "en": "teacher"},
-      {"no": "klasse", "tl": "klase", "en": "class"},
-      {"no": "bok", "tl": "aklat", "en": "book"},
-      {"no": "blyant", "tl": "lapis", "en": "pencil"},
-      {"no": "penn", "tl": "panulat", "en": "pen"},
-      {"no": "viskelær", "tl": "pambura", "en": "eraser"},
-      {"no": "papir", "tl": "papel", "en": "paper"},
-      {"no": "tavle", "tl": "pisara", "en": "blackboard"},
-      {"no": "linjal", "tl": "pinuno", "en": "ruler"},
-      {"no": "sekk", "tl": "bag", "en": "backpack"},
-      {"no": "prøve", "tl": "eksamen", "en": "test"},
-      {"no": "lekser", "tl": "takdang aralin", "en": "homework"},
-      {"no": "friminutt", "tl": "recess", "en": "break"}
+      {
+        "no": "skole",
+        "tl": "paaralan",
+        "en": "school"
+      },
+      {
+        "no": "elev",
+        "tl": "mag-aaral",
+        "en": "student"
+      },
+      {
+        "no": "lærer",
+        "tl": "guro",
+        "en": "teacher"
+      },
+      {
+        "no": "klasse",
+        "tl": "klase",
+        "en": "class"
+      },
+      {
+        "no": "bok",
+        "tl": "aklat",
+        "en": "book"
+      },
+      {
+        "no": "blyant",
+        "tl": "lapis",
+        "en": "pencil"
+      },
+      {
+        "no": "penn",
+        "tl": "bolpen",
+        "en": "pen"
+      },
+      {
+        "no": "viskelær",
+        "tl": "pambura",
+        "en": "eraser"
+      },
+      {
+        "no": "papir",
+        "tl": "papel",
+        "en": "paper"
+      },
+      {
+        "no": "tavle",
+        "tl": "pisara",
+        "en": "blackboard"
+      },
+      {
+        "no": "linjal",
+        "tl": "pinuno",
+        "en": "ruler"
+      },
+      {
+        "no": "sekk",
+        "tl": "backpack",
+        "en": "backpack"
+      },
+      {
+        "no": "prøve",
+        "tl": "eksamen",
+        "en": "test"
+      },
+      {
+        "no": "lekser",
+        "tl": "takdang aralin",
+        "en": "homework"
+      },
+      {
+        "no": "friminutt",
+        "tl": "recess",
+        "en": "break"
+      }
     ]
-  },  
+  },
   {
   "level": 31,
   "themes": {
@@ -3400,5 +4300,6 @@
   ]
 }
 ]
+
 
 
