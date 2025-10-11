@@ -169,91 +169,91 @@
       }
     ]
   },
-  {
-    "level": 3,
-    "themes": {
-      "no": "Personlige pronomen",
-      "en": "Personal Pronouns",
-      "tl": "Panghalip Panao"
-    },
-    "items": [
-      {
-        "no": "jeg",
-        "tl": "ako",
-        "en": "I"
-      },
-      {
-        "no": "du",
-        "tl": "ikaw",
-        "en": "you (singular)"
-      },
-      {
-        "no": "han",
-        "tl": "siya",
-        "en": "he"
-      },
-      {
-        "no": "hun",
-        "tl": "siya",
-        "en": "she"
-      },
-      {
-        "no": "vi",
-        "tl": "kami",
-        "en": "we (exclusive)"
-      },
-      {
-        "no": "vi (inkluderende)",
-        "tl": "tayo",
-        "en": "we (inclusive)"
-      },
-      {
-        "no": "dere",
-        "tl": "kayo",
-        "en": "you (plural)"
-      },
-      {
-        "no": "de",
-        "tl": "sila",
-        "en": "they"
-      },
-      {
-        "no": "meg",
-        "tl": "sa akin",
-        "en": "me"
-      },
-      {
-        "no": "deg",
-        "tl": "sa iyo",
-        "en": "you"
-      },
-      {
-        "no": "ham",
-        "tl": "sa kanya",
-        "en": "him"
-      },
-      {
-        "no": "henne",
-        "tl": "sa kanya",
-        "en": "her"
-      },
-      {
-        "no": "oss",
-        "tl": "sa amin",
-        "en": "us"
-      },
-      {
-        "no": "dem",
-        "tl": "sa kanila",
-        "en": "them"
-      },
-      {
-        "no": "seg selv",
-        "tl": "sarili",
-        "en": "oneself"
-      }
-    ]
+{
+  "level": 3,
+  "themes": {
+    "no": "Personlige pronomen",
+    "en": "Personal Pronouns",
+    "tl": "Panghalip Panao"
   },
+  "items": [
+    {
+      "no": "jeg",
+      "tl": "ako",
+      "en": "I"
+    },
+    {
+      "no": "du",
+      "tl": "ikaw",
+      "en": "you (singular)"
+    },
+    {
+      "no": "han",
+      "tl": "siya",
+      "en": "he"
+    },
+    {
+      "no": "hun",
+      "tl": "siya",
+      "en": "she"
+    },
+    {
+      "no": "vi",
+      "tl": "kami",
+      "en": "we (exclusive)"
+    },
+    {
+      "no": "vi (inkluderende)",
+      "tl": "tayo",
+      "en": "we (inclusive)"
+    },
+    {
+      "no": "dere",
+      "tl": "kayo",
+      "en": "you (plural)"
+    },
+    {
+      "no": "de",
+      "tl": "sila",
+      "en": "they"
+    },
+    {
+      "no": "meg",
+      "tl": "ako",
+      "en": "me"
+    },
+    {
+      "no": "deg",
+      "tl": "ikaw",
+      "en": "you"
+    },
+    {
+      "no": "ham",
+      "tl": "siya",
+      "en": "him"
+    },
+    {
+      "no": "henne",
+      "tl": "siya",
+      "en": "her"
+    },
+    {
+      "no": "oss",
+      "tl": "kami",
+      "en": "us"
+    },
+    {
+      "no": "dem",
+      "tl": "sila",
+      "en": "them"
+    },
+    {
+      "no": "seg selv",
+      "tl": "sarili",
+      "en": "oneself"
+    }
+  ]
+},
   {
     "level": 4,
     "themes": {
@@ -433,7 +433,7 @@
     },
     "items": [
       {
-        "no": "én",
+        "no": "en",
         "tl": "isa",
         "en": "one"
       },
@@ -4300,6 +4300,7 @@
   ]
 }
 ]
+
 
 
 
