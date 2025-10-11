@@ -1,13 +1,9 @@
 [
   {
     "level": 1,
-    "themes": {
-      "no": "Hilsener og høflighet",
-      "en": "Greetings and Politeness",
-      "tl": "Pagbati at Kagandahang-Asal"
-    },
+    "themes": { "no": "Hilsener og høflighet", "en": "Greetings and Politeness", "tl": "Pagbati at Kagandahang-Asal" },
     "items": [
-      {"no": "hei", "tl": "kumusta", "en": "hi"},
+      {"no": "hei", "tl": "hello", "en": "hi"},
       {"no": "hallo", "tl": "hello", "en": "hello"},
       {"no": "god morgen", "tl": "magandang umaga", "en": "good morning"},
       {"no": "god kveld", "tl": "magandang gabi", "en": "good evening"},
@@ -21,22 +17,18 @@
       {"no": "hvordan går det?", "tl": "kumusta ka?", "en": "how are you?"},
       {"no": "bra", "tl": "mabuti", "en": "good"},
       {"no": "dårlig", "tl": "masama", "en": "bad"},
-      {"no": "sånn passe", "tl": "pwede na", "en": "so-so"}
+      {"no": "sånn passe", "tl": "okay lang", "en": "so-so"}
     ]
   },
   {
     "level": 2,
-    "themes": {
-      "no": "Hilsener og høflighet",
-      "en": "Greetings and Politeness",
-      "tl": "Pagbati at Kagandahang-Asal"
-    },
+    "themes": { "no": "Hilsener og høflighet", "en": "Greetings and Politeness", "tl": "Pagbati at Kagandahang-Asal" },
     "items": [
       {"no": "hyggelig å møte deg", "tl": "ikinagagalak kong makilala ka", "en": "nice to meet you"},
       {"no": "på gjensyn", "tl": "hanggang sa muli", "en": "see you again"},
       {"no": "ta vare", "tl": "mag-ingat ka", "en": "take care"},
       {"no": "gratulerer", "tl": "binabati kita", "en": "congratulations"},
-      {"no": "lykke til", "tl": "suwertehin ka sana", "en": "good luck"},
+      {"no": "lykke til", "tl": "sana swertehin ka", "en": "good luck"},
       {"no": "god ferie", "tl": "magandang bakasyon", "en": "have a nice holiday"},
       {"no": "god jul", "tl": "maligayang pasko", "en": "merry Christmas"},
       {"no": "godt nytt år", "tl": "manigong bagong taon", "en": "happy New Year"},
@@ -51,11 +43,7 @@
   },
   {
     "level": 3,
-    "themes": {
-      "no": "Personlige pronomen",
-      "en": "Personal Pronouns",
-      "tl": "Panghalip Panao"
-    },
+    "themes": { "no": "Personlige pronomen", "en": "Personal Pronouns", "tl": "Panghalip Panao" },
     "items": [
       {"no": "jeg", "tl": "ako", "en": "I"},
       {"no": "du", "tl": "ikaw", "en": "you (singular)"},
@@ -65,22 +53,18 @@
       {"no": "vi (inkluderende)", "tl": "tayo", "en": "we (inclusive)"},
       {"no": "dere", "tl": "kayo", "en": "you (plural)"},
       {"no": "de", "tl": "sila", "en": "they"},
-      {"no": "meg", "tl": "akin", "en": "me"},
-      {"no": "deg", "tl": "iyo", "en": "you"},
-      {"no": "ham", "tl": "kanya", "en": "him"},
-      {"no": "henne", "tl": "kanya", "en": "her"},
-      {"no": "oss", "tl": "amin", "en": "us"},
-      {"no": "dem", "tl": "kanila", "en": "them"},
+      {"no": "meg", "tl": "sa akin", "en": "me"},
+      {"no": "deg", "tl": "sa iyo", "en": "you"},
+      {"no": "ham", "tl": "sa kanya", "en": "him"},
+      {"no": "henne", "tl": "sa kanya", "en": "her"},
+      {"no": "oss", "tl": "sa amin", "en": "us"},
+      {"no": "dem", "tl": "sa kanila", "en": "them"},
       {"no": "seg selv", "tl": "sarili", "en": "oneself"}
     ]
   },
   {
     "level": 4,
-    "themes": {
-      "no": "Familie",
-      "en": "Family",
-      "tl": "Pamilya"
-    },
+    "themes": { "no": "Familie", "en": "Family", "tl": "Pamilya" },
     "items": [
       {"no": "mor", "tl": "ina", "en": "mother"},
       {"no": "far", "tl": "ama", "en": "father"},
@@ -101,11 +85,7 @@
   },
   {
     "level": 5,
-    "themes": {
-      "no": "Vanlige spørsmål",
-      "en": "Common Questions",
-      "tl": "Karaniwang Tanong"
-    },
+    "themes": { "no": "Vanlige spørsmål", "en": "Common Questions", "tl": "Karaniwang Tanong" },
     "items": [
       {"no": "hva", "tl": "ano", "en": "what"},
       {"no": "hvor", "tl": "saan", "en": "where"},
@@ -115,7 +95,7 @@
       {"no": "hvem", "tl": "sino", "en": "who"},
       {"no": "hvilken", "tl": "alin", "en": "which"},
       {"no": "hvor mye", "tl": "magkano", "en": "how much"},
-      {"no": "hvor mange", "tl": "ilang", "en": "how many"},
+      {"no": "hvor mange", "tl": "ilan", "en": "how many"},
       {"no": "hvor langt", "tl": "gaano kalayo", "en": "how far"},
       {"no": "hvor lenge", "tl": "gaano katagal", "en": "how long"},
       {"no": "hvor ofte", "tl": "gaano kadalas", "en": "how often"},
@@ -126,11 +106,7 @@
   },
   {
     "level": 6,
-    "themes": {
-      "no": "Tall",
-      "en": "Numbers",
-      "tl": "Mga Bilang"
-    },
+    "themes": { "no": "Tall", "en": "Numbers", "tl": "Mga Bilang" },
     "items": [
       {"no": "én", "tl": "isa", "en": "one"},
       {"no": "to", "tl": "dalawa", "en": "two"},
@@ -143,19 +119,15 @@
       {"no": "ni", "tl": "siyam", "en": "nine"},
       {"no": "ti", "tl": "sampu", "en": "ten"},
       {"no": "elleve", "tl": "labing-isa", "en": "eleven"},
-      {"no": "tolv", "tl": "labindalawa", "en": "twelve"},
-      {"no": "tretten", "tl": "labintatlo", "en": "thirteen"},
+      {"no": "tolv", "tl": "labing-dalawa", "en": "twelve"},
+      {"no": "tretten", "tl": "labing-tatlo", "en": "thirteen"},
       {"no": "fjorten", "tl": "labing-apat", "en": "fourteen"},
-      {"no": "femten", "tl": "labinlima", "en": "fifteen"}
+      {"no": "femten", "tl": "labing-lima", "en": "fifteen"}
     ]
   },
   {
     "level": 7,
-    "themes": {
-      "no": "Dager og måneder",
-      "en": "Days and Months",
-      "tl": "Mga Araw at Buwan"
-    },
+    "themes": { "no": "Dager og måneder", "en": "Days and Months", "tl": "Mga Araw at Buwan" },
     "items": [
       {"no": "mandag", "tl": "lunes", "en": "Monday"},
       {"no": "tirsdag", "tl": "martes", "en": "Tuesday"},
@@ -176,11 +148,7 @@
   },
   {
     "level": 8,
-    "themes": {
-      "no": "Mat og drikke",
-      "en": "Food and Drinks",
-      "tl": "Pagkain at Inumin"
-    },
+    "themes": { "no": "Mat og drikke", "en": "Food and Drinks", "tl": "Pagkain at Inumin" },
     "items": [
       {"no": "mat", "tl": "pagkain", "en": "food"},
       {"no": "drikke", "tl": "inumin", "en": "drink"},
@@ -201,11 +169,7 @@
   },
   {
     "level": 9,
-    "themes": {
-      "no": "Kjøkkenutstyr",
-      "en": "Kitchenware",
-      "tl": "Kagamitan sa Kusina"
-    },
+    "themes": { "no": "Kjøkkenutstyr", "en": "Kitchenware", "tl": "Kagamitan sa Kusina" },
     "items": [
       {"no": "tallerken", "tl": "plato", "en": "plate"},
       {"no": "glass", "tl": "baso", "en": "glass"},
@@ -226,11 +190,7 @@
   },
   {
     "level": 10,
-    "themes": {
-      "no": "Klær",
-      "en": "Clothes",
-      "tl": "Damit"
-    },
+    "themes": { "no": "Klær", "en": "Clothes", "tl": "Damit" },
     "items": [
       {"no": "skjorte", "tl": "kamiseta", "en": "shirt"},
       {"no": "bukse", "tl": "pantalon", "en": "trousers"},
@@ -242,7 +202,7 @@
       {"no": "støvler", "tl": "bota", "en": "boots"},
       {"no": "sokker", "tl": "medyas", "en": "socks"},
       {"no": "belte", "tl": "sinturon", "en": "belt"},
-      {"no": "skjerf", "tl": "scarf", "en": "scarf"},
+      {"no": "skjerf", "tl": "iskarf", "en": "scarf"},
       {"no": "hansker", "tl": "guwantes", "en": "gloves"},
       {"no": "slips", "tl": "kurbata", "en": "tie"},
       {"no": "lue", "tl": "bonnet", "en": "beanie"},
@@ -2500,3 +2460,4 @@
   ]
 }
 ]
+
