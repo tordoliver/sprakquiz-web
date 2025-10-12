@@ -41,6 +41,26 @@
     .modalHeader{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;border-bottom:1px solid #444;position:sticky;top:0;background:#2c2c2c;z-index:1}
     .modalBody{padding:.8rem 1rem 1rem}
     .modalClose{appearance:none;border:0;background:#444;color:#fff;border-radius:10px;padding:.35rem .6rem;cursor:pointer}
+
+    /* --- Anti-hopping på mobil --- */
+    .noWrapFlex{ flex-wrap:nowrap; }         /* ikke bryt linje i pill-raden */
+    .nowrap{ white-space:nowrap; }
+    .tabnums{ font-variant-numeric: tabular-nums; }
+
+    /* Fast bredde for timer + prosent */
+    #timeLeft{
+      font-variant-numeric: tabular-nums;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      display:inline-block;
+      width:5ch;         /* "00:00" = 5 tegn */
+      text-align:right;
+    }
+    #progressPill{
+      font-variant-numeric: tabular-nums;
+      min-width:10ch;    /* plass til "100% riktig" */
+      text-align:center;
+      white-space:nowrap;
+    }
   </style>
 </head>
 <body>
@@ -131,9 +151,11 @@
       <h3 id="quizTitle"></h3>
       <div class="row" style="justify-content:space-between;align-items:center;gap:.6rem">
         <span class="pill" id="dirText"></span>
-        <div class="row" style="gap:.5rem">
+        <div class="row noWrapFlex" style="gap:.5rem">
           <button class="btn ghost hidden" id="btnShowAnswers">👁 <span data-t="show_answer">Vis fasit</span></button>
-          <span class="pill hidden" id="timerWrap">⏳ <span data-t="timer_left">Tid igjen</span>: <span id="timeLeft">15:00</span></span>
+          <span class="pill hidden nowrap" id="timerWrap">⏳ <span data-t="timer_left">Tid igjen</span>:
+            <span id="timeLeft">15:00</span>
+          </span>
           <span class="pill" id="progressPill">0% riktig</span>
         </div>
       </div>
@@ -298,7 +320,7 @@ let currentScreen='screenLogin', navStack=[];
 let PRACTICE_TYPE='typing'; // 'typing' | 'choice'
 
 // Tilstand for gjeldende spørsmål
-let decided=false;        // om svaret er avklart
+let decided=false;        // svaret avklart?
 let decidedCorrect=false; // var det riktig?
 let awaitingNext=false;   // sperre mot dobbel "Neste"
 
@@ -322,13 +344,36 @@ function show(id,{push=true}={}){
   $('#'+id).classList.remove('hidden'); currentScreen=id; updateBackState();
 }
 function updateBackState(){ $('#btnBackTop').disabled = navStack.length===0; }
+
+/* ===== Back-knapp (deterministisk) ===== */
 function goBack(){
+  // Lukk åpne modaler først
   if(!$('#answersModal').classList.contains('hidden')){ closeAnswersModal(); return; }
   if(!$('#practiceModal').classList.contains('hidden')){ closePracticeModal(); return; }
-  if(navStack.length===0) return;
-  const prev = navStack.pop();
-  show(prev,{push:false});
+
+  // Bestemt navigasjon
+  switch (currentScreen) {
+    case 'screenQuiz':
+      openLevels(); // Quiz -> Nivåer
+      break;
+    case 'screenLevels':
+      show('screenPickMode', { push:false }); // Nivåer -> Velg modus
+      break;
+    case 'screenPickMode':
+      show('screenHome', { push:false }); // Velg modus -> Hjem
+      break;
+    case 'screenHelp':
+    case 'screenSettings':
+      show('screenHome', { push:false });
+      break;
+    default:
+      show('screenHome', { push:false });
+  }
+  // Tøm stack for å unngå å "hoppe" tilbake inn i quiz
+  navStack = [];
+  updateBackState();
 }
+
 function percentCorrect(){const total=Math.max(1,right+wrong); return (right/total)*100;}
 function updateProgress(){ $('#progressPill').textContent = `${Math.round(percentCorrect())}${tr('pct_correct')}`;}
 function colorForScore(sc){const total=30; const p=Math.max(0,Math.min(100,(sc/total)*100)); const r=Math.round(255*(1-p/100)), g=Math.round(255*(p/100)); return `rgb(${r},${g},0)`;}
@@ -388,7 +433,7 @@ function openLevels(){
     b.innerHTML=`Nivå ${lvl}${sc!=null? ` (${sc}/30)`:''}${theme? `<br><span class="muted" style="font-weight:500">${theme}</span>`:''}`;
     b.onclick=()=> {
       if(MODE==='ov') openPracticeModal(lvl);
-      else startLevel(lvl); // test som før
+      else startLevel(lvl); // test -> start direkte
     };
     grid.appendChild(b);
   }
@@ -398,7 +443,7 @@ function openLevels(){
 /* ===== Quiz ===== */
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];}return a;}
 
-/* buildQuestions for Øv/Test + flervalg-støtte */
+/* Bygg spørsmål */
 function buildQuestions(mode){
   const s=store.settings||{known:'no',learn:'tl'};
   const src=s.known||'no', dst=s.learn||'tl';
@@ -481,7 +526,7 @@ function startLevel(lvl){
   $('#btnRestart').disabled=(MODE==='test');
   $('#btnShowAnswers').classList.toggle('hidden', MODE!=='ov'); // kun i Øv
 
-  // toggl UI for øvingsmåte
+  // Øvings-UI
   $('#typingWrap').classList.toggle('hidden', !(PRACTICE_TYPE==='typing' || MODE==='test'));
   $('#mcWrap').classList.toggle('hidden', !(PRACTICE_TYPE==='choice' && MODE==='ov'));
 
@@ -499,7 +544,7 @@ function renderMC(q){
     const btn=document.createElement('button');
     btn.className='btn'; btn.textContent=opt;
     btn.onclick=()=>{
-      if(decided) return; // første klikk teller
+      if(decided) return;
       const ans=opt.toLowerCase();
       decidedCorrect = q.answers.includes(ans);
       decided = true;
@@ -529,7 +574,7 @@ function nextQuestion(){
   }
 }
 
-// Avgjør svaret for tekst-oppgaver. Teller ikke poeng her – det gjøres ved "Neste".
+// Tekst-svar: avgjør, men tell poeng først når vi trykker "Neste"
 function checkAnswer(){
   if(MODE==='ov' && PRACTICE_TYPE==='choice') return;
   const q=QLIST[qi]; if($('#btnCheck').disabled || decided) return;
@@ -544,7 +589,7 @@ function checkAnswer(){
     if(MODE==='ov'){
       if(q.tries>=2){
         decided=true; decidedCorrect=false;
-        $('#resultMsg').textContent=tr('wrong_again_reveal', q.answers.join(', ')); // ← FIX
+        $('#resultMsg').textContent=tr('wrong_again_reveal', q.answers.join(', '));
         $('#resultMsg').style.color='#ff6b6b';
         $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false;
       }else{
@@ -559,7 +604,7 @@ function checkAnswer(){
   }
 }
 
-// Avanserer og teller poeng (felles)
+// Neste: tell poeng og gå videre
 function advance(){
   if(awaitingNext) return;
   awaitingNext=true;
@@ -581,7 +626,7 @@ function advance(){
 function showResult(){
   if(MODE==='test') timer.active=false;
   const total=QLIST.length, score=right;
-  $('#finalMsg').textContent = tr('result', { level: CURRENT_LEVEL, score, total }); // ← FIX
+  $('#finalMsg').textContent = tr('result', { level: CURRENT_LEVEL, score, total });
   $('#prompt').textContent=tr('level_finished');
   $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=true;
   if(MODE==='test' && CURRENT_USER){
@@ -591,10 +636,13 @@ function showResult(){
     $('#btnRestart').disabled=false;
   }
 }
+
 function tick(){
   if(!timer.active) return;
-  const m=Math.floor(timer.sec/60), s=String(timer.sec%60).padStart(2,'0');
-  $('#timeLeft').textContent=`${m}:${s}`;
+  const m = Math.floor(timer.sec/60);
+  const mm = String(m).padStart(2,'0');          // alltid to sifre
+  const ss = String(timer.sec%60).padStart(2,'0');
+  $('#timeLeft').textContent = `${mm}:${ss}`;
   if(timer.sec<=0){showResult();return;}
   timer.sec--; setTimeout(tick,1000);
 }
