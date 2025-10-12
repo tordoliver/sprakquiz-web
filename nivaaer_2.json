@@ -37,8 +37,8 @@
       {"no": "ingen årsak", "tl": "walang anuman", "en": "you're welcome"},
       {"no": "kan jeg hjelpe deg?", "tl": "maaari ba kitang tulungan?", "en": "can I help you?"},
       {"no": "kan du hjelpe meg?", "tl": "maaari mo ba akong tulungan?", "en": "can you help me?"},
-      {"no": "hvordan har du det?", "tl": "kumusta ka?", "en": "how are you?"},
-      {"no": "ha det bra", "tl": "paalam", "en": "goodbye"}
+      {"no": "hva heter du?", "tl": "ano ang pangalan mo?", "en": "what is your name?"}
+      {"no": "jeg heter Tord", "tl": "ang pangalan ko ay Tord", "en": "my name is Tord"}
     ]
   },
   {
@@ -2380,6 +2380,7 @@
   ]
 }
 ]
+
 
 
 
