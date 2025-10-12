@@ -140,7 +140,7 @@
 
       <div id="prompt" style="font-size:1.25rem;margin:.6rem 0 .35rem"></div>
 
-      <!-- Skriving (som før) -->
+      <!-- Skriving -->
       <div id="typingWrap">
         <input id="answer" placeholder="Skriv svaret her"/>
       </div>
@@ -208,7 +208,7 @@
     </div>
 
     <!-- Modal (Øvingsmåte) -->
-    <div id="practiceModal" class="modalBackdrop hidden" aria-hidden="true">
+    <div id="practiceModal" class="modalBackdrop hidden" aria-hidden="true" data-level="">
       <div class="modalCard" role="dialog" aria-modal="true" aria-labelledby="practiceTitle">
         <div class="modalHeader">
           <strong id="practiceTitle">🧠 <span data-t="choose_practice">Velg øvingsmåte</span></strong>
@@ -233,15 +233,48 @@ const LANG_CODES = ["no","en","tl"];
 const LANG_NAMES = {no:{no:"norsk",en:"engelsk",tl:"tagalog"},en:{no:"Norwegian",en:"English",tl:"Tagalog"},tl:{no:"Norwegian",en:"Ingles",tl:"Tagalog"}};
 const T={
   no:{
-    app_title:"Språkquiz",logout:"Logg ut / bytt",username:"Brukernavn",password:"Passord",login:"Logg inn",register:"Registrer",guest:"Gjest",register_title:"Registrer",levels:"Nivåer",settings:"Innstillinger",help:"Hjelp",back:"Tilbake",choose_mode:"Velg modus",practice:"Øv",test:"Test",choose_level:"Velg nivå",choose_level_practice:"Velg nivå – Øv",choose_level_test:"Velg nivå – Test",check_answer:"Sjekk svar",next_question:"Neste spørsmål",restart_level:"Start nivået på nytt",pick_new_level:"Velg nytt nivå",level_finished:"Nivå ferdig!",timer_left:"Tid igjen",result:o=>`Resultat nivå ${o.level}: ${o.score}/${o.total} riktige`,pct_correct:"% riktig",show_answer:"Vis fasit",hide_answer:"Skjul fasit",src:"Kilde",dst:"Mål",i_know:"Jeg kan",i_want_to_learn:"Jeg vil lære",language:"Grensesnittspråk",settings_title:"Innstillinger",apply:"Bruk",wrong_try_again:"❌ Feil. Prøv igjen!",wrong_again_reveal:ans=>`❌ Feil igjen. Riktig: ${ans}`,right:"✅ Riktig!",wrong:"❌ Feil.",help_text:`• Velg «Nivåer» → «Øv» eller «Test».\n• Øv: hjelpemidler (ordbok, fasit, hint). Test: ingen hjelp + nedtelling.\n• I Test spørres hvert ord begge veier (30 spørsmål = 2×15).\n• Full pott i Test låser opp neste nivå.\n• ENTER sjekker svaret; ENTER igjen går videre.`,enter_user_pass:"Skriv inn brukernavn og passord.",bad_creds:"Feil brukernavn eller passord.",user_exists:"Brukernavn er allerede i bruk.",reg_success:"Bruker opprettet. Du kan nå logge inn.",guest_info:"Du er gjest. Fremdrift lagres ikke.",error_same_lang:"Kilde- og mål-språk kan ikke være like.",settings_updated:"Oppdatert",
+    app_title:"Språkquiz",logout:"Logg ut / bytt",username:"Brukernavn",password:"Passord",login:"Logg inn",register:"Registrer",guest:"Gjest",
+    register_title:"Registrer",levels:"Nivåer",settings:"Innstillinger",help:"Hjelp",back:"Tilbake",choose_mode:"Velg modus",practice:"Øv",test:"Test",
+    choose_level:"Velg nivå",choose_level_practice:"Velg nivå – Øv",choose_level_test:"Velg nivå – Test",
+    check_answer:"Sjekk svar",next_question:"Neste spørsmål",restart_level:"Start nivået på nytt",pick_new_level:"Velg nytt nivå",
+    level_finished:"Nivå ferdig!",timer_left:"Tid igjen",result:o=>`Resultat nivå ${o.level}: ${o.score}/${o.total} riktige`,
+    pct_correct:"% riktig",show_answer:"Vis fasit",hide_answer:"Skjul fasit",src:"Kilde",dst:"Mål",
+    i_know:"Jeg kan",i_want_to_learn:"Jeg vil lære",language:"Grensesnittspråk",settings_title:"Innstillinger",apply:"Bruk",
+    wrong_try_again:"❌ Feil. Prøv igjen!",wrong_again_reveal:ans=>`❌ Feil igjen. Riktig: ${ans}`,right:"✅ Riktig!",wrong:"❌ Feil.",
+    help_text:`• Velg «Nivåer» → «Øv» eller «Test».\n• Øv: hjelpemidler (ordbok, fasit, hint). Test: ingen hjelp + nedtelling.\n• I Test spørres hvert ord begge veier (30 spørsmål = 2×15).\n• Full pott i Test låser opp neste nivå.\n• ENTER sjekker svaret; ENTER igjen går videre.`,
+    enter_user_pass:"Skriv inn brukernavn og passord.",bad_creds:"Feil brukernavn eller passord.",user_exists:"Brukernavn er allerede i bruk.",
+    reg_success:"Bruker opprettet. Du kan nå logge inn.",guest_info:"Du er gjest. Fremdrift lagres ikke.",
+    error_same_lang:"Kilde- og mål-språk kan ikke være like.",settings_updated:"Oppdatert",
     choose_practice:"Velg øvingsmåte", typing:"Skriving", multiple_choice:"Flervalg"
   },
   en:{
-    app_title:"Language Quiz",logout:"Log out / switch",username:"Username",password:"Password",login:"Log in",register:"Register",guest:"Guest",register_title:"Register",levels:"Levels",settings:"Settings",help:"Help",back:"Back",choose_mode:"Choose mode",practice:"Practice",test:"Test",choose_level:"Choose level",choose_level_practice:"Choose Level – Practice",choose_level_test:"Choose Level – Test",check_answer:"Check answer",next_question:"Next question",restart_level:"Restart level",pick_new_level:"Pick another level",level_finished:"Level finished!",timer_left:"Time left",result:o=>`Result Level ${o.level}: ${o.score}/${o.total} correct`,pct_correct:"% correct",show_answer:"Show answers",hide_answer:"Hide answers",src:"Source",dst:"Target",i_know:"I know",i_want_to_learn:"I want to learn",language:"Interface language",settings_title:"Settings",apply:"Apply",wrong_try_again:"❌ Wrong. Try again!",wrong_again_reveal:ans=>`❌ Still wrong. Correct: ${ans}`,right:"✅ Correct!",wrong:"❌ Wrong.",help_text:`• Choose “Levels” → “Practice” or “Test”.\n• Practice: helpers (word list, answers, hints). Test: no help + countdown.\n• In Test each word is asked both directions (30 questions = 2×15).\n• A perfect Test unlocks the next level.\n• ENTER checks the answer; press ENTER again to go next.`,enter_user_pass:"Enter username and password.",bad_creds:"Wrong username or password.",user_exists:"Username is already taken.",reg_success:"User created. You can log in now.",guest_info:"You are a guest. Progress is not saved.",error_same_lang:"Source and target can’t be the same.",settings_updated:"Updated",
+    app_title:"Language Quiz",logout:"Log out / switch",username:"Username",password:"Password",login:"Log in",register:"Register",guest:"Guest",
+    register_title:"Register",levels:"Levels",settings:"Settings",help:"Help",back:"Back",choose_mode:"Choose mode",practice:"Practice",test:"Test",
+    choose_level:"Choose level",choose_level_practice:"Choose Level – Practice",choose_level_test:"Choose Level – Test",
+    check_answer:"Check answer",next_question:"Next question",restart_level:"Restart level",pick_new_level:"Pick another level",
+    level_finished:"Level finished!",timer_left:"Time left",result:o=>`Result Level ${o.level}: ${o.score}/${o.total} correct`,
+    pct_correct:"% correct",show_answer:"Show answers",hide_answer:"Hide answers",src:"Source",dst:"Target",
+    i_know:"I know",i_want_to_learn:"I want to learn",language:"Interface language",settings_title:"Settings",apply:"Apply",
+    wrong_try_again:"❌ Wrong. Try again!",wrong_again_reveal:ans=>`❌ Still wrong. Correct: ${ans}`,right:"✅ Correct!",wrong:"❌ Wrong.",
+    help_text:`• Choose “Levels” → “Practice” or “Test”.\n• Practice: helpers (word list, answers, hints). Test: no help + countdown.\n• In Test each word is asked both directions (30 questions = 2×15).\n• A perfect Test unlocks the next level.\n• ENTER checks the answer; press ENTER again to go next.`,
+    enter_user_pass:"Enter username and password.",bad_creds:"Wrong username or password.",user_exists:"Username is already taken.",
+    reg_success:"User created. You can log in now.",guest_info:"You are a guest. Progress is not saved.",
+    error_same_lang:"Source and target can’t be the same.",settings_updated:"Updated",
     choose_practice:"Choose practice type", typing:"Typing", multiple_choice:"Multiple choice"
   },
   tl:{
-    app_title:"Pagsusulit sa Wika",logout:"Mag-sign out / palitan",username:"Username",password:"Password",login:"Mag-sign in",register:"Magrehistro",guest:"Bisita",register_title:"Magrehistro",levels:"Mga Antas",settings:"Mga Setting",help:"Tulong",back:"Bumalik",choose_mode:"Pumili ng mode",practice:"Ehersisyo",test:"Pagsusulit",choose_level:"Piliin ang antas",choose_level_practice:"Piliin ang Antas – Ehersisyo",choose_level_test:"Piliin ang Antas – Pagsusulit",check_answer:"Suriin ang sagot",next_question:"Susunod na tanong",restart_level:"Ulitin ang antas",pick_new_level:"Pumili ng ibang antas",level_finished:"Tapos na ang antas!",timer_left:"Natitirang oras",result:o=>`Resulta Antas ${o.level}: ${o.score}/${o.total} tama`,pct_correct:"% tama",show_answer:"Ipakita ang mga sagot",hide_answer:"Itago ang mga sagot",src:"Pinagmulan",dst:"Patungo",i_know:"Alam ko",i_want_to_learn:"Nais kong matutunan",language:"Wika ng UI",settings_title:"Mga Setting",apply:"Ilapat",wrong_try_again:"❌ Mali. Subukan muli!",wrong_again_reveal:ans=>`❌ Mali pa rin. Tama: ${ans}`,right:"✅ Tama!",wrong:"❌ Mali.",help_text:`• Piliin ang “Mga Antas” → “Ehersisyo” o “Pagsusulit”.\n• Ehersisyo: may tulong (talaan ng salita, sagot, pahiwatig). Pagsusulit: walang tulong + countdown.\n• Sa Pagsusulit, parehong direksyon ang tanong sa bawat salita (30 tanong = 2×15).\n• Perpektong iskor sa Pagsusulit ay magbubukas ng susunod na antas.\n• ENTER para suriin; ENTER muli para magpatuloy.`,enter_user_pass:"Ilagay ang username at password.",bad_creds:"Maling username o password.",user_exists:"Nagamit na ang username.",reg_success:"Nagawa ang user. Maaari ka nang mag-sign in.",guest_info:"Bisita ka. Hindi ise-save ang progreso.",error_same_lang:"Hindi maaaring magkapareho ang pinagmulan at patungo.",settings_updated:"Na-update",
+    app_title:"Pagsusulit sa Wika",logout:"Mag-sign out / palitan",username:"Username",password:"Password",login:"Mag-sign in",register:"Magrehistro",guest:"Bisita",
+    register_title:"Magrehistro",levels:"Mga Antas",settings:"Mga Setting",help:"Tulong",back:"Bumalik",choose_mode:"Pumili ng mode",practice:"Ehersisyo",test:"Pagsusulit",
+    choose_level:"Piliin ang antas",choose_level_practice:"Piliin ang Antas – Ehersisyo",choose_level_test:"Piliin ang Antas – Pagsusulit",
+    check_answer:"Suriin ang sagot",next_question:"Susunod na tanong",restart_level:"Ulitin ang antas",pick_new_level:"Pumili ng ibang antas",
+    level_finished:"Tapos na ang antas!",timer_left:"Natitirang oras",result:o=>`Resulta Antas ${o.level}: ${o.score}/${o.total} tama`,
+    pct_correct:"% tama",show_answer:"Ipakita ang mga sagot",hide_answer:"Itago ang mga sagot",src:"Pinagmulan",dst:"Patungo",
+    i_know:"Alam ko",i_want_to_learn:"Nais kong matutunan",language:"Wika ng UI",settings_title:"Mga Setting",apply:"Ilapat",
+    wrong_try_again:"❌ Mali. Subukan muli!",wrong_again_reveal:ans=>`❌ Mali pa rin. Tama: ${ans}`,right:"✅ Tama!",wrong:"❌ Mali.",
+    help_text:`• Piliin ang “Mga Antas” → “Ehersisyo” o “Pagsusulit”.\n• Ehersisyo: may tulong (talaan ng salita, sagot, pahiwatig). Pagsusulit: walang tulong + countdown.\n• Sa Pagsusulit, parehong direksyon ang tanong sa bawat salita (30 tanong = 2×15).\n• Perpektong iskor sa Pagsusulit ay magbubukas ng susunod na antas.\n• ENTER para suriin; ENTER muli para magpatuloy.`,
+    enter_user_pass:"Ilagay ang username at password.",bad_creds:"Maling username o password.",user_exists:"Nagamit na ang username.",
+    reg_success:"Nagawa ang user. Maaari ka nang mag-sign in.",guest_info:"Bisita ka. Hindi ise-save ang progreso.",
+    error_same_lang:"Hindi maaaring magkapareho ang pinagmulan at patungo.",settings_updated:"Na-update",
     choose_practice:"Pumili ng paraan ng ehersisyo", typing:"Pagta-type", multiple_choice:"Multiple choice"
   }
 };
@@ -403,7 +436,7 @@ function buildQuestions(mode){
     shuffle(QLIST);
   }
 
-  // Bygg flervalg-alternativer hvis nødvendig
+  // Flervalg-alternativer for øving
   if(PRACTICE_TYPE==='choice' && mode==='ov'){
     const srcPool = ORD.map(o=>norm(o.Source));
     const dstPool = ORD.map(o=>norm(o.Target));
@@ -421,7 +454,8 @@ function buildQuestions(mode){
 }
 
 function startLevel(lvl){
-  CURRENT_LEVEL=lvl; const s=store.settings||{known:'no',learn:'tl'};
+  CURRENT_LEVEL=lvl;
+  const s=store.settings||{known:'no',learn:'tl'};
   if((s.known||'no')===(s.learn||'tl')){alert(tr('error_same_lang'));return;}
   buildQuestions(MODE); qi=0; right=0; wrong=0; updateProgress();
   $('#finalMsg').textContent=''; $('#resultMsg').textContent=''; $('#hintMsg').textContent='';
@@ -535,24 +569,23 @@ function openAnswersModal(){
 function closeAnswersModal(){ $('#answersModal').classList.add('hidden'); }
 
 /* ===== Øvingsmåte-modal ===== */
-let pendingLevel=null;
 function openPracticeModal(lvl){
-  pendingLevel=lvl;
-  $('#practiceModal').classList.remove('hidden');
+  const modal = $('#practiceModal');
+  modal.dataset.level = String(lvl);                 // lagre nivået her
+  $('#practiceTitle').innerHTML = `🧠 ${tr('choose_practice')} – Nivå ${lvl}`;
+  modal.classList.remove('hidden');
 }
 function closePracticeModal(){
-  $('#practiceModal').classList.add('hidden');
-  // VIKTIG: ikke nullstill pendingLevel her lenger
+  $('#practiceModal').classList.add('hidden');       // ikke nullstill dataset.level
 }
 $('#practiceClose').onclick=closePracticeModal;
 $('#practiceModal').addEventListener('click',e=>{ if(e.target.id==='practiceModal') closePracticeModal(); });
 $$('#practiceModal [data-practice]').forEach(btn=>{
   btn.addEventListener('click',()=>{
-    PRACTICE_TYPE=btn.getAttribute('data-practice');
-    const lvl = pendingLevel;          // <-- TA VARE PÅ NIVÅET
+    PRACTICE_TYPE = btn.getAttribute('data-practice');
+    const lvl = +$('#practiceModal').dataset.level;  // hent riktig nivå
     closePracticeModal();
-    startLevel(lvl || 1);              // <-- START MED RIKTIG NIVÅ
-    pendingLevel = null;               // <-- nullstill ETTER at vi har startet
+    startLevel(lvl);
   });
 });
 
