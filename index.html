@@ -297,14 +297,20 @@ let timer={active:false,sec:TEST_TID_SEK};
 let currentScreen='screenLogin', navStack=[];
 let PRACTICE_TYPE='typing'; // 'typing' | 'choice'
 
-// Tilstand for nåværende spørsmål:
-let decided=false;     // er svaret avgjort (riktig/feil)?
+// Tilstand for gjeldende spørsmål
+let decided=false;        // om svaret er avklart
 let decidedCorrect=false; // var det riktig?
 let awaitingNext=false;   // sperre mot dobbel "Neste"
 
 /* ===== Utils ===== */
 const $=s=>document.querySelector(s); const $$=s=>Array.from(document.querySelectorAll(s));
-function tr(k,arg){const t=T[UI_LANG][k]; return typeof t==='function'? t(arg):(t||k);}
+function tr(k, arg){
+  const t = T[UI_LANG][k];
+  if (typeof t === 'function'){
+    return (arg === undefined) ? t : t(arg);
+  }
+  return t || k;
+}
 function applyI18n(){ $('#appTitle').textContent=tr('app_title'); $('[data-t="logout"]').textContent=tr('logout'); $('#loginTitle').textContent=tr('login');
   $$('#screenLogin [data-t], #screenHome [data-t], #screenPickMode [data-t], #screenLevels [data-t], #screenHelp [data-t], #screenSettings [data-t], #screenQuiz [data-t]').forEach(el=>{const k=el.getAttribute('data-t'); const v=T[UI_LANG][k]; if(typeof v==='string') el.textContent=v;});
   $('#helpText').textContent=tr('help_text');
@@ -441,7 +447,7 @@ function buildQuestions(mode){
     shuffle(QLIST);
   }
 
-  // Flervalg-alternativer for øving
+  // Flervalg-alternativer (øv)
   if(PRACTICE_TYPE==='choice' && mode==='ov'){
     const srcPool = ORD.map(o=>norm(o.Source));
     const dstPool = ORD.map(o=>norm(o.Target));
@@ -450,7 +456,6 @@ function buildQuestions(mode){
       const pool = (q.dir==='src2dst') ? dstPool : srcPool;
       const picks = new Set();
       if(correct) picks.add(correct);
-      // fallback dersom korrekt er tom:
       while(picks.size<4){
         const cand = pool[Math.floor(Math.random()*pool.length)] || '';
         if(cand && !picks.has(cand)) picks.add(cand);
@@ -494,14 +499,13 @@ function renderMC(q){
     const btn=document.createElement('button');
     btn.className='btn'; btn.textContent=opt;
     btn.onclick=()=>{
-      if(decided) return; // bare første klikk teller
+      if(decided) return; // første klikk teller
       const ans=opt.toLowerCase();
       decidedCorrect = q.answers.includes(ans);
       decided = true;
       $('#resultMsg').textContent = decidedCorrect? tr('right'): tr('wrong');
       $('#resultMsg').style.color = decidedCorrect? '#8ef28e': '#ff6b6b';
       $('#btnNext').disabled=false;
-      // lås alternativene
       $$('#mcOptions .btn').forEach(b=>b.disabled=true);
     };
     wrap.appendChild(btn);
@@ -521,12 +525,11 @@ function nextQuestion(){
     renderMC(q);
     $('#btnCheck').disabled=true; $('#answer').value=''; $('#answer').disabled=true;
   }else{
-    // typing (eller test)
     $('#answer').value=''; $('#answer').disabled=false; $('#btnCheck').disabled=false; $('#answer').focus(); q.tries=0;
   }
 }
 
-// Avgjør svaret for tekst-oppgaver. Teller IKKE poeng her – det gjøres ved "Neste".
+// Avgjør svaret for tekst-oppgaver. Teller ikke poeng her – det gjøres ved "Neste".
 function checkAnswer(){
   if(MODE==='ov' && PRACTICE_TYPE==='choice') return;
   const q=QLIST[qi]; if($('#btnCheck').disabled || decided) return;
@@ -541,14 +544,14 @@ function checkAnswer(){
     if(MODE==='ov'){
       if(q.tries>=2){
         decided=true; decidedCorrect=false;
-        $('#resultMsg').textContent=tr('wrong_again_reveal')(q.answers.join(', ')); $('#resultMsg').style.color='#ff6b6b';
+        $('#resultMsg').textContent=tr('wrong_again_reveal', q.answers.join(', ')); // ← FIX
+        $('#resultMsg').style.color='#ff6b6b';
         $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false;
       }else{
         const first=(q.answers[0]||'')[0]||'?'; $('#hintMsg').textContent=`Hint: Første bokstav er '${first}'`;
         $('#resultMsg').textContent=tr('wrong_try_again'); $('#resultMsg').style.color='#ff6b6b';
       }
     }else{
-      // Test: én sjanse
       decided=true; decidedCorrect=false;
       $('#resultMsg').textContent=tr('wrong'); $('#resultMsg').style.color='#ff6b6b';
       $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false;
@@ -556,7 +559,7 @@ function checkAnswer(){
   }
 }
 
-// Avanserer til neste spørsmål og teller poeng (felles for alle moduser)
+// Avanserer og teller poeng (felles)
 function advance(){
   if(awaitingNext) return;
   awaitingNext=true;
@@ -566,7 +569,6 @@ function advance(){
     updateProgress();
     qi++;
   }else{
-    // Ikke avgjort – ignorer eller tving? Vi tvinger å ikke gå videre.
     awaitingNext=false;
     return;
   }
@@ -579,7 +581,7 @@ function advance(){
 function showResult(){
   if(MODE==='test') timer.active=false;
   const total=QLIST.length, score=right;
-  $('#finalMsg').textContent=tr('result')({level:CURRENT_LEVEL,score:score,total:total});
+  $('#finalMsg').textContent = tr('result', { level: CURRENT_LEVEL, score, total }); // ← FIX
   $('#prompt').textContent=tr('level_finished');
   $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=true;
   if(MODE==='test' && CURRENT_USER){
