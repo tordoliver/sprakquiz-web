@@ -297,6 +297,11 @@ let timer={active:false,sec:TEST_TID_SEK};
 let currentScreen='screenLogin', navStack=[];
 let PRACTICE_TYPE='typing'; // 'typing' | 'choice'
 
+// Tilstand for nåværende spørsmål:
+let decided=false;     // er svaret avgjort (riktig/feil)?
+let decidedCorrect=false; // var det riktig?
+let awaitingNext=false;   // sperre mot dobbel "Neste"
+
 /* ===== Utils ===== */
 const $=s=>document.querySelector(s); const $$=s=>Array.from(document.querySelectorAll(s));
 function tr(k,arg){const t=T[UI_LANG][k]; return typeof t==='function'? t(arg):(t||k);}
@@ -441,16 +446,24 @@ function buildQuestions(mode){
     const srcPool = ORD.map(o=>norm(o.Source));
     const dstPool = ORD.map(o=>norm(o.Target));
     for(const q of QLIST){
-      const correct = q.answers[0];
+      const correct = q.answers[0] || '';
       const pool = (q.dir==='src2dst') ? dstPool : srcPool;
-      const picks = new Set([correct]);
+      const picks = new Set();
+      if(correct) picks.add(correct);
+      // fallback dersom korrekt er tom:
       while(picks.size<4){
-        const cand = pool[Math.floor(Math.random()*pool.length)];
+        const cand = pool[Math.floor(Math.random()*pool.length)] || '';
         if(cand && !picks.has(cand)) picks.add(cand);
       }
       q.choices = shuffle(Array.from(picks));
     }
   }
+}
+
+function resetDecision(){
+  decided=false;
+  decidedCorrect=false;
+  awaitingNext=false;
 }
 
 function startLevel(lvl){
@@ -477,20 +490,18 @@ function startLevel(lvl){
 
 function renderMC(q){
   const wrap = $('#mcOptions'); wrap.innerHTML='';
-  q.choices.forEach(opt=>{
+  (q.choices||[]).forEach(opt=>{
     const btn=document.createElement('button');
     btn.className='btn'; btn.textContent=opt;
     btn.onclick=()=>{
+      if(decided) return; // bare første klikk teller
       const ans=opt.toLowerCase();
-      const ok=q.answers.includes(ans);
-      if(ok){
-        $('#resultMsg').textContent=tr('right'); $('#resultMsg').style.color='#8ef28e';
-        right++; qi++; updateProgress();
-      }else{
-        $('#resultMsg').textContent=tr('wrong'); $('#resultMsg').style.color='#ff6b6b';
-        wrong++; qi++; updateProgress();
-      }
+      decidedCorrect = q.answers.includes(ans);
+      decided = true;
+      $('#resultMsg').textContent = decidedCorrect? tr('right'): tr('wrong');
+      $('#resultMsg').style.color = decidedCorrect? '#8ef28e': '#ff6b6b';
       $('#btnNext').disabled=false;
+      // lås alternativene
       $$('#mcOptions .btn').forEach(b=>b.disabled=true);
     };
     wrap.appendChild(btn);
@@ -499,40 +510,70 @@ function renderMC(q){
 
 function nextQuestion(){
   if(qi>=QLIST.length){showResult(); return;}
-  const q=QLIST[qi]; $('#prompt').textContent=q.prompt;
+  resetDecision();
+
+  const q=QLIST[qi];
+  $('#prompt').textContent=q.prompt;
   $('#resultMsg').textContent=''; $('#hintMsg').textContent='';
   $('#btnNext').disabled=true;
 
   if(MODE==='ov' && PRACTICE_TYPE==='choice'){
-    renderMC(q); $('#btnCheck').disabled=true; $('#answer').value=''; $('#answer').disabled=true;
+    renderMC(q);
+    $('#btnCheck').disabled=true; $('#answer').value=''; $('#answer').disabled=true;
   }else{
     // typing (eller test)
     $('#answer').value=''; $('#answer').disabled=false; $('#btnCheck').disabled=false; $('#answer').focus(); q.tries=0;
   }
 }
 
+// Avgjør svaret for tekst-oppgaver. Teller IKKE poeng her – det gjøres ved "Neste".
 function checkAnswer(){
   if(MODE==='ov' && PRACTICE_TYPE==='choice') return;
-  const q=QLIST[qi]; if($('#btnCheck').disabled) return;
+  const q=QLIST[qi]; if($('#btnCheck').disabled || decided) return;
   const ans=$('#answer').value.trim().toLowerCase(); q.tries=(q.tries||0)+1;
   const ok=q.answers.includes(ans);
+
   if(ok){
+    decided=true; decidedCorrect=true;
     $('#resultMsg').textContent=tr('right'); $('#resultMsg').style.color='#8ef28e';
-    right++; $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
+    $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false;
   }else{
     if(MODE==='ov'){
       if(q.tries>=2){
+        decided=true; decidedCorrect=false;
         $('#resultMsg').textContent=tr('wrong_again_reveal')(q.answers.join(', ')); $('#resultMsg').style.color='#ff6b6b';
-        wrong++; $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
+        $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false;
       }else{
         const first=(q.answers[0]||'')[0]||'?'; $('#hintMsg').textContent=`Hint: Første bokstav er '${first}'`;
         $('#resultMsg').textContent=tr('wrong_try_again'); $('#resultMsg').style.color='#ff6b6b';
       }
     }else{
+      // Test: én sjanse
+      decided=true; decidedCorrect=false;
       $('#resultMsg').textContent=tr('wrong'); $('#resultMsg').style.color='#ff6b6b';
-      wrong++; $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false; qi++; updateProgress();
+      $('#answer').disabled=true; $('#btnCheck').disabled=true; $('#btnNext').disabled=false;
     }
   }
+}
+
+// Avanserer til neste spørsmål og teller poeng (felles for alle moduser)
+function advance(){
+  if(awaitingNext) return;
+  awaitingNext=true;
+
+  if(decided){
+    if(decidedCorrect) right++; else wrong++;
+    updateProgress();
+    qi++;
+  }else{
+    // Ikke avgjort – ignorer eller tving? Vi tvinger å ikke gå videre.
+    awaitingNext=false;
+    return;
+  }
+
+  if(qi>=QLIST.length){ showResult(); awaitingNext=false; return; }
+  nextQuestion();
+  awaitingNext=false;
 }
 
 function showResult(){
@@ -571,19 +612,19 @@ function closeAnswersModal(){ $('#answersModal').classList.add('hidden'); }
 /* ===== Øvingsmåte-modal ===== */
 function openPracticeModal(lvl){
   const modal = $('#practiceModal');
-  modal.dataset.level = String(lvl);                 // lagre nivået her
+  modal.dataset.level = String(lvl);
   $('#practiceTitle').innerHTML = `🧠 ${tr('choose_practice')} – Nivå ${lvl}`;
   modal.classList.remove('hidden');
 }
 function closePracticeModal(){
-  $('#practiceModal').classList.add('hidden');       // ikke nullstill dataset.level
+  $('#practiceModal').classList.add('hidden');
 }
 $('#practiceClose').onclick=closePracticeModal;
 $('#practiceModal').addEventListener('click',e=>{ if(e.target.id==='practiceModal') closePracticeModal(); });
 $$('#practiceModal [data-practice]').forEach(btn=>{
   btn.addEventListener('click',()=>{
     PRACTICE_TYPE = btn.getAttribute('data-practice');
-    const lvl = +$('#practiceModal').dataset.level;  // hent riktig nivå
+    const lvl = +$('#practiceModal').dataset.level;
     closePracticeModal();
     startLevel(lvl);
   });
@@ -605,7 +646,8 @@ $('#btnModeTest').onclick=()=>{MODE='test'; openLevels();};
 
 $('#btnBackToLevels').onclick=()=>openLevels();
 $('#btnRestart').onclick=()=>startLevel(CURRENT_LEVEL);
-$('#btnCheck').onclick=checkAnswer; $('#btnNext').onclick=nextQuestion;
+$('#btnCheck').onclick=checkAnswer;
+$('#btnNext').onclick=advance;
 
 $('#btnShowAnswers').onclick=openAnswersModal;
 $('#answersClose').onclick=closeAnswersModal;
@@ -617,13 +659,14 @@ $('#toSettings').onclick=()=>{loadSettingsUI(); show('screenSettings');};
 $('#applySettings').onclick=applySettings;
 $('#uiLangSel').onchange=(e)=>{UI_LANG=e.target.value; const s=store.settings||{}; s.lang=UI_LANG; store.settings=s; applyI18n();};
 
-// ENTER i quiz (bare for skriving)
+// ENTER i quiz (skriving / test)
 window.addEventListener('keydown',e=>{
   if($('#screenQuiz').classList.contains('hidden')) return;
-  if(PRACTICE_TYPE!=='typing' && MODE==='ov') return;
+  if(e.repeat) return; // hindrer dobbel-trigger
+  if(MODE==='ov' && PRACTICE_TYPE!=='typing') return; // i flervalg bruker vi ikke Enter
   if(e.key==='Enter'){
-    if(!$('#btnCheck').disabled && !$('#answer').disabled){ checkAnswer(); }
-    else if(!$('#btnNext').disabled){ nextQuestion(); }
+    if(!$('#btnCheck').disabled && !$('#answer').disabled && !decided){ checkAnswer(); }
+    else if(!$('#btnNext').disabled){ advance(); }
   }
 });
 
