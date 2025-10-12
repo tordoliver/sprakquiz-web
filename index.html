@@ -150,16 +150,6 @@
         <div id="mcOptions" class="row" style="gap:.5rem;flex-wrap:wrap"></div>
       </div>
 
-      <!-- Flashcards -->
-      <div id="flashWrap" class="hidden" style="margin:.4rem 0">
-        <div id="flashAnswer" class="muted" style="min-height:1.2em"></div>
-        <div class="row" style="margin-top:.4rem">
-          <button class="btn ghost" id="btnFlashReveal">👁 <span data-t="reveal">Vis</span></button>
-          <button class="btn ok" id="btnFlashKnow">✅ <span data-t="i_knew_it">Kunne det</span></button>
-          <button class="btn bad" id="btnFlashMiss">❌ <span data-t="i_missed_it">Bommet</span></button>
-        </div>
-      </div>
-
       <div id="resultMsg" style="margin:.4rem 0 .2rem"></div>
       <div id="hintMsg" class="muted" style="min-height:1.2em"></div>
 
@@ -228,10 +218,7 @@
           <div class="row" style="gap:.6rem">
             <button class="btn" data-practice="typing">⌨️ <span data-t="typing">Skriving</span></button>
             <button class="btn" data-practice="choice">🔢 <span data-t="multiple_choice">Flervalg</span></button>
-            <button class="btn" data-practice="flash">🃏 <span data-t="flashcards">Flashcards</span></button>
-            <button class="btn ghost" data-practice="mixed">🔀 <span data-t="mixed_dir">Blandet retning</span></button>
           </div>
-          <p class="muted" style="margin-top:.6rem" data-t="practice_hint">Tips: «Blandet retning» spør begge veier også i øving.</p>
         </div>
       </div>
     </div>
@@ -247,18 +234,15 @@ const LANG_NAMES = {no:{no:"norsk",en:"engelsk",tl:"tagalog"},en:{no:"Norwegian"
 const T={
   no:{
     app_title:"Språkquiz",logout:"Logg ut / bytt",username:"Brukernavn",password:"Passord",login:"Logg inn",register:"Registrer",guest:"Gjest",register_title:"Registrer",levels:"Nivåer",settings:"Innstillinger",help:"Hjelp",back:"Tilbake",choose_mode:"Velg modus",practice:"Øv",test:"Test",choose_level:"Velg nivå",choose_level_practice:"Velg nivå – Øv",choose_level_test:"Velg nivå – Test",check_answer:"Sjekk svar",next_question:"Neste spørsmål",restart_level:"Start nivået på nytt",pick_new_level:"Velg nytt nivå",level_finished:"Nivå ferdig!",timer_left:"Tid igjen",result:o=>`Resultat nivå ${o.level}: ${o.score}/${o.total} riktige`,pct_correct:"% riktig",show_answer:"Vis fasit",hide_answer:"Skjul fasit",src:"Kilde",dst:"Mål",i_know:"Jeg kan",i_want_to_learn:"Jeg vil lære",language:"Grensesnittspråk",settings_title:"Innstillinger",apply:"Bruk",wrong_try_again:"❌ Feil. Prøv igjen!",wrong_again_reveal:ans=>`❌ Feil igjen. Riktig: ${ans}`,right:"✅ Riktig!",wrong:"❌ Feil.",help_text:`• Velg «Nivåer» → «Øv» eller «Test».\n• Øv: hjelpemidler (ordbok, fasit, hint). Test: ingen hjelp + nedtelling.\n• I Test spørres hvert ord begge veier (30 spørsmål = 2×15).\n• Full pott i Test låser opp neste nivå.\n• ENTER sjekker svaret; ENTER igjen går videre.`,enter_user_pass:"Skriv inn brukernavn og passord.",bad_creds:"Feil brukernavn eller passord.",user_exists:"Brukernavn er allerede i bruk.",reg_success:"Bruker opprettet. Du kan nå logge inn.",guest_info:"Du er gjest. Fremdrift lagres ikke.",error_same_lang:"Kilde- og mål-språk kan ikke være like.",settings_updated:"Oppdatert",
-    /* Nye tekster */
-    choose_practice:"Velg øvingsmåte", typing:"Skriving", multiple_choice:"Flervalg", flashcards:"Flashcards", mixed_dir:"Blandet retning", practice_hint:"Tips: «Blandet retning» spør begge veier også i øving.", reveal:"Vis", i_knew_it:"Kunne det", i_missed_it:"Bommet"
+    choose_practice:"Velg øvingsmåte", typing:"Skriving", multiple_choice:"Flervalg"
   },
   en:{
     app_title:"Language Quiz",logout:"Log out / switch",username:"Username",password:"Password",login:"Log in",register:"Register",guest:"Guest",register_title:"Register",levels:"Levels",settings:"Settings",help:"Help",back:"Back",choose_mode:"Choose mode",practice:"Practice",test:"Test",choose_level:"Choose level",choose_level_practice:"Choose Level – Practice",choose_level_test:"Choose Level – Test",check_answer:"Check answer",next_question:"Next question",restart_level:"Restart level",pick_new_level:"Pick another level",level_finished:"Level finished!",timer_left:"Time left",result:o=>`Result Level ${o.level}: ${o.score}/${o.total} correct`,pct_correct:"% correct",show_answer:"Show answers",hide_answer:"Hide answers",src:"Source",dst:"Target",i_know:"I know",i_want_to_learn:"I want to learn",language:"Interface language",settings_title:"Settings",apply:"Apply",wrong_try_again:"❌ Wrong. Try again!",wrong_again_reveal:ans=>`❌ Still wrong. Correct: ${ans}`,right:"✅ Correct!",wrong:"❌ Wrong.",help_text:`• Choose “Levels” → “Practice” or “Test”.\n• Practice: helpers (word list, answers, hints). Test: no help + countdown.\n• In Test each word is asked both directions (30 questions = 2×15).\n• A perfect Test unlocks the next level.\n• ENTER checks the answer; press ENTER again to go next.`,enter_user_pass:"Enter username and password.",bad_creds:"Wrong username or password.",user_exists:"Username is already taken.",reg_success:"User created. You can log in now.",guest_info:"You are a guest. Progress is not saved.",error_same_lang:"Source and target can’t be the same.",settings_updated:"Updated",
-    /* New */
-    choose_practice:"Choose practice type", typing:"Typing", multiple_choice:"Multiple choice", flashcards:"Flashcards", mixed_dir:"Mixed direction", practice_hint:"Tip: “Mixed direction” asks both ways in practice too.", reveal:"Reveal", i_knew_it:"I knew it", i_missed_it:"I missed it"
+    choose_practice:"Choose practice type", typing:"Typing", multiple_choice:"Multiple choice"
   },
   tl:{
     app_title:"Pagsusulit sa Wika",logout:"Mag-sign out / palitan",username:"Username",password:"Password",login:"Mag-sign in",register:"Magrehistro",guest:"Bisita",register_title:"Magrehistro",levels:"Mga Antas",settings:"Mga Setting",help:"Tulong",back:"Bumalik",choose_mode:"Pumili ng mode",practice:"Ehersisyo",test:"Pagsusulit",choose_level:"Piliin ang antas",choose_level_practice:"Piliin ang Antas – Ehersisyo",choose_level_test:"Piliin ang Antas – Pagsusulit",check_answer:"Suriin ang sagot",next_question:"Susunod na tanong",restart_level:"Ulitin ang antas",pick_new_level:"Pumili ng ibang antas",level_finished:"Tapos na ang antas!",timer_left:"Natitirang oras",result:o=>`Resulta Antas ${o.level}: ${o.score}/${o.total} tama`,pct_correct:"% tama",show_answer:"Ipakita ang mga sagot",hide_answer:"Itago ang mga sagot",src:"Pinagmulan",dst:"Patungo",i_know:"Alam ko",i_want_to_learn:"Nais kong matutunan",language:"Wika ng UI",settings_title:"Mga Setting",apply:"Ilapat",wrong_try_again:"❌ Mali. Subukan muli!",wrong_again_reveal:ans=>`❌ Mali pa rin. Tama: ${ans}`,right:"✅ Tama!",wrong:"❌ Mali.",help_text:`• Piliin ang “Mga Antas” → “Ehersisyo” o “Pagsusulit”.\n• Ehersisyo: may tulong (talaan ng salita, sagot, pahiwatig). Pagsusulit: walang tulong + countdown.\n• Sa Pagsusulit, parehong direksyon ang tanong sa bawat salita (30 tanong = 2×15).\n• Perpektong iskor sa Pagsusulit ay magbubukas ng susunod na antas.\n• ENTER para suriin; ENTER muli para magpatuloy.`,enter_user_pass:"Ilagay ang username at password.",bad_creds:"Maling username o password.",user_exists:"Nagamit na ang username.",reg_success:"Nagawa ang user. Maaari ka nang mag-sign in.",guest_info:"Bisita ka. Hindi ise-save ang progreso.",error_same_lang:"Hindi maaaring magkapareho ang pinagmulan at patungo.",settings_updated:"Na-update",
-    /* Bago */
-    choose_practice:"Pumili ng paraan ng ehersisyo", typing:"Pagta-type", multiple_choice:"Multiple choice", flashcards:"Flashcards", mixed_dir:"Halo-halong direksyon", practice_hint:"Tip: Ang “Halo-halong direksyon” ay nagtatanong ng parehong paraan sa ehersisyo.", reveal:"Ipakita", i_knew_it:"Alam ko", i_missed_it:"Nagkamali ako"
+    choose_practice:"Pumili ng paraan ng ehersisyo", typing:"Pagta-type", multiple_choice:"Multiple choice"
   }
 };
 
@@ -278,7 +262,7 @@ let LEVELS=[], MODE='ov', CURRENT_LEVEL=1;
 let ORD=[], QLIST=[], qi=0, right=0, wrong=0;
 let timer={active:false,sec:TEST_TID_SEK};
 let currentScreen='screenLogin', navStack=[];
-let PRACTICE_TYPE='typing'; // 'typing' | 'choice' | 'flash' | 'mixed'
+let PRACTICE_TYPE='typing'; // 'typing' | 'choice'
 
 /* ===== Utils ===== */
 const $=s=>document.querySelector(s); const $$=s=>Array.from(document.querySelectorAll(s));
@@ -370,7 +354,7 @@ function openLevels(){
 /* ===== Quiz ===== */
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];}return a;}
 
-/* Ny: buildQuestions m/ støtte for mixed + distraktorer */
+/* buildQuestions for Øv/Test + flervalg-støtte */
 function buildQuestions(mode){
   const s=store.settings||{known:'no',learn:'tl'};
   const src=s.known||'no', dst=s.learn||'tl';
@@ -400,28 +384,22 @@ function buildQuestions(mode){
   };
 
   QLIST = [];
-  const pushBoth = () => {
-    for(const it of ORD){
-      QLIST.push({ prompt:`Hva er '${it.Source}' på ${dstName}?`, answers:answersFor(it.Source, it.Target, 'src2dst'), key:it.Source, dir:'src2dst' });
-      QLIST.push({ prompt:`Hva er '${it.Target}' på ${srcName}?`, answers:answersFor(it.Target, it.Source, 'dst2src'), key:it.Source, dir:'dst2src' });
-    }
-  };
 
   if(mode==='ov'){
-    if(PRACTICE_TYPE==='mixed'){
-      pushBoth();
-    }else{
-      for(const it of ORD){
-        if(Math.random()<0.5){
-          QLIST.push({ prompt:`Hva er '${it.Source}' på ${dstName}?`, answers:answersFor(it.Source, it.Target, 'src2dst'), key:it.Source, dir:'src2dst' });
-        }else{
-          QLIST.push({ prompt:`Hva er '${it.Target}' på ${srcName}?`, answers:answersFor(it.Target, it.Source, 'dst2src'), key:it.Source, dir:'dst2src' });
-        }
+    for(const it of ORD){
+      if(Math.random()<0.5){
+        QLIST.push({ prompt:`Hva er '${it.Source}' på ${dstName}?`, answers:answersFor(it.Source, it.Target, 'src2dst'), key:it.Source, dir:'src2dst' });
+      }else{
+        QLIST.push({ prompt:`Hva er '${it.Target}' på ${srcName}?`, answers:answersFor(it.Target, it.Source, 'dst2src'), key:it.Source, dir:'dst2src' });
       }
     }
     shuffle(QLIST);
   }else{
-    pushBoth();
+    // Test: begge retninger
+    for(const it of ORD){
+      QLIST.push({ prompt:`Hva er '${it.Source}' på ${dstName}?`, answers:answersFor(it.Source, it.Target, 'src2dst'), key:it.Source, dir:'src2dst' });
+      QLIST.push({ prompt:`Hva er '${it.Target}' på ${srcName}?`, answers:answersFor(it.Target, it.Source, 'dst2src'), key:it.Source, dir:'dst2src' });
+    }
     shuffle(QLIST);
   }
 
@@ -454,7 +432,6 @@ function startLevel(lvl){
   // toggl UI for øvingsmåte
   $('#typingWrap').classList.toggle('hidden', !(PRACTICE_TYPE==='typing' || MODE==='test'));
   $('#mcWrap').classList.toggle('hidden', !(PRACTICE_TYPE==='choice' && MODE==='ov'));
-  $('#flashWrap').classList.toggle('hidden', !(PRACTICE_TYPE==='flash' && MODE==='ov'));
 
   const total=QLIST.length; const modeTxt = MODE==='ov'?'Øv':'Test';
   $('#quizTitle').textContent = `Språkquiz – Nivå ${CURRENT_LEVEL} (${total} spørsmål) – ${modeTxt}`;
@@ -480,7 +457,6 @@ function renderMC(q){
         wrong++; qi++; updateProgress();
       }
       $('#btnNext').disabled=false;
-      // disable all choices
       $$('#mcOptions .btn').forEach(b=>b.disabled=true);
     };
     wrap.appendChild(btn);
@@ -495,8 +471,6 @@ function nextQuestion(){
 
   if(MODE==='ov' && PRACTICE_TYPE==='choice'){
     renderMC(q); $('#btnCheck').disabled=true; $('#answer').value=''; $('#answer').disabled=true;
-  }else if(MODE==='ov' && PRACTICE_TYPE==='flash'){
-    $('#flashAnswer').textContent=''; $('#btnCheck').disabled=true; $('#answer').value=''; $('#answer').disabled=true;
   }else{
     // typing (eller test)
     $('#answer').value=''; $('#answer').disabled=false; $('#btnCheck').disabled=false; $('#answer').focus(); q.tries=0;
@@ -504,7 +478,7 @@ function nextQuestion(){
 }
 
 function checkAnswer(){
-  if(MODE==='ov' && (PRACTICE_TYPE==='choice' || PRACTICE_TYPE==='flash')) return;
+  if(MODE==='ov' && PRACTICE_TYPE==='choice') return;
   const q=QLIST[qi]; if($('#btnCheck').disabled) return;
   const ans=$('#answer').value.trim().toLowerCase(); q.tries=(q.tries||0)+1;
   const ok=q.answers.includes(ans);
@@ -605,32 +579,15 @@ $('#toSettings').onclick=()=>{loadSettingsUI(); show('screenSettings');};
 $('#applySettings').onclick=applySettings;
 $('#uiLangSel').onchange=(e)=>{UI_LANG=e.target.value; const s=store.settings||{}; s.lang=UI_LANG; store.settings=s; applyI18n();};
 
-// ENTER i quiz
+// ENTER i quiz (bare for skriving)
 window.addEventListener('keydown',e=>{
   if($('#screenQuiz').classList.contains('hidden')) return;
-  if(PRACTICE_TYPE!=='typing' && MODE==='ov') return; // kun typing bruker Enter
+  if(PRACTICE_TYPE!=='typing' && MODE==='ov') return;
   if(e.key==='Enter'){
     if(!$('#btnCheck').disabled && !$('#answer').disabled){ checkAnswer(); }
     else if(!$('#btnNext').disabled){ nextQuestion(); }
   }
 });
-
-/* Flashcards knapper */
-$('#btnFlashReveal').onclick=()=>{
-  if(qi>=QLIST.length) return;
-  const q=QLIST[qi];
-  $('#flashAnswer').textContent = q.answers.join(', ');
-};
-$('#btnFlashKnow').onclick=()=>{
-  if(qi>=QLIST.length) return;
-  right++; qi++; updateProgress(); $('#btnNext').disabled=false;
-  $('#resultMsg').textContent=tr('right'); $('#resultMsg').style.color='#8ef28e';
-};
-$('#btnFlashMiss').onclick=()=>{
-  if(qi>=QLIST.length) return;
-  wrong++; qi++; updateProgress(); $('#btnNext').disabled=false;
-  $('#resultMsg').textContent=tr('wrong'); $('#resultMsg').style.color='#ff6b6b';
-};
 
 /* ===== Oppstart ===== */
 (async function init(){
