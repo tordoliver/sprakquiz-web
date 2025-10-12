@@ -540,14 +540,19 @@ function openPracticeModal(lvl){
   pendingLevel=lvl;
   $('#practiceModal').classList.remove('hidden');
 }
-function closePracticeModal(){ $('#practiceModal').classList.add('hidden'); pendingLevel=null; }
+function closePracticeModal(){
+  $('#practiceModal').classList.add('hidden');
+  // VIKTIG: ikke nullstill pendingLevel her lenger
+}
 $('#practiceClose').onclick=closePracticeModal;
 $('#practiceModal').addEventListener('click',e=>{ if(e.target.id==='practiceModal') closePracticeModal(); });
 $$('#practiceModal [data-practice]').forEach(btn=>{
   btn.addEventListener('click',()=>{
     PRACTICE_TYPE=btn.getAttribute('data-practice');
+    const lvl = pendingLevel;          // <-- TA VARE PÅ NIVÅET
     closePracticeModal();
-    startLevel(pendingLevel||1);
+    startLevel(lvl || 1);              // <-- START MED RIKTIG NIVÅ
+    pendingLevel = null;               // <-- nullstill ETTER at vi har startet
   });
 });
 
