@@ -13,7 +13,7 @@
       {"no": "unnskyld", "tl": "patawad", "en": "sorry"},
       {"no": "beklager", "tl": "pasensya", "en": "sorry"},
       {"no": "velkommen", "tl": "maligayang pagdating", "en": "welcome"},
-      {"no": "ha en fin dag", "tl": "magandang araw", "en": "have a nice day"},
+      {"no": "god dag", "tl": "magandang araw", "en": "have a nice day"},
       {"no": "hvordan går det?", "tl": "kumusta?", "en": "how are you?"},
       {"no": "bra", "tl": "mabuti", "en": "good"},
       {"no": "dårlig", "tl": "masama", "en": "bad"},
@@ -28,12 +28,12 @@
       {"no": "på gjensyn", "tl": "hanggang sa muli", "en": "see you again"},
       {"no": "ta vare", "tl": "mag-ingat ka", "en": "take care"},
       {"no": "gratulerer", "tl": "binabati kita", "en": "congratulations"},
-      {"no": "lykke til", "tl": "sana swertehin ka", "en": "good luck"},
-      {"no": "god ferie", "tl": "magandang bakasyon", "en": "have a nice holiday"},
+      {"no": "lykke til", "tl": "sana maging masuwerte ka", "en": "good luck"},
+      {"no": "god ferie", "tl": "magandang bakasyon sa’yo", "en": "have a nice holiday"},
       {"no": "god jul", "tl": "maligayang pasko", "en": "merry Christmas"},
       {"no": "godt nytt år", "tl": "manigong bagong taon", "en": "happy New Year"},
       {"no": "unnskyld meg", "tl": "paumanhin", "en": "excuse me"},
-      {"no": "vær så god", "tl": "heto", "en": "here you go"},
+      {"no": "vær så god", "tl": "walang anuman", "en": "here you go"},
       {"no": "ingen årsak", "tl": "walang anuman", "en": "you're welcome"},
       {"no": "kan jeg hjelpe deg?", "tl": "maaari ba kitang tulungan?", "en": "can I help you?"},
       {"no": "kan du hjelpe meg?", "tl": "maaari mo ba akong tulungan?", "en": "can you help me?"},
@@ -75,8 +75,8 @@
       {"no": "foreldre", "tl": "mga magulang", "en": "parents"},
       {"no": "bestemor", "tl": "lola", "en": "grandmother"},
       {"no": "bestefar", "tl": "lolo", "en": "grandfather"},
-      {"no": "tante", "tl": "tiya", "en": "aunt"},
-      {"no": "onkel", "tl": "tiyo", "en": "uncle"},
+      {"no": "tante", "tl": "tita", "en": "aunt"},
+      {"no": "onkel", "tl": "tito", "en": "uncle"},
       {"no": "fetter", "tl": "pinsan", "en": "male cousin"},
       {"no": "kusine", "tl": "pinsan", "en": "female cousin"},
       {"no": "barnebarn", "tl": "apo", "en": "grandchild"},
@@ -160,7 +160,7 @@
       {"no": "frukt", "tl": "prutas", "en": "fruit"},
       {"no": "grønnsak", "tl": "gulay", "en": "vegetable"},
       {"no": "salat", "tl": "ensalada", "en": "salad"},
-      {"no": "suppe", "tl": "sopas", "en": "soup"},
+      {"no": "suppe", "tl": "sabaw", "en": "soup"},
       {"no": "egg", "tl": "itlog", "en": "egg"},
       {"no": "melk", "tl": "gatas", "en": "milk"},
       {"no": "kaffe", "tl": "kape", "en": "coffee"},
@@ -194,7 +194,7 @@
     "items": [
       {"no": "skjorte", "tl": "kamiseta", "en": "shirt"},
       {"no": "bukse", "tl": "pantalon", "en": "trousers"},
-      {"no": "jakke", "tl": "dyaket", "en": "jacket"},
+      {"no": "jakke", "tl": "jacket", "en": "jacket"},
       {"no": "sko", "tl": "sapatos", "en": "shoes"},
       {"no": "hatt", "tl": "sumbrero", "en": "hat"},
       {"no": "kjole", "tl": "bestida", "en": "dress"},
@@ -202,7 +202,7 @@
       {"no": "støvler", "tl": "bota", "en": "boots"},
       {"no": "sokker", "tl": "medyas", "en": "socks"},
       {"no": "belte", "tl": "sinturon", "en": "belt"},
-      {"no": "skjerf", "tl": "iskarf", "en": "scarf"},
+      {"no": "skjerf", "tl": "scarf", "en": "scarf"},
       {"no": "hansker", "tl": "guwantes", "en": "gloves"},
       {"no": "slips", "tl": "kurbata", "en": "tie"},
       {"no": "lue", "tl": "bonnet", "en": "beanie"},
@@ -226,7 +226,7 @@
       {"no": "brun", "tl": "kayumanggi", "en": "brown"},
       {"no": "lys", "tl": "maliwanag", "en": "light"},
       {"no": "mørk", "tl": "madilim", "en": "dark"},
-      {"no": "gyllen", "tl": "ginto", "en": "golden"},
+      {"no": "guld", "tl": "ginto", "en": "gold"},
       {"no": "sølv", "tl": "pilak", "en": "silver"}
     ]
   },
@@ -281,7 +281,7 @@
       {"no": "tog", "tl": "tren", "en": "train"},
       {"no": "sykkel", "tl": "bisikleta", "en": "bicycle"},
       {"no": "motorsykkel", "tl": "motorsiklo", "en": "motorcycle"},
-      {"no": "båt", "tl": "barko", "en": "boat"},
+      {"no": "båt", "tl": "bangka", "en": "boat"},
       {"no": "ferge", "tl": "ferry", "en": "ferry"},
       {"no": "fly", "tl": "eroplano", "en": "airplane"},
       {"no": "helikopter", "tl": "helikopter", "en": "helicopter"},
@@ -2380,6 +2380,7 @@
   ]
 }
 ]
+
 
 
 
